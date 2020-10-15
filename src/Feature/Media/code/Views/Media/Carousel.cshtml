@@ -1,0 +1,27 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@model FordIndia.Feature.Media.Models.Carousel
+
+<div class="container-md">
+    <div class="row mobile-row">
+        <div class="col-lg-8 col-md-9 col-xl-9 mobile-second">
+            <div class="charging-features-wrapper">
+                @if (Model != null && Model.CarouseImage != null && Model.CarouseImage.Count() > 0)
+                {
+                    foreach (var item in Model.CarouseImage)
+                    {
+                        <div class="row no-gutters bottom-p">
+                            <div class="col-lg">
+                                <div class="charging-feature d-block">
+                                    <div class="d-flex">
+                                        <h4>@Html.Glass().Editable(item, x => x.MediaTitle)</h4>
+                                    </div>
+                                    @Html.Glass().RenderImage(item, x => x.MediaImage)
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
