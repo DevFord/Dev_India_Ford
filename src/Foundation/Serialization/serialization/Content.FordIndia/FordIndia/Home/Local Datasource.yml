@@ -1,0 +1,18 @@
+﻿---
+ID: "9a4092f6-dac1-43f2-a7d9-dd6004eeb8f0"
+Parent: "0d17fede-b400-41a8-b306-72ce37f12548"
+Template: "fff5f245-ffc0-4022-a998-9b07aa5e761f"
+Path: /sitecore/content/FordIndia/Home/Local Datasource
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201011T163529Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

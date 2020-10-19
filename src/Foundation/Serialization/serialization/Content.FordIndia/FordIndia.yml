@@ -1,0 +1,21 @@
+﻿---
+ID: "86fa8d73-b262-47ba-9e5b-44f30cd48457"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "0643d9d4-f30b-4b07-91d0-289cc324c9cf"
+Path: /sitecore/content/FordIndia
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201011T163010Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e748d808-64c1-4dec-9718-f35cf9689e4b"
+      Hint: Logo
+      Value: 

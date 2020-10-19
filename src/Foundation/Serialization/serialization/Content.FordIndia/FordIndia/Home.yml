@@ -1,0 +1,131 @@
+﻿---
+ID: "0d17fede-b400-41a8-b306-72ce37f12548"
+Parent: "86fa8d73-b262-47ba-9e5b-44f30cd48457"
+Template: "4a8822cc-b418-4452-ab0f-8bb6df2f2114"
+Path: /sitecore/content/FordIndia/Home
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        s:l="{1D517D38-25AF-4702-9340-807ADCBFF2DE}">
+        <r
+          uid="{E6CA18D8-321D-4105-9C38-0622E94BE400}">
+          <p:d />
+        </r>
+        <r
+          uid="{E75C1424-7E2C-4E85-A5F8-FDF1E86B3A2F}"
+          s:ds="{6B3E2125-9402-4ABE-BE65-1DC375B2111E}"
+          s:id="{B16CA656-A38A-435A-8B9B-7030FB4399B4}"
+          s:par=""
+          s:ph="main" />
+        <r
+          uid="{EF51B238-7CE2-4E39-AB87-D05424735160}">
+          <p:d />
+        </r>
+        <r
+          uid="{F963AA98-4957-45B5-95CD-B61C242063E1}">
+          <p:d />
+        </r>
+        <r
+          uid="{05FFB7B4-377C-4C00-9520-0ED7735CADCA}">
+          <p:d />
+        </r>
+        <r
+          uid="{630F4515-1F19-49A8-B986-D46ADD5CE024}">
+          <p:d />
+        </r>
+        <r
+          uid="{07C9FE71-A5E2-4E5F-B276-5F2B73481D44}">
+          <p:d />
+        </r>
+        <r
+          uid="{7BD25BD6-C6C4-4FBE-9828-D29A39A2FEC9}">
+          <p:d />
+        </r>
+        <r
+          uid="{FBDB4313-35B5-4C26-A586-17F48FD2DC41}">
+          <p:d />
+        </r>
+        <r
+          uid="{75551DEC-A457-43A3-B76F-91742B5DDE93}">
+          <p:d />
+        </r>
+        <r
+          uid="{462763BC-EC80-4FBA-9714-B63A87B43259}">
+          <p:d />
+        </r>
+        <r
+          uid="{3555E24E-FBE9-4D81-AAC7-50408AA45EF0}">
+          <p:d />
+        </r>
+        <r
+          uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}">
+          <p:d />
+        </r>
+        <r
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}">
+          <p:d />
+        </r>
+        <r
+          uid="{1DF746C3-2D29-43E6-9DE2-05622DED6F97}">
+          <p:d />
+        </r>
+        <r
+          uid="{A3CA17FF-693C-46F1-87AA-B8C1833F1890}">
+          <p:d />
+        </r>
+        <r
+          uid="{E2040FB7-4151-456D-9315-5973E4EB4D9D}">
+          <p:d />
+        </r>
+        <r
+          uid="{025588CB-DFC0-4B02-8223-0015C525AE52}">
+          <p:d />
+        </r>
+        <r
+          uid="{0E0C6DCA-1A29-4975-84D7-E99498A64A72}">
+          <p:d />
+        </r>
+        <r
+          uid="{0E0C6DCA-1A29-4975-84D7-E99498A64A72}">
+          <p:d />
+        </r>
+        <r
+          uid="{47F5A079-6F63-4219-BC45-1A221B200906}">
+          <p:d />
+        </r>
+        <r
+          uid="{84124EE2-E678-4144-8316-0D6874866604}">
+          <p:d />
+        </r>
+        <r
+          uid="{A3BAD4D4-8E21-4B30-8C4C-B04163653D62}">
+          <p:d />
+        </r>
+        <r
+          uid="{20AB9BAA-C112-4567-A701-564423E650D2}">
+          <p:d />
+        </r>
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201011T163027Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

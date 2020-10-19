@@ -1,0 +1,14 @@
+﻿---
+ID: "9557b3f8-e183-4878-913e-22713cc29e99"
+Parent: "e2e1222e-839a-4d71-890d-2a87e0d15d33"
+Template: "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b"
+Path: /sitecore/templates/Project/FordIndia/Page Types
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201011T160349Z
