@@ -241,7 +241,53 @@
     <Content Include="App_Config\Include\Project\FordIndia.Website.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Assets\css\bootstrap-select.min.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\fonts\FordAntenna-Bold.svg" />
+    <Content Include="Assets\fonts\FordAntenna-Medium.svg" />
+    <Content Include="Assets\fonts\FordAntenna-Regular.svg" />
+    <Content Include="Assets\fonts\FordAntenna-Semibold.svg" />
+    <Content Include="Assets\fonts\FordAntennaComp-Black.svg" />
+    <Content Include="Assets\images\aspire-menu.jpg" />
+    <Content Include="Assets\images\ecosport-menu.jpg" />
+    <Content Include="Assets\images\endeavour-menu.jpg" />
+    <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\figo-menu.jpg" />
+    <Content Include="Assets\images\ford-service.jpg" />
+    <Content Include="Assets\images\freestyle-menu.jpg" />
+    <Content Include="Assets\images\fun-to-drive.jpg" />
+    <Content Include="Assets\images\hero-banner-mobile.jpg" />
+    <Content Include="Assets\images\hero-banner.jpg" />
+    <Content Include="Assets\images\latest-banner-desktop.jpg" />
+    <Content Include="Assets\images\latest-banner-mobile.jpg" />
+    <Content Include="Assets\images\logo-color.png" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\map-color-icon.png" />
+    <Content Include="Assets\images\map-icon.png" />
+    <Content Include="Assets\images\mustang-menu.jpg" />
+    <Content Include="Assets\images\safety-hero-banner.jpg" />
+    <Content Include="Assets\images\search-color-icon.png" />
+    <Content Include="Assets\images\search-icon.png" />
+    <Content Include="Assets\images\steering-color-icon.png" />
+    <Content Include="Assets\images\steering-icon.png" />
+    <Content Include="Assets\images\toll-free-desktop.jpg" />
+    <Content Include="Assets\images\toll-free-mobile.jpg" />
+    <Content Include="Assets\js\bootstrap-select.min.js" />
+    <Content Include="Assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\owl.carousel.min.js" />
     <Content Include="Views\Website\Layouts\Default.cshtml" />
+    <Content Include="Assets\fonts\FordAntenna-Bold.woff" />
+    <Content Include="Assets\fonts\FordAntenna-Bold.woff2" />
+    <Content Include="Assets\fonts\FordAntenna-Medium.woff" />
+    <Content Include="Assets\fonts\FordAntenna-Medium.woff2" />
+    <Content Include="Assets\fonts\FordAntenna-Regular.woff" />
+    <Content Include="Assets\fonts\FordAntenna-Regular.woff2" />
+    <Content Include="Assets\fonts\FordAntenna-Semibold.woff" />
+    <Content Include="Assets\fonts\FordAntenna-Semibold.woff2" />
+    <Content Include="Assets\fonts\FordAntennaComp-Black.woff" />
+    <Content Include="Assets\fonts\FordAntennaComp-Black.woff2" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
