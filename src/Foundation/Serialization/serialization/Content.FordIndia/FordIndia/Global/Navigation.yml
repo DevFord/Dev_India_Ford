@@ -1,0 +1,18 @@
+﻿---
+ID: "27844d71-0960-4ee0-8f17-c7530d0693e3"
+Parent: "4eb9e2c7-550f-4be9-9553-6646baa9a499"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/FordIndia/Global/Navigation
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201021T063017Z

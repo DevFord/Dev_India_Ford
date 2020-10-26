@@ -2,7 +2,9 @@
 {
     using System;
     using Sitecore;
+    using Sitecore.Data;
     using Sitecore.Data.Fields;
+    using Sitecore.Data.Items;
     using Sitecore.Links.UrlBuilders;
     using Sitecore.Resources.Media;
 
@@ -48,5 +50,17 @@
             }
             return MainUtil.GetBool(checkboxField.Value, false);
         }
+        public static Item TargetItem(this Item item, ID linkFieldId)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+            if (item.Fields[linkFieldId] == null || !item.Fields[linkFieldId].HasValue)
+                return null;
+            return ((LinkField)item.Fields[linkFieldId]).TargetItem ?? ((ReferenceField)item.Fields[linkFieldId]).TargetItem;
+        }
+
+
     }
 }

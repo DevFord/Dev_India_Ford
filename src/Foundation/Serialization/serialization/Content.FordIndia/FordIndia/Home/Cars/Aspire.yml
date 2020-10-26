@@ -1,0 +1,53 @@
+﻿---
+ID: "3c249c6b-43a8-46d6-ac58-0b7e1cc30846"
+Parent: "8883dce4-20e9-4120-82fc-59ade19e9cc0"
+Template: "bdc9fe50-3ade-4203-8179-3df6fd6c4db2"
+Path: /sitecore/content/FordIndia/Home/Cars/Aspire
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09e7cae7-4983-4de4-980a-076f5909b480"
+      Hint: Price
+      Value: 67,00,000
+    - ID: "14b84ec9-2b90-4dbb-98f8-b0ef51845e65"
+      Hint: SeatingCount
+      Value: 6
+    - ID: "1982a9ad-c6f1-4bc7-8106-c343a9066acb"
+      Hint: SubCategoryName
+      Value: Ford Aspire
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Aspire
+    - ID: "1ff03e4c-4c6b-4e9e-a8f0-c4a49c52a312"
+      Hint: SubCatTitle
+      Value: Ford Aspire
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201023T080851Z
+    - ID: "3b91895f-1219-4936-a0fb-79cb348b69a9"
+      Hint: SubCategoryThumbnail
+      Value: |
+        <image mediaid="{53266252-2BF8-460E-9220-B659F44C3CD0}" />
+    - ID: "5d1edee5-4f33-45ab-ac74-fba22cbf57b0"
+      Hint: SeatingText
+      Value: Seating for at
+    - ID: "653c4419-e323-4fef-9cc1-d585c8b65b8b"
+      Hint: MPGText
+      Value: Est. MPG City/Highway
+    - ID: "91e3213e-1fb1-4a60-9a9b-931f5041ade1"
+      Hint: PriceText
+      Value: Starting at
+    - ID: "f914da57-dfb8-4f62-9f77-13c492d0041c"
+      Hint: MPGValue
+      Value: 14/17
+    - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
+      Hint: Link
+      Value: |
+        <link linktype="javascript" url="javascript:void(0);" anchor="" />

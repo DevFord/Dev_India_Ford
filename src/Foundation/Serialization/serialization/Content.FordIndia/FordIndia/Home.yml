@@ -5,6 +5,14 @@ Template: "4a8822cc-b418-4452-ab0f-8bb6df2f2114"
 Path: /sitecore/content/FordIndia/Home
 DB: master
 SharedFields:
+- ID: "5585a30d-b115-4753-93ce-422c3455deb2"
+  Hint: ShowInNavigation
+  Type: Checkbox
+  Value: 0
+- ID: "68016087-aa00-45d6-922a-678475c50d4a"
+  Hint: ShowChildren
+  Type: Checkbox
+  Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
@@ -22,12 +30,6 @@ SharedFields:
           <p:d />
         </r>
         <r
-          uid="{E75C1424-7E2C-4E85-A5F8-FDF1E86B3A2F}"
-          s:ds="{6B3E2125-9402-4ABE-BE65-1DC375B2111E}"
-          s:id="{B16CA656-A38A-435A-8B9B-7030FB4399B4}"
-          s:par=""
-          s:ph="main" />
-        <r
           uid="{EF51B238-7CE2-4E39-AB87-D05424735160}">
           <p:d />
         </r>
@@ -43,6 +45,35 @@ SharedFields:
           uid="{630F4515-1F19-49A8-B986-D46ADD5CE024}">
           <p:d />
         </r>
+        <r
+          uid="{E75C1424-7E2C-4E85-A5F8-FDF1E86B3A2F}"
+          p:before="*"
+          s:ds="{6B3E2125-9402-4ABE-BE65-1DC375B2111E}"
+          s:id="{B16CA656-A38A-435A-8B9B-7030FB4399B4}"
+          s:par=""
+          s:ph="main" />
+        <r
+          uid="{CF38A4DD-DC9C-45FA-ADBA-9A93B3A9465D}"
+          p:after="r[@uid='{E75C1424-7E2C-4E85-A5F8-FDF1E86B3A2F}']"
+          s:id="{3ED979E5-AB17-40EE-AA78-838907D5F1FB}"
+          s:ph="header" />
+        <r
+          uid="{4248DF9B-1973-4410-AEE8-57024B807DA0}"
+          p:after="r[@uid='{CF38A4DD-DC9C-45FA-ADBA-9A93B3A9465D}']"
+          s:id="{21B86F93-F4B1-467D-A676-FE32C4144CEC}"
+          s:ph="PhNavigationBar" />
+        <r
+          uid="{14149156-49FF-4D14-96CF-97D68E7F378D}"
+          p:after="r[@uid='{4248DF9B-1973-4410-AEE8-57024B807DA0}']"
+          s:id="{44954101-6B69-43AA-85AF-308A5167FF93}"
+          s:ph="PhRightNavigationBar" />
+        <r
+          uid="{DF284B05-BAAD-488A-AD4A-32E86BB59F7F}"
+          p:after="*[1=2]"
+          s:ds="{233171DF-06D6-4106-99F3-CCDE3291CB47}"
+          s:id="{B0584148-3061-488D-9657-DB8927FADC17}"
+          s:par=""
+          s:ph="main" />
         <r
           uid="{07C9FE71-A5E2-4E5F-B276-5F2B73481D44}">
           <p:d />

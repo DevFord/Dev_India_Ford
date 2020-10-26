@@ -1,0 +1,14 @@
+﻿---
+ID: "4153cc7a-b2c0-4b44-acd5-e26d21846599"
+Parent: "6878c882-8a15-4572-916b-b09e86bb988e"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Category/Category Thumbnail/Category Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201023T065435Z

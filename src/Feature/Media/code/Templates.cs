@@ -22,6 +22,12 @@ namespace FordIndia.Feature.Media
             public static ID MediaThumbnailFieldID => new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
 
             public static ID MediaImageFieldID => new ID("{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}");
+            public static ID LinkFieldID => new ID("{A68CA6C2-46BE-4FCF-A3F7-AA8A849AAE68}");
+            public static ID MobileImage => new ID("{42284A58-25F9-47F7-A9DB-13826299EF07}");
+        }
+        public struct MediaGroup
+        {
+            public static readonly ID ID = new ID("{1361A3E5-D15E-43AB-8D0B-B02C3FB65AB2}");
         }
     }
 }

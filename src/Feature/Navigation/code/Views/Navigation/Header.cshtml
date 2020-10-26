@@ -1,0 +1,45 @@
+﻿@model FordIndia.Feature.Navigation.Models.NavigationBar
+@using Sitecore.Data.Items;
+@using Sitecore.Data.Fields;
+@using FordIndia.Feature.Navigation.Models;
+@using Sitecore.Resources.Media;
+@using Sitecore.Mvc
+@using FordIndia.Feature.Navigation
+@using FordIndia.Foundation.SitecoreExtensions
+
+
+@if (Model.NavbarItems != null)
+{
+    <!--[Header]-->
+    <div class="bg-overlay">&nbsp;</div>
+    <header id="header">
+        <div class="container-fluid p-0 h-100">
+            <div class="d-flex align-items-center">
+                @Html.Sitecore().Placeholder("PhNavigationBar")
+
+                @{
+                    var image = Model.Logo;
+                    Sitecore.Data.Fields.ImageField imgField = ((Sitecore.Data.Fields.ImageField)image.Fields["{EBB088E0-138C-4B05-9F5C-588BE2378D99}"]);
+                    string url = Sitecore.Resources.Media.MediaManager.GetMediaUrl(imgField.MediaItem);
+                    var whiteLogoimage = Model.LogoWhite;
+                    Sitecore.Data.Fields.ImageField whiteimgField = ((Sitecore.Data.Fields.ImageField)image.Fields["{5C61B62E-53F1-49AD-BD00-1AD9FD890454}"]);
+                    string whiteurl = Sitecore.Resources.Media.MediaManager.GetMediaUrl(whiteimgField.MediaItem);
+
+
+                }
+                <div class="col-2 text-center center p-0">
+                    <a href="index.html" class="navbar-brand">
+                        <div class="brand-logo">
+                            <img src="@whiteurl" class="brand-logo-white" alt="">
+                            <img src="@url" class="brand-logo-color" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5 right p-xl-0 pl-md-3 pl-2">
+                    @Html.Sitecore().Placeholder("PhRightNavigationBar")
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--[/Header]-->
+ }

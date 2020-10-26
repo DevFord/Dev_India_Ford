@@ -1,0 +1,50 @@
+﻿---
+ID: "53ed2c60-d3be-4867-a795-f90b8ab7b39b"
+Parent: "8883dce4-20e9-4120-82fc-59ade19e9cc0"
+Template: "bdc9fe50-3ade-4203-8179-3df6fd6c4db2"
+Path: /sitecore/content/FordIndia/Home/Cars/Endeavour
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09e7cae7-4983-4de4-980a-076f5909b480"
+      Hint: Price
+      Value: 67,00,000
+    - ID: "14b84ec9-2b90-4dbb-98f8-b0ef51845e65"
+      Hint: SeatingCount
+      Value: 7
+    - ID: "1982a9ad-c6f1-4bc7-8106-c343a9066acb"
+      Hint: SubCategoryName
+      Value: Endeavour
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Endeavour
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201023T080936Z
+    - ID: "3b91895f-1219-4936-a0fb-79cb348b69a9"
+      Hint: SubCategoryThumbnail
+      Value: |
+        <image mediaid="{54107D8A-9B67-471F-9C58-810415B5FA29}" />
+    - ID: "5d1edee5-4f33-45ab-ac74-fba22cbf57b0"
+      Hint: SeatingText
+      Value: Seating at
+    - ID: "653c4419-e323-4fef-9cc1-d585c8b65b8b"
+      Hint: MPGText
+      Value: Est. MPG City/Highway
+    - ID: "91e3213e-1fb1-4a60-9a9b-931f5041ade1"
+      Hint: PriceText
+      Value: Starting at
+    - ID: "f914da57-dfb8-4f62-9f77-13c492d0041c"
+      Hint: MPGValue
+      Value: 14/18
+    - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
+      Hint: Link
+      Value: |
+        <link linktype="javascript" url="javascript:void(0);" anchor="" />

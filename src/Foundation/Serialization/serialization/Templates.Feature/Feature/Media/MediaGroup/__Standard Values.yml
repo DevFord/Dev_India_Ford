@@ -1,0 +1,18 @@
+﻿---
+ID: "ab612a0f-89f7-4ba0-8279-d989d7f097f1"
+Parent: "1361a3e5-d15e-43ab-8d0b-b02c3fb65ab2"
+Template: "1361a3e5-d15e-43ab-8d0b-b02c3fb65ab2"
+Path: /sitecore/templates/Feature/Media/MediaGroup/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201025T185905Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

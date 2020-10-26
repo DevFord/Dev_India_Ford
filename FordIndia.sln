@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.1259
+VisualStudioVersion = 15.0.26228.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DAE96CA5-AEFB-4FA5-8C6C-46A291430C88}"
 	ProjectSection(SolutionItems) = preProject
@@ -44,6 +44,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FordIndia.Project.Website",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FordIndia.Foundation.ErrorHandling", "src\Foundation\ErrorHandling\code\FordIndia.Foundation.ErrorHandling.csproj", "{2D187474-94E4-4399-8841-7E227961450A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{A3BF7971-A606-4100-B4BB-1CB9BDE28828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FordIndia.Feature.Navigation", "src\Feature\Navigation\Code\FordIndia.Feature.Navigation.csproj", "{5EE96168-C482-4EAF-A886-2F60EEA65484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +82,10 @@ Global
 		{2D187474-94E4-4399-8841-7E227961450A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D187474-94E4-4399-8841-7E227961450A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D187474-94E4-4399-8841-7E227961450A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE96168-C482-4EAF-A886-2F60EEA65484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE96168-C482-4EAF-A886-2F60EEA65484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE96168-C482-4EAF-A886-2F60EEA65484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE96168-C482-4EAF-A886-2F60EEA65484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +105,8 @@ Global
 		{D144ACB2-5C5F-4D1B-92DA-7A0BDB8CF7AE} = {E556AB5B-1042-4CA4-9FA3-135FAB436BC0}
 		{804D2DC0-60FC-4520-9938-91B355119374} = {3E011737-FBC4-49CF-A2BF-4040787347A4}
 		{2D187474-94E4-4399-8841-7E227961450A} = {A59BF772-57D6-42AA-92C4-3723D4B82703}
+		{A3BF7971-A606-4100-B4BB-1CB9BDE28828} = {A120A0BB-9F45-4671-B94A-1C0C283002DF}
+		{5EE96168-C482-4EAF-A886-2F60EEA65484} = {A3BF7971-A606-4100-B4BB-1CB9BDE28828}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED930540-2C52-48A4-B162-6AEAD0CA43FA}

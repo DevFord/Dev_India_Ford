@@ -1,0 +1,27 @@
+﻿---
+ID: "96494bfe-1b5b-4dc7-afcb-5ad2520f7cd0"
+Parent: "27844d71-0960-4ee0-8f17-c7530d0693e3"
+Template: "4c5753eb-f68b-4521-ac59-e2d8541ac96a"
+Path: /sitecore/content/FordIndia/Global/Navigation/Navigation List
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201021T065230Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "cc6ceab5-4826-4f6b-8f8a-61bd72f31c72"
+      Hint: Navigation List Items
+      Type: Multilist
+      Value: |
+        {6A2678A9-C5BA-46F4-9513-9BA53CB6C1D4}
+        {94BF3000-DEBC-4A91-BB28-71BF3BB87E30}
+        {D11AE84D-8E26-4EF9-8735-1A44FE3FCA7C}
+        {90408EDA-EDC6-4B86-98E1-A10A500EB1AC}
+        {51B851B3-CE80-4F39-B1B0-3DE02AC69F0C}

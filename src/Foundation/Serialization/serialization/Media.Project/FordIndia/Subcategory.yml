@@ -1,8 +1,8 @@
 ﻿---
-ID: "37de87ab-1f8d-43f6-8df4-5ff24fcba7f7"
-Parent: "93f5939b-276b-48b1-8715-d3fa1c5e6785"
+ID: "9590b47a-f2dd-4132-ada5-ca538eb692db"
+Parent: "9b879ef0-0271-4856-adae-6ced106105eb"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
-Path: /sitecore/media library/FordIndia/Images/HomeCarousel
+Path: /sitecore/media library/FordIndia/Subcategory
 DB: master
 Languages:
 - Language: en
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20201011T180238Z
+      Value: 20201023T083035Z

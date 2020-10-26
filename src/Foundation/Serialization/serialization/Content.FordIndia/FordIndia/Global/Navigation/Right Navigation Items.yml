@@ -1,0 +1,14 @@
+﻿---
+ID: "aaa4b42c-3995-4565-af11-45731466d4ae"
+Parent: "27844d71-0960-4ee0-8f17-c7530d0693e3"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/FordIndia/Global/Navigation/Right Navigation Items
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201022T095709Z

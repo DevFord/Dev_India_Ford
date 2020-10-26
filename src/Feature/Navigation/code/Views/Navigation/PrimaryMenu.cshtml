@@ -1,0 +1,104 @@
+﻿@using FordIndia.Feature.Navigation
+@using FordIndia.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Data.Fields;
+@using Sitecore.Data.Items;
+@using Sitecore.Links;
+@using Sitecore.Resources.Media;
+@model FordIndia.Feature.Navigation.Models.NavigationItems
+
+<div class="col-5 p-0 left">
+    <div class="hamburger"><span></span></div>
+    <nav id="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item nav-item-top d-flex d-xl-none">
+                <button class="btn-close ml-auto">&times;</button>
+            </li>
+            @if (Model.NavItems != null)
+            {
+                foreach (var menuItem in Model.NavItems)
+                {
+                    var hasChildren = menuItem.Children != null && menuItem.Children.NavItems.Any() && menuItem.ShowChildren;
+                    var NavLink = CustomSCExtension.LinkUrl(menuItem.Item.Fields[Templates.Link.Fields.Link]);
+                    if (hasChildren)
+                    {
+                        <li class="nav-item dropdown">
+                            @if (!string.IsNullOrEmpty(NavLink))
+                            {
+                                <a href="@NavLink" data-toggle="dropdown" class="nav-link dropdown-toggle">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item)</a>
+                            }
+                            else
+                            {
+                                <a href="@LinkManager.GetItemUrl(menuItem.Item)" data-toggle="dropdown" class="nav-link dropdown-toggle">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item)</a>
+                            }
+                            
+
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li class="nav-item nav-item-top d-flex d-xl-none">
+                                    <button class="btn-back btn-back-one"><i class="fa fa-angle-left"></i></button>
+                                    <button class="btn-close ml-auto">&times;</button>
+                                </li>
+                                @foreach (var subItem in menuItem.Children.NavItems)
+                                {
+                                    ImageField image = ((Sitecore.Data.Fields.ImageField)subItem.Item.Fields[Templates.Subcategory.Fields.SubCategoryThumbnail]);
+                                    var imageurl = image.MediaItem != null ? MediaManager.GetMediaUrl(image.MediaItem) : "";
+                                    var NavSubItemLink = CustomSCExtension.LinkUrl(subItem.Item.Fields[Templates.Link.Fields.Link]);
+                                    var imageAlt = image.Alt;
+                                    <li class="nav-item">
+                                        @if (!string.IsNullOrEmpty(NavSubItemLink))
+                                        {
+                                            <a href="@NavSubItemLink" class="nav-link" data-toggle="dropdown">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, subItem.Item)</a>
+                                        }
+                                        else
+                                        {
+                                            <a href="@LinkManager.GetItemUrl(subItem.Item)" class="nav-link" data-toggle="dropdown">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, subItem.Item)</a>
+                                        }
+                                        
+                                        <div class="dropdown-menu dropdown-sub-submenu">
+                                            <div class="nav-item nav-item-top d-flex d-xl-none">
+                                                <button class="btn-back btn-back-two"><i class="fa fa-angle-left"></i></button>
+                                                <button class="btn-close ml-auto">&times;</button>
+                                            </div>
+                                            <a href="#" class="card card-car">
+                                                <div class="card-img">
+                                                    <img src="@imageurl" alt="@imageAlt">
+                                                </div>
+                                                <div class="card-body p-lg-4">
+                                                    <h4>@Html.Sitecore().Field(Templates.Subcategory.Fields.SubCategoryName, subItem.Item)</h4>
+                                                    <div class="d-xl-flex mt-4">
+                                                        <div class="col p-lg-0 mb-xl-0 mb-4">
+                                                            <h5 class="text-muted">@Html.Sitecore().Field(Templates.Subcategory.Fields.PriceText, subItem.Item)</h5>
+                                                            <div class="card-car-value"><i class="fa fa-rupee"></i> @Html.Sitecore().Field(Templates.Subcategory.Fields.Price, subItem.Item)</div>
+                                                        </div>
+                                                        <div class="col p-lg-0 mb-xl-0 mb-4">
+                                                            <h5 class="text-muted">@Html.Sitecore().Field(Templates.Subcategory.Fields.MPGText, subItem.Item)</h5>
+                                                            <div class="card-car-value">@Html.Sitecore().Field(Templates.Subcategory.Fields.MPGValue, subItem.Item)</div>
+                                                        </div>
+                                                        <div class="col p-lg-0 mb-xl-0">
+                                                            <h5 class="text-muted">@Html.Sitecore().Field(Templates.Subcategory.Fields.SeatingText, subItem.Item)</h5>
+                                                            <div class="card-car-value">@Html.Sitecore().Field(Templates.Subcategory.Fields.SeatingCount, subItem.Item)</div>
+                                                        </div>
+                                                        <div class="col col-cta ml-auto">
+                                                            <span class="btn-circle"><i class="fa fa-chevron-right"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item dropdown"><a href="shop.html" class="nav-link">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item)</a></li>
+                    }
+                }
+            }
+            <li class="nav-item dropdown"><a href="shop.html" class="nav-link">Shop</a></li>
+            <li class="nav-item dropdown"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item dropdown"><a href="my-ford.html" class="nav-link">My Ford</a></li>
+            <li class="nav-item dropdown"><a href="discover-ford.html" class="nav-link">Discover Ford</a></li>
+        </ul>
+    </nav>
+</div>

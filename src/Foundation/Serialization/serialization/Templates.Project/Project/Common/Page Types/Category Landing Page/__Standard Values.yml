@@ -1,0 +1,14 @@
+﻿---
+ID: "f7e0b1c0-6fe9-4ab9-8b4c-3436507941d3"
+Parent: "fa5a86c6-b0b4-47d8-8d5d-8b0f161a2b97"
+Template: "fa5a86c6-b0b4-47d8-8d5d-8b0f161a2b97"
+Path: /sitecore/templates/Project/Common/Page Types/Category Landing Page/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201023T072144Z

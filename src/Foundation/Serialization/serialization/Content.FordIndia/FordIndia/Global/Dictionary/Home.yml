@@ -1,0 +1,18 @@
+﻿---
+ID: "0a8e172a-38a7-4711-b33c-b6a24188b2ba"
+Parent: "a48b4950-6f66-46bd-b616-480425d610ee"
+Template: "98e4bdc6-9b43-4eb2-baa3-d4303c35852e"
+Path: /sitecore/content/FordIndia/Global/Dictionary/Home
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201026T071320Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

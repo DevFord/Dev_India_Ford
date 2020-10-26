@@ -1,0 +1,26 @@
+﻿---
+ID: "c463c9c2-86d0-4413-b275-8e5e398dabe8"
+Parent: "27844d71-0960-4ee0-8f17-c7530d0693e3"
+Template: "0378b953-91c5-4240-80ba-47d3fbcd52de"
+Path: /sitecore/content/FordIndia/Global/Navigation/Logo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201021T065535Z
+    - ID: "5c61b62e-53f1-49ad-bd00-1ad9fd890454"
+      Hint: Logo white
+      Value: |
+        <image mediaid="{88EFE351-C28F-4370-8122-EA6B3822C279}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "ebb088e0-138c-4b05-9f5c-588be2378d99"
+      Hint: Logo
+      Value: |
+        <image mediaid="{828705D7-1AF9-4B64-8C7C-68E32241DB9F}" />

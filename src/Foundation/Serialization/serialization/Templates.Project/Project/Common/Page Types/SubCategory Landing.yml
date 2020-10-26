@@ -1,0 +1,31 @@
+﻿---
+ID: "bdc9fe50-3ade-4203-8179-3df6fd6c4db2"
+Parent: "c9635039-d5d7-445e-8a90-09bdd60913a1"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Common/Page Types/SubCategory Landing
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/nav_plain_blue.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {75C60227-4DD3-40E1-91A2-80C7E734F92D}
+    {9F7E74F8-1302-4EF6-9D93-16A5279587CE}
+    {D88CCD80-D851-470D-AF11-701FF23504E7}
+    {3C1715FE-6A13-4FCF-845F-DE308BA9741D}
+    {A1CBA309-D22B-46D5-80F8-2972C185363F}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{643836A7-633E-4EC6-8886-5E6DE34AAF5E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201023T073424Z

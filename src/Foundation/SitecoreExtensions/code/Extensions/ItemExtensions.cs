@@ -59,18 +59,18 @@
         }
 
 
-        public static Item TargetItem(this Item item, ID linkFieldId)
-        {
-            if (item == null)
-            {
-                throw new ArgumentNullException(nameof(item));
-            }
-            if (item.Fields[linkFieldId] == null || !item.Fields[linkFieldId].HasValue)
-            {
-                return null;
-            }
-            return ((LinkField)item.Fields[linkFieldId]).TargetItem ?? ((ReferenceField)item.Fields[linkFieldId]).TargetItem;
-        }
+        //public static Item TargetItem(this Item item, ID linkFieldId)
+        //{
+        //    if (item == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(item));
+        //    }
+        //    if (item.Fields[linkFieldId] == null || !item.Fields[linkFieldId].HasValue)
+        //    {
+        //        return null;
+        //    }
+        //    return ((LinkField)item.Fields[linkFieldId]).TargetItem ?? ((ReferenceField)item.Fields[linkFieldId]).TargetItem;
+        //}
 
         public static string MediaUrl(this Item item, ID mediaFieldId, MediaUrlBuilderOptions options = null)
         {

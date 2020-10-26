@@ -354,7 +354,6 @@
       <HintPath>..\..\..\..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
-    <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
@@ -462,6 +461,7 @@
     <Compile Include="Extensions\RenderingExtensions.cs" />
     <Compile Include="Extensions\RenderingParameterExtensions.cs" />
     <Compile Include="Extensions\SessionExtensions.cs" />
+    <Compile Include="Extensions\CustomSCExtension.cs" />
     <Compile Include="Extensions\SiteExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -497,7 +497,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53296</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

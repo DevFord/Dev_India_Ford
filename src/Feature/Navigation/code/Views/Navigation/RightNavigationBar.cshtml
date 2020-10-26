@@ -1,0 +1,19 @@
+﻿@model FordIndia.Feature.Navigation.Models.RightNavigationBar
+@using Sitecore.Data.Items;
+@using Sitecore.Data.Fields;
+@using FordIndia.Feature.Navigation.Models;
+@using Sitecore.Resources.Media;
+@using Sitecore.Mvc
+@using FordIndia.Feature.Navigation
+@using FordIndia.Foundation.SitecoreExtensions.Extensions
+
+@if (Model.RightNavItems != null)
+{
+    <div class="d-flex header-right-nav">
+        <ul class="nav ml-auto">             
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon search-icon"></i> Search</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon map-icon"></i> Locate a Dealer</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon drive-icon"></i> Book a Test Drive</a></li>        
+        </ul>
+    </div>
+}

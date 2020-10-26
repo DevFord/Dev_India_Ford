@@ -1,0 +1,21 @@
+﻿---
+ID: "44954101-6b69-43aa-85af-308a5167ff93"
+Parent: "dfeafa73-36c7-4a82-9bb6-50db9b1366d6"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Navigation/RightNavigationBar
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: ~/Views/Navigation/RightNavigationBar.cshtml
+- ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
+  Hint: Model
+  Value: /sitecore/layout/Models/Feature/Navigation/RightNavigationBar
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201022T090216Z
