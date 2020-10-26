@@ -26,7 +26,7 @@ if (fs.existsSync("./gulp-config.js.user")) {
 
 module.exports.config = config;
 
-helix.header("TVS source code, tools and processes");
+helix.header("Ford source code, tools and processes");
 
 gulp.task("default",
     function(callback) {
