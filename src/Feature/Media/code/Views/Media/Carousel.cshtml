@@ -7,22 +7,19 @@
 <!--[Hero-Slider]-->
 <section id="home-slider">
     <div class="hp-carousel owl-carousel">
-@if (Model != null && Model.CarouseImage != null && Model.CarouseImage.Count() > 0)
-{
-    foreach (var item in Model.CarouseImage)
-    {
-        //ImageField image = ((Sitecore.Data.Fields.ImageField)item.Item.Fields[Templates.ImageItem.MediaImageFieldID]);
-        //var imageurl = image.MediaItem != null ? MediaManager.GetMediaUrl(image.MediaItem) : "";
-    <a href="#">
-        <picture>
-            <source srcset="" media="(min-width: 768px)">
-            @Html.Glass().RenderImage(item, x => x.MediaImage)
-            <img src=" @Html.Glass().RenderImage(item, x => x.MobileImage)">
-            @Html.Glass().RenderImage(item, x => x.MobileImage)
-        </picture>
-    </a>
-    }
-}
+        @if (Model != null && Model.CarouseImage != null && Model.CarouseImage.Count() > 0)
+        {
+            foreach (var item in Model.CarouseImage)
+            {
+                <a href="#">
+                    <picture>
+                        <source srcset="@item.MediaImage.Src" media="(min-width: 768px)">
+                        <img src=" @item.MobileImage.Src">
+
+                    </picture>
+                </a>
+            }
+        }
 
     </div>
 </section>

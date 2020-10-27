@@ -15,6 +15,10 @@ Languages:
     - ID: "302c9f8d-f703-4f76-a4ab-73d222648232"
       Hint: MediaDescription
       Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{2FCAE87E-05EB-487A-9362-4E8F83228566}" />
     - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
       Hint: MediaTitle
       Value: Lorem ipsum dolor sit amet1

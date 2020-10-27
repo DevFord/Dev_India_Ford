@@ -22,11 +22,15 @@ namespace FordIndia.Feature.Media.Models
 
         [SitecoreField(FieldId = "{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}")]
         public virtual Image MediaImage { get; set; }
-        [SitecoreField(FieldId = "{A68CA6C2-46BE-4FCF-A3F7-AA8A849AAE68}")]
-        public virtual Image MobileImage { get; set; }
+
         [SitecoreField(FieldId = "{42284A58-25F9-47F7-A9DB-13826299EF07}")]
+        public virtual Image MobileImage { get; set; }
+
+        [SitecoreField(FieldId = "{A68CA6C2-46BE-4FCF-A3F7-AA8A849AAE68}")]
         public virtual Image Link { get; set; }
         public Item Item { get; set; }
 
-    }
+        
+
+}
 }
