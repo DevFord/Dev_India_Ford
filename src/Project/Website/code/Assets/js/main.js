@@ -3,6 +3,7 @@
 $(document).ready(function(){
 
 
+
 	var Wwidth = $(window).width();				
 if (Wwidth > 768) {
 	//alert("Hi");
@@ -101,5 +102,19 @@ $('.latest-carousel').owlCarousel({
 		thumbImage: false,
 		autoHeight:true,
 	});
-
+$('.overview-carousel').owlCarousel({
+		items: 1,
+		loop: false,
+		dots: true,
+		nav: false,
+		center:false,		
+		margin: 0,		
+		autoplay:true,
+	  smartSpeed:800,
+    autoplayTimeout:8000,
+		autoplayHoverPause:false,
+		thumbs: false,
+		thumbImage: false,
+		autoHeight:true,
+	});
 });

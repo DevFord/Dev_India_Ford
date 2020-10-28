@@ -112,6 +112,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Media\TwoBanner.cshtml" />
+    <Content Include="Views\Media\BannerTiles.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,14 @@
+﻿---
+ID: "75ff0e5b-b1fa-492f-961e-3b1c26d16ad9"
+Parent: "ea13174a-b43e-4f68-b474-b41188771a9e"
+Template: "1361a3e5-d15e-43ab-8d0b-b02c3fb65ab2"
+Path: /sitecore/content/FordIndia/Global/Media/Banner Tiles
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201028T081218Z

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<FordIndia.Feature.Media.Models.TwoBanner>
+@using FordIndia.Foundation.SitecoreExtensions.Extensions;
+
+
+@if (Model != null)
+{
+<!--[/Tiles-3-Column]-->
+<section class="sec-hp-tiles">
+    <div class="row m-0">
+        @foreach (var item in Model)
+        {
+        <div class="col-sm-4 p-0 card-col">
+            <a href="#" class="card-tiles">
+                <picture>
+                    <source srcset="@item.MediaImage" media="(min-width: 768px)">
+                    <img src="@item.MobileImage">
+                </picture>
+                <header class="title-head mw-100 text-white mb-0">
+                    <h2 class="title">@Html.Raw(item.MediaTitle)</h2>
+                </header>
+            </a>
+        </div>     
+        }
+    </div>
+</section>
+<!--[/Tiles-3-Column]-->
+}

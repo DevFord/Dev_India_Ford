@@ -1,0 +1,14 @@
+﻿---
+ID: "55b52362-f238-47a7-a658-96db61e3ad99"
+Parent: "37de87ab-1f8d-43f6-8df4-5ff24fcba7f7"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/FordIndia/Images/Home/TilesImages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201028T081707Z

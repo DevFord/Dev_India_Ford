@@ -45,7 +45,7 @@ namespace FordIndia.Feature.Media.Controllers
                     var Banneritem = dataSource.GetChildren();
                     if (Banneritem.Any())
                     {
-                        if (Banneritem.Count > 1)
+                        if (Banneritem.Count > 1 && Banneritem.Count==2)
                         {
                             List<TwoBanner> TwobannerCarosel = new List<TwoBanner>();
                             foreach (Item item in Banneritem)
@@ -63,6 +63,25 @@ namespace FordIndia.Feature.Media.Controllers
                                 TwobannerCarosel.Add(banner);
                             }
                             return View("~/Views/Media/TwoBanner.cshtml", TwobannerCarosel);
+                        }
+                        if (Banneritem.Count > 1 && Banneritem.Count == 3)
+                        {
+                            List<TwoBanner> TwobannerCarosel = new List<TwoBanner>();
+                            foreach (Item item in Banneritem)
+                            {
+                                var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
+                                var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
+                                var banner = new TwoBanner
+                                {
+                                    MediaTitle = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
+                                    MediaDescription = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
+                                    MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                    MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
+                                    Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
+                                };
+                                TwobannerCarosel.Add(banner);
+                            }
+                            return View("~/Views/Media/BannerTiles.cshtml", TwobannerCarosel);
                         }
                     }
                 }
