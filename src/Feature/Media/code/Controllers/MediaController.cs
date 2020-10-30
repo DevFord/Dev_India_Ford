@@ -92,6 +92,31 @@ namespace FordIndia.Feature.Media.Controllers
             }
             return new EmptyResult();
         }
+        public ActionResult HeroBanner()
+        {
+            try
+            {
+                var bannercontext = Sitecore.Context.Item;
+                var desktopImage = (ImageField)bannercontext.Fields[Templates.ImageItem.MediaImageFieldID];
+                var MobileImage = (ImageField)bannercontext.Fields[Templates.ImageItem.MobileImage];
+                var iconImage = (ImageField)bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Image];
+                HeroBanner bannerItem = new HeroBanner
+                {
+                    MediaTitle = !string.IsNullOrEmpty(bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
+                    MediaImage = desktopImage.MediaItem != null && !string.IsNullOrEmpty(desktopImage.Value) ? MediaManager.GetMediaUrl(desktopImage.MediaItem) : string.Empty,
+                    MobileImage = MobileImage.MediaItem != null && !string.IsNullOrEmpty(MobileImage.Value) ? MediaManager.GetMediaUrl(MobileImage.MediaItem) : string.Empty,
+                    Title=!string.IsNullOrEmpty(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Title].Value)?bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Title].Value:string.Empty,
+                    Link=!string.IsNullOrEmpty(Helpers.LinkUrl(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Link])) ? Helpers.LinkUrl(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Link]) : string.Empty,
+                    Image = iconImage.MediaItem != null && !string.IsNullOrEmpty(iconImage.Value) ? MediaManager.GetMediaUrl(iconImage.MediaItem) : string.Empty,
+                };
+                
+                return View("~/Views/Media/HeroBanner.cshtml", bannerItem);
+            }
+            catch (Exception ex)
+            {
+                return new EmptyResult();
+            }
 
+        }
     }
 }

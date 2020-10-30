@@ -1,0 +1,21 @@
+﻿---
+ID: "e44676f7-378f-4fce-9320-ea5b2aad8796"
+Parent: "4c6397d1-80a1-491c-97bd-218db4a8300f"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/PageContent/ContactUs
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: ContactUs
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: FordIndia.Feature.PageContent.Controllers.PageContentController,FordIndia.Feature.PageContent
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201030T101202Z

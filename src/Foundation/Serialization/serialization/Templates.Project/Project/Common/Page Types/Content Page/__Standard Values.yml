@@ -1,0 +1,51 @@
+﻿---
+ID: "b5f2cbdc-bc7e-4037-9a7d-0ae24cd5c999"
+Parent: "88f46b65-1b45-4339-b452-ead039ad2eff"
+Template: "88f46b65-1b45-4339-b452-ead039ad2eff"
+Path: /sitecore/templates/Project/Common/Page Types/Content Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{1D517D38-25AF-4702-9340-807ADCBFF2DE}">
+        <r
+          id="{3ED979E5-AB17-40EE-AA78-838907D5F1FB}"
+          ph="header"
+          uid="{CF38A4DD-DC9C-45FA-ADBA-9A93B3A9465D}" />
+        <r
+          id="{21B86F93-F4B1-467D-A676-FE32C4144CEC}"
+          ph="PhNavigationBar"
+          uid="{4248DF9B-1973-4410-AEE8-57024B807DA0}" />
+        <r
+          id="{44954101-6B69-43AA-85AF-308A5167FF93}"
+          ph="PhRightNavigationBar"
+          uid="{14149156-49FF-4D14-96CF-97D68E7F378D}" />
+        <r
+          id="{4CFC6277-BD95-45D8-8A33-C10AB9858F0B}"
+          ph="main"
+          uid="{BBB6DBB6-21AE-4F77-9FD1-4EA65C6657A3}" />
+        <r
+          ds=""
+          id="{E44676F7-378F-4FCE-9320-EA5B2AAD8796}"
+          par=""
+          ph="main"
+          uid="{4912D6AA-9639-471F-9F7C-292F0904F806}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201030T050301Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,42 @@
+﻿@model FordIndia.Feature.PageContent.Models.Content
+@if (Model != null)
+{
+    <div class="customer-relationship">
+        <div class="row">
+            <div class="col-lg-4">
+                <header class="title-head">
+                    <h2 class="title blue">@Html.Raw(Model.Title)</h2>
+                    <p>@Model.Description</p>
+                </header>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-card text-center">
+                            <a href="mailto:custmail@ford.com">
+                                <div class="sec-pic mb-3"><img src="@Model.EmailImage" alt=""></div>
+                                @Html.Raw(Model.EmailDesc)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-card text-center">
+                            <a href="sms://56263">
+                                <div class="sec-pic mb-3"><img src="@Model.SmsImage" alt=""></div>
+                                @Html.Raw(Model.SmsDesc)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-card text-center">
+                            <a href="tel:1800 419 3000">
+                                <div class="sec-pic mb-3"><img src="@Model.TollImage" alt=""></div>
+                                @Html.Raw(Model.TollDesc)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,14 @@
+﻿---
+ID: "701a6ff4-eb75-43c7-882c-7147d7c2c84f"
+Parent: "9b879ef0-0271-4856-adae-6ced106105eb"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/FordIndia/PageContent
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201030T101452Z

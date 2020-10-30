@@ -1,0 +1,129 @@
+﻿---
+ID: "6147b66d-5658-4de8-96db-5aacb44d202d"
+Parent: "0d17fede-b400-41a8-b306-72ce37f12548"
+Template: "88f46b65-1b45-4339-b452-ead039ad2eff"
+Path: /sitecore/content/FordIndia/Home/Contact Us
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201030T050122Z
+    - ID: "2b322f9c-cba5-408d-aea2-e32d18fd53c2"
+      Hint: Summary
+      Value: |
+        <div class="row">
+        				<div class="col-md-4">
+        					<address>
+        						<h3>Ford Chennai Plant and Regd. Office</h3>
+        						<p class="location-ico">Ford India Pvt. Ltd. S.P. Koil Post, Chengalpattu  - 603204</p>
+        						<p class="number-ico">+91-44-67403333</p>
+        					</address>
+        				</div>
+        				<div class="col-md-4">
+        					<address>
+        						<h3>Ford India – Sanand Plant</h3>
+        						<p class="location-ico">Sanand Vehicle Assembly & Engine Plant, Ford India Pvt. Ltd., Revenue Survey No.1, Northkotpura Village, Sanand Tulaka, Ahmedabad District - 382170</p>
+        						<p class="number-ico">+91-2717-3671019</p>
+        					</address>
+        				</div>
+        				<div class="col-md-4">
+        					<address>
+        						<h3>Corporate & Regional Office - North</h3>
+        						<p class="location-ico">Ford India Pvt. Ltd., 5th Floor, Plot No. 142, Chimes 142, Sector 44 Road, Gurgaon 122003, Haryana, India</p>
+        						<p class="number-ico">+91-0124 – 6133000 / +91-0124 –6133001</p>
+        					</address>
+        				</div>
+        			</div>
+        			<div class="row">
+        				<div class="col-md-4">
+        					<address>
+        						<h3>Regional Office - West</h3>
+        						<p class="location-ico">ord India Pvt. Ltd., 2401, 24th Floor, Kesar Solitaire Condominium Plot Number 5, Sector 19, Sanpada Palm Beach Road,	Navi Mumbai - 400705</p>
+        						<p class="number-ico">+91-022-67034300</p>
+        					</address>
+        				</div>
+        				<div class="col-md-4">
+        					<address>
+        						<h3>Regional Office - South</h3>
+        						<p class="location-ico">Ford India Pvt. Ltd., Block - 1B, 1st Floor, RMZ Millenia Business Park 143, Dr MGR Road, North Veeranam Salai Perungudi,	Chennai - 600096</p>
+        						<p class="number-ico">+91-44-24551500</p>
+        						<p class="fax-ico">+91-44-24559965</p>
+        					</address>
+        				</div>
+        				<div class="col-md-4">
+        					<address>
+        						<h3>Regional Office - East</h3>
+        						<p class="location-ico">Ford India Pvt. Ltd., P S Srijan Maestro 113 G, Matheswartala Road Office No. 601 &	602, 6th Floor, West Bengal, Kolkata – 700046</p>
+        						<p class="number-ico">+91-33-71154300</p>
+        					</address>
+        				</div>
+        			</div>
+    - ID: "33c901a2-9f90-430d-8b3f-c1bc10992104"
+      Hint: Description
+      Value: A dedicated customer relationship centre is at your service in every Ford dealer outlet. Please call them for any assistance.
+    - ID: "3bc1e7cb-19f0-40e0-a16d-d934af20a42a"
+      Hint: Description
+      Value: "Need to reach us for anything? Please contact us at the following locations."
+    - ID: "3d9039b2-e79d-402c-a82f-d6f4492da73a"
+      Hint: TollFreeImage
+      Value: |
+        <image mediaid="{BBEE5EC2-D4BF-4A23-B5CF-C4064C28BB3E}" />
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{B2291DAA-F45F-4FB2-BA02-097D09A44D98}" />
+    - ID: "483e9b54-1129-4d29-af82-512765502f98"
+      Hint: TollFreeDescription
+      Value: |
+        <div class="contact-card-title">Toll Free No.</div>
+        									<p>1800-419-3000</p>
+    - ID: "5ab580da-06aa-4e5f-afff-129c54453106"
+      Hint: SmsImage
+      Value: |
+        <image mediaid="{4E9106B1-9EF1-4264-8940-A936D3CDDFB0}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
+      Hint: MediaTitle
+      Value: Contact Us
+    - ID: "64533a68-e7f1-4371-8a86-1bea300bc00b"
+      Hint: EmailImage
+      Value: |
+        <image mediaid="{08E2890B-8FB4-475C-8F1F-503226423929}" />
+    - ID: "6673e33d-96b3-4f72-8316-08b11190ac8e"
+      Hint: Title
+      Value: Contact Us
+    - ID: "6889c45f-dd6e-45ab-a879-e0d01994fa3f"
+      Hint: Title
+      Value: Customer <br>Relationship Centre
+    - ID: "768d36db-cb38-411c-8758-8ec19f2539d0"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{0D17FEDE-B400-41A8-B306-72CE37F12548}" />
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{B2291DAA-F45F-4FB2-BA02-097D09A44D98}" />
+    - ID: "bb74c06d-4781-4093-9745-9acc70130560"
+      Hint: SmsDescription
+      Value: |
+        <div class="contact-card-title">Send SMS</div>
+        									<p>Fordcare to 56263</p>
+    - ID: "c40d3334-6b7e-461d-bbe8-e2926675e41d"
+      Hint: EmailDescription
+      Value: |
+        <div class="contact-card-title">custmail@ford.com</div>
+        <p>Email your details and we will get back to you.</p>
+    - ID: "dfab8ab5-1dac-4191-a743-72e11c3e5970"
+      Hint: HeaderTitle
+      Value: Ford India Location
+    - ID: "e4549837-b4fb-4845-9b49-1cb8a39fa13d"
+      Hint: Image
+      Value: |
+        <image mediaid="{4DC0A5FE-BDD7-471D-8B52-9CB72C35CC2C}" />
