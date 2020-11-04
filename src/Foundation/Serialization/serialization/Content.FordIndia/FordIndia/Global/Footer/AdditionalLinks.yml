@@ -1,0 +1,18 @@
+﻿---
+ID: "a06d4b68-8e9e-40e4-a114-e3b3db17ec32"
+Parent: "94fb6ba5-269d-4806-be57-e8dc31dc6b65"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/FordIndia/Global/Footer/AdditionalLinks
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201103T121128Z

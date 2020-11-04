@@ -1,0 +1,24 @@
+﻿---
+ID: "c39dab77-d6e9-46a1-8750-fc9c3336cb6a"
+Parent: "9d8f90fd-8eb1-494e-b7ae-13c3c9dc9303"
+Template: "f5fa406e-51c4-4a15-b0bf-5ba2595fb7aa"
+Path: /sitecore/content/FordIndia/Global/Social/Blog
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T112116Z
+    - ID: "41c5ee14-3c80-4278-92bd-edd32bc037d4"
+      Hint: SocialClass
+      Value: "fa fa-commenting"
+    - ID: "a2899b90-f851-4558-ae6e-df4409f53259"
+      Hint: Social Title
+      Value: Blog
+    - ID: "e663822f-b878-4d74-84e0-9c886f63b7e5"
+      Hint: Social Link
+      Value: |
+        <link linktype="external" url="http://drivingford.india.ford.com/?_ga=2.88498589.786898256.1603705659-665731689.1602582739" anchor="" target="" />

@@ -1,0 +1,14 @@
+﻿---
+ID: "94fb6ba5-269d-4806-be57-e8dc31dc6b65"
+Parent: "4eb9e2c7-550f-4be9-9553-6646baa9a499"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/FordIndia/Global/Footer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T085659Z

@@ -1,0 +1,101 @@
+﻿@model FordIndia.Feature.Footer.Models.Footer
+@using FordIndia.Feature.Footer.Models;
+@using FordIndia.Foundation.SitecoreExtensions.Extensions
+@using FordIndia.Feature.Footer;
+@using Sitecore.Data.Items;
+@using Sitecore.Data.Fields;
+@using Sitecore.Resources.Media
+
+@{
+    var cuurent = Sitecore.Context.Database.Items.GetItem("{AA7ED8D8-E1C3-4664-BFF8-162A3E3375FF}");
+}
+@if (Model != null && Model.FooterItems.Count > 0)
+{
+    <!--[Footer]-->
+    <footer id="footer">
+        <div class="row flex-md-row-reverse">
+            <div class="col-md-2 text-md-left text-center mb-md-0 mb-4">
+                @{ ImageField image = ((Sitecore.Data.Fields.ImageField)cuurent.Fields[Templates.LogoItem.Fields.LogoWhite]);
+                    var imageurl = image.MediaItem != null ? MediaManager.GetMediaUrl(image.MediaItem) : "";
+                    var logourl = CustomSCExtension.LinkUrl(cuurent.Fields[Templates.LogoItem.Fields.Link]);
+                }
+                <a href="@logourl"><img src="@imageurl" alt=""></a>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    @{ //List<FooterItem> footers = new List<FooterItem>();
+                        foreach (FooterItem footeritem in Model.FooterItems)
+                        {
+                            if (FieldExtensions.IsChecked(footeritem.FooterHeader.Fields[Templates.FooterHeaderItem.Fields.IsMenu.ToString()]))
+                            {
+                                <div class="col-md-3">
+                                    <nav class="footer-nav">
+                                        <h4 class="footer-title">@Html.Sitecore().Field(Templates.FooterHeaderItem.Fields.FooterHeaderTitle, footeritem.FooterHeader)</h4>
+                                        <ul class="list-unstyled">
+                                            @if (footeritem.FooterLinks != null && footeritem.FooterLinks.Count > 0)
+                                            {
+                                                foreach (Item footerchildren in footeritem.FooterLinks)
+                                                {                                                   
+                                                        var FooterlinkUrl = CustomSCExtension.LinkUrl(footerchildren.Fields[Templates.FooterLinksItem.Fields.FooterLink]);                                                   
+                                                    <li><a href="@FooterlinkUrl">@Html.Sitecore().Field(Templates.FooterLinksItem.Fields.FooterTitle.ToString(), footerchildren)</a></li>
+
+                                                }
+
+                                            }
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                            }
+
+                        }
+                    }
+
+
+                </div>
+            </div>
+        </div>
+        <div class="social-connect mt-md-0 mt-4">
+            @if (Model.SocialItems != null && Model.SocialItems.Count > 0)
+            {
+                <h4 class="footer-title">@Sitecore.Globalization.Translate.Text("Shareyourthoughts ")</h4>
+                <ul class="d-flex list-unstyled mt-3">
+                    @foreach (Item socialitem in Model.SocialItems)
+                    {
+                        if (socialitem.Fields[Templates.SocialItems.Fields.SocialClass.ToString()] != null && socialitem.Fields[Templates.SocialItems.Fields.SocialClass.ToString()].Value != "")
+                        {
+                            <li>
+                                @{var link = CustomSCExtension.LinkUrl(socialitem.Fields[Templates.SocialItems.Fields.SocialLink]);
+                                }
+                                <a href="@link" title="Facebook" target="_blank">
+                                    <i class="@socialitem.Fields[Templates.SocialItems.Fields.SocialClass.ToString()].Value"></i>
+                                </a>
+                            </li>
+                        }
+                    }
+                </ul>
+            }
+        </div>
+
+        <div class="d-lg-flex footer-bottom align-items-center mt-md-5 mt-4">
+            @if (Model.AdditionalFooterItems != null && Model.AdditionalFooterItems.Count > 0)
+            {
+                <div class="copy-text mr-lg-5 mb-lg-0 mb-2">&copy; 2020 Ford India Motor Company</div>
+                <ul class="d-flex list-unstyled nav">
+                    @foreach (Item addfooter in Model.AdditionalFooterItems)
+                    {
+
+                        var additionalinkurl = CustomSCExtension.LinkUrl(addfooter.Fields[Templates.FooterLinksItem.Fields.FooterLink]);
+
+                        <li class="nav-item"><a class="nav-link" href="@additionalinkurl">@Html.Sitecore().Field(Templates.FooterLinksItem.Fields.FooterTitle.ToString(), addfooter)</a></li>
+                        @*<li class="nav-item"><a class="nav-link" href="tnc.html"><span class="d-none d-md-block">Terms and Conditions</span><span class="d-md-none">T&amp;C</span></a></li>*@
+                    }
+
+                </ul>
+            }
+
+        </div>
+    </footer>
+    <!--[/Footer]-->
+
+}

@@ -1,0 +1,28 @@
+﻿---
+ID: "d798fe9d-67d9-471c-b4c7-7fe1daf16932"
+Parent: "9d8f90fd-8eb1-494e-b7ae-13c3c9dc9303"
+Template: "f5fa406e-51c4-4a15-b0bf-5ba2595fb7aa"
+Path: /sitecore/content/FordIndia/Global/Social/Twitter
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T111844Z
+    - ID: "41c5ee14-3c80-4278-92bd-edd32bc037d4"
+      Hint: SocialClass
+      Value: "fa fa-twitter"
+    - ID: "a2899b90-f851-4558-ae6e-df4409f53259"
+      Hint: Social Title
+      Value: Twitter
+    - ID: "e663822f-b878-4d74-84e0-9c886f63b7e5"
+      Hint: Social Link
+      Value: |
+        <link linktype="external" url="https://twitter.com/fordindia" anchor="" target="" />

@@ -1,0 +1,30 @@
+﻿---
+ID: "aa7ed8d8-e1c3-4664-bff8-162a3e3375ff"
+Parent: "94fb6ba5-269d-4806-be57-e8dc31dc6b65"
+Template: "0378b953-91c5-4240-80ba-47d3fbcd52de"
+Path: /sitecore/content/FordIndia/Global/Footer/Logo
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201103T102007Z
+    - ID: "5c61b62e-53f1-49ad-bd00-1ad9fd890454"
+      Hint: Logo white
+      Value: |
+        <image mediaid="{88EFE351-C28F-4370-8122-EA6B3822C279}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "bfeb3b64-97b3-40c8-b727-bfe5be004591"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{0D17FEDE-B400-41A8-B306-72CE37F12548}" />

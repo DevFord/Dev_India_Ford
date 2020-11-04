@@ -1,0 +1,14 @@
+﻿---
+ID: "3d16e51a-b831-4490-a115-3bdcbd3ab488"
+Parent: "26d11c32-fca0-40a1-bc1d-a77ed224c910"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Footer/Footer Header/FooterHeader
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T063227Z
