@@ -1,0 +1,21 @@
+﻿---
+ID: "9a958204-b48d-4d7d-9e23-db5ec450bcc6"
+Parent: "e687dd89-dbcf-42c9-b071-f106371291d4"
+Template: "33b41029-6ad4-4f5c-af68-97f343b8ede0"
+Path: /sitecore/content/FordIndia/Global/Footer/Cars/Aspire
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T111220Z
+    - ID: "6be6a780-ac62-454a-8700-75b0508e594e"
+      Hint: Footer Title
+      Value: Aspire

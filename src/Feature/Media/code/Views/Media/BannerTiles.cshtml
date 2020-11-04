@@ -10,8 +10,7 @@
         @foreach (var item in Model)
         {
         <div class="col-sm-4 p-0 card-col">
-            @if (!string.IsNullOrEmpty(item.Link))
-            {
+           
             <a href="#" class="card-tiles">
                 <picture>
                     <source srcset="@item.MediaImage" media="(min-width: 768px)">
@@ -21,7 +20,7 @@
                     <h2 class="title">@Html.Raw(item.MediaTitle)</h2>
                 </header>
             </a>
-            }
+            
         </div>     
         }
     </div>

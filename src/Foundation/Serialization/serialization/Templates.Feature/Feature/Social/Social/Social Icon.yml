@@ -1,0 +1,14 @@
+﻿---
+ID: "e7d48578-b934-45db-966e-30ce43d42388"
+Parent: "f5fa406e-51c4-4a15-b0bf-5ba2595fb7aa"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Social/Social/Social Icon
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T062714Z

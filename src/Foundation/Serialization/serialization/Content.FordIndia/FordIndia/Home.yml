@@ -50,6 +50,10 @@ SharedFields:
           <p:d />
         </r>
         <r
+          uid="{7BD25BD6-C6C4-4FBE-9828-D29A39A2FEC9}">
+          <p:d />
+        </r>
+        <r
           uid="{E75C1424-7E2C-4E85-A5F8-FDF1E86B3A2F}"
           p:before="*"
           s:ds="{6B3E2125-9402-4ABE-BE65-1DC375B2111E}"
@@ -80,15 +84,16 @@ SharedFields:
           s:ph="main" />
         <r
           uid="{DF284B05-BAAD-488A-AD4A-32E86BB59F7F}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{4E9FBCFB-5C2B-4C9A-A9F4-05FA7DF65CF1}']"
           s:ds="{233171DF-06D6-4106-99F3-CCDE3291CB47}"
           s:id="{B0584148-3061-488D-9657-DB8927FADC17}"
           s:par=""
           s:ph="main" />
         <r
-          uid="{7BD25BD6-C6C4-4FBE-9828-D29A39A2FEC9}">
-          <p:d />
-        </r>
+          uid="{4E967677-8E1F-4C8E-9B67-7135AE2ACE95}"
+          p:after="*[1=2]"
+          s:id="{D27897F7-3D6A-4788-A2E1-3D25DC4582B4}"
+          s:ph="footer" />
         <r
           uid="{FBDB4313-35B5-4C26-A586-17F48FD2DC41}">
           <p:d />

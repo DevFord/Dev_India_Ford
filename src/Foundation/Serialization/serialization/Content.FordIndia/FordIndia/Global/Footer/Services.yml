@@ -1,0 +1,25 @@
+﻿---
+ID: "c805e4fb-631b-4b3d-a78c-8a5902fcaf80"
+Parent: "94fb6ba5-269d-4806-be57-e8dc31dc6b65"
+Template: "26d11c32-fca0-40a1-bc1d-a77ed224c910"
+Path: /sitecore/content/FordIndia/Global/Footer/Services
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0e80acd1-2356-4fb8-b77f-c33ef74d0f30"
+      Hint: IsMenu
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T111546Z
+    - ID: "382da7c8-ec60-4516-a4a1-4ce323cf11cd"
+      Hint: FooterHeaderTitle
+      Value: Service
