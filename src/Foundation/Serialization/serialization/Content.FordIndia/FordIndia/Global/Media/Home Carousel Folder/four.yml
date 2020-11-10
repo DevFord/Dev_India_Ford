@@ -1,0 +1,26 @@
+﻿---
+ID: "1bb5101c-77f9-479d-9aa4-1211950acac1"
+Parent: "4b86cb93-0ae5-4845-877b-6a045eac5707"
+Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
+Path: /sitecore/content/FordIndia/Global/Media/Home Carousel Folder/four
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201026T074730Z
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{2FCAE87E-05EB-487A-9362-4E8F83228566}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{F2F26B1F-FEC2-4256-B978-F58995F757F7}" />

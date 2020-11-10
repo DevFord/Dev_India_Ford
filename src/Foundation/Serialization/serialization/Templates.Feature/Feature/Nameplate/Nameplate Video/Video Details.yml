@@ -1,0 +1,14 @@
+﻿---
+ID: "e0afe0db-fa86-459e-9c41-99f6bda32298"
+Parent: "f5c5092e-0840-4d4f-a1d9-129450139252"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Nameplate/Nameplate Video/Video Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201109T092455Z

@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D144ACB2-5C5F-4D1B-92DA-7A0BDB8CF7AE}</ProjectGuid>
+    <ProjectGuid>{DAF88A6C-2823-4ECF-9CE9-019B1BFF6C41}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FordIndia.Feature.Media</RootNamespace>
-    <AssemblyName>FordIndia.Feature.Media</AssemblyName>
+    <RootNamespace>FordIndia.Feature.FAQ</RootNamespace>
+    <AssemblyName>FordIndia.Feature.FAQ</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -43,15 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Glass.Mapper">
-      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.93.Core.5.8.170\lib\net471\Glass.Mapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Glass.Mapper.Sc">
-      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.93.Core.5.8.170\lib\net471\Glass.Mapper.Sc.dll</HintPath>
-    </Reference>
-    <Reference Include="Glass.Mapper.Sc.Mvc">
-      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.93.Mvc.5.8.170\lib\net471\Glass.Mapper.Sc.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.3.0\lib\net471\Sitecore.Kernel.dll</HintPath>
@@ -68,10 +59,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -84,6 +71,9 @@
     <Reference Include="System.Web.Razor">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Webpages.Deployment">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
     </Reference>
@@ -93,9 +83,6 @@
     <Reference Include="System.Web.Helpers">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Mvc">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
@@ -104,34 +91,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Views\Media\Carousel.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Views\Media\TwoBanner.cshtml" />
-    <Content Include="Views\Media\BannerTiles.cshtml" />
-    <Content Include="Views\Media\HeroBanner.cshtml" />
-    <Content Include="Views\Media\NameplateBanner.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\MediaController.cs" />
-    <Compile Include="Models\Carousel.cs" />
-    <Compile Include="Models\HeroBanner.cs" />
-    <Compile Include="Models\ImageItem.cs" />
-    <Compile Include="Models\TwoBanner.cs" />
+    <Compile Include="Controllers\FAQController.cs" />
+    <Compile Include="Models\FAQ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\IMediaRepository.cs" />
-    <Compile Include="Repository\MediaRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\web.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Views\web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -141,18 +110,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\FordIndia.Foundation.DependencyInjection.csproj">
-      <Project>{077655b7-c8a7-4f55-993a-057e39987c99}</Project>
-      <Name>FordIndia.Foundation.DependencyInjection</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\FordIndia.Foundation.SitecoreExtensions.csproj">
-      <Project>{36795007-8d80-4760-aaa3-f2352a3a3fc1}</Project>
-      <Name>FordIndia.Foundation.SitecoreExtensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Navigation\Code\FordIndia.Feature.Navigation.csproj">
-      <Project>{5ee96168-c482-4eaf-a886-2f60eea65484}</Project>
-      <Name>FordIndia.Feature.Navigation</Name>
-    </ProjectReference>
+    <Folder Include="Views\FAQ\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -165,11 +123,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55605</DevelopmentServerPort>
+          <DevelopmentServerPort>59758</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:55073/</IISUrl>
+          <IISUrl>http://localhost:59758/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

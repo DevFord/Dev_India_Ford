@@ -1,0 +1,14 @@
+﻿---
+ID: "5552668a-88d8-4870-a9af-63fdb4507d8a"
+Parent: "26cedc58-293c-4474-a8db-de92464f2eba"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/FAQ/FAQ/FAQ Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201105T065859Z
