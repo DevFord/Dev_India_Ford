@@ -27,7 +27,7 @@ namespace FordIndia.Feature.Media.Controllers
             try
             {
                 var model = _mediaRepository.GetCarouseItems();
-                return View("Carousel",model);
+                return View("Carousel", model);
             }
             catch (Exception ex)
             {
@@ -45,7 +45,7 @@ namespace FordIndia.Feature.Media.Controllers
                     var Banneritem = dataSource.GetChildren();
                     if (Banneritem.Any())
                     {
-                        if (Banneritem.Count > 1 && Banneritem.Count==2)
+                        if (Banneritem.Count > 1 && Banneritem.Count == 2)
                         {
                             List<TwoBanner> TwobannerCarosel = new List<TwoBanner>();
                             foreach (Item item in Banneritem)
@@ -54,11 +54,11 @@ namespace FordIndia.Feature.Media.Controllers
                                 var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
                                 var banner = new TwoBanner
                                 {
-                                  MediaTitle=!string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value)? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value:string.Empty,
-                                  MediaDescription= !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value)? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value:string.Empty,
-                                  MediaImage= desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value)?MediaManager.GetMediaUrl(desktopimage.MediaItem):string.Empty,
-                                  MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
-                                  Link=!string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
+                                    MediaTitle = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
+                                    MediaDescription = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
+                                    MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                    MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
+                                    Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
                                 };
                                 TwobannerCarosel.Add(banner);
                             }
@@ -83,6 +83,23 @@ namespace FordIndia.Feature.Media.Controllers
                             }
                             return View("~/Views/Media/BannerTiles.cshtml", TwobannerCarosel);
                         }
+
+                        else
+                        {
+                            var bannercontext = Sitecore.Context.Item;
+                            var desktopimage = (ImageField)bannercontext.Fields[Templates.ImageItem.MediaImageFieldID];
+                            var mobimage = (ImageField)bannercontext.Fields[Templates.ImageItem.MobileImage];
+                            var banner = new TwoBanner
+                            {
+                                MediaTitle = !string.IsNullOrEmpty(bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
+                                MediaDescription = !string.IsNullOrEmpty(bannercontext.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? bannercontext.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
+                                MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
+                                Link = !string.IsNullOrEmpty(Helpers.LinkUrl(bannercontext.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(bannercontext.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
+                            };
+                            return View("~/Views/Media/NameplateBanner.cshtml", banner);
+
+                        }
                     }
                 }
             }
@@ -105,11 +122,11 @@ namespace FordIndia.Feature.Media.Controllers
                     MediaTitle = !string.IsNullOrEmpty(bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
                     MediaImage = desktopImage.MediaItem != null && !string.IsNullOrEmpty(desktopImage.Value) ? MediaManager.GetMediaUrl(desktopImage.MediaItem) : string.Empty,
                     MobileImage = MobileImage.MediaItem != null && !string.IsNullOrEmpty(MobileImage.Value) ? MediaManager.GetMediaUrl(MobileImage.MediaItem) : string.Empty,
-                    Title=!string.IsNullOrEmpty(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Title].Value)?bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Title].Value:string.Empty,
-                    Link=!string.IsNullOrEmpty(Helpers.LinkUrl(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Link])) ? Helpers.LinkUrl(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Link]) : string.Empty,
+                    Title = !string.IsNullOrEmpty(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Title].Value) ? bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Title].Value : string.Empty,
+                    Link = !string.IsNullOrEmpty(Helpers.LinkUrl(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Link])) ? Helpers.LinkUrl(bannercontext.Fields[Templates.BannerBreadcrumb.Fields.Link]) : string.Empty,
                     Image = iconImage.MediaItem != null && !string.IsNullOrEmpty(iconImage.Value) ? MediaManager.GetMediaUrl(iconImage.MediaItem) : string.Empty,
                 };
-                
+
                 return View("~/Views/Media/HeroBanner.cshtml", bannerItem);
             }
             catch (Exception ex)
@@ -117,6 +134,47 @@ namespace FordIndia.Feature.Media.Controllers
                 return new EmptyResult();
             }
 
+        }
+        public ActionResult NameplateBanner()
+        {
+            try
+            {
+                var dataSource = RenderingContext.Current.Rendering.Item;
+                if (dataSource != null && dataSource.TemplateID == Templates.MediaGroup.ID)
+                {
+                    var Banner = dataSource.GetChildren();
+                    if (Banner.Any())
+                    {
+                        if (Banner.Count > 1)
+                        {
+                            List<TwoBanner> Nameplate = new List<TwoBanner>();
+                            foreach (Item item in Banner)
+                            {
+                                var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
+                                var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
+                                var Nameplatebanner = new TwoBanner
+                                {
+                                    MediaTitle = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
+                                    MediaDescription = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
+                                    MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                    MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
+                                    Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
+                                };
+                                Nameplate.Add(Nameplatebanner);
+                            }
+                            return View("~/Views/Media/NameplateBanner.cshtml", Nameplate);
+
+                        }
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return new EmptyResult();
+            }
+            return new EmptyResult();
         }
     }
 }

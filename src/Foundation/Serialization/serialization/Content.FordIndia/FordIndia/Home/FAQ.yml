@@ -1,0 +1,67 @@
+﻿---
+ID: "f503669f-ac37-4b5a-a8d8-e1d90bd223e5"
+Parent: "0d17fede-b400-41a8-b306-72ce37f12548"
+Template: "74d94262-c696-4b9f-aaec-2d342f45bf26"
+Path: /sitecore/content/FordIndia/Home/FAQ
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{1D517D38-25AF-4702-9340-807ADCBFF2DE}">
+        <r
+          id="{3ED979E5-AB17-40EE-AA78-838907D5F1FB}"
+          ph="header"
+          uid="{ABE4A4A1-1C91-4D97-8306-09FD75CD2025}" />
+        <r
+          id="{21B86F93-F4B1-467D-A676-FE32C4144CEC}"
+          ph="PhNavigationBar"
+          uid="{AF714D11-C2CF-4652-8EE5-2CCC0B0B7012}" />
+        <r
+          id="{44954101-6B69-43AA-85AF-308A5167FF93}"
+          ph="PhRightNavigationBar"
+          uid="{7613EF78-B983-4C2E-9CF5-DDCFD2401E37}" />
+        <r
+          id="{4CFC6277-BD95-45D8-8A33-C10AB9858F0B}"
+          ph="main"
+          uid="{3E6AE28C-979E-403A-BE24-87D63558BD9E}" />
+        <r
+          id="{D27897F7-3D6A-4788-A2E1-3D25DC4582B4}"
+          ph="footer"
+          uid="{01F19CE1-6102-4300-9FFE-F48620186240}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201105T114520Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
+      Hint: MediaTitle
+      Value: Frequently Asked Questions
+    - ID: "6673e33d-96b3-4f72-8316-08b11190ac8e"
+      Hint: Title
+      Value: Frequently Asked Questions
+    - ID: "768d36db-cb38-411c-8758-8ec19f2539d0"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{0D17FEDE-B400-41A8-B306-72CE37F12548}" />
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{99848735-BD34-4944-B1D2-3800B2C89987}" />
+    - ID: "e4549837-b4fb-4845-9b49-1cb8a39fa13d"
+      Hint: Image
+      Value: |
+        <image mediaid="{4DC0A5FE-BDD7-471D-8B52-9CB72C35CC2C}" />

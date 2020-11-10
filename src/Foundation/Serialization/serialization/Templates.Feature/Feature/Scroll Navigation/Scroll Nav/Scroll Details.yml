@@ -1,0 +1,14 @@
+﻿---
+ID: "ec4d2102-4f11-4738-9478-3a2dd02498ef"
+Parent: "0d7b46d8-df86-4ae9-bb19-0a8e9909af23"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Scroll Navigation/Scroll Nav/Scroll Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201110T073804Z

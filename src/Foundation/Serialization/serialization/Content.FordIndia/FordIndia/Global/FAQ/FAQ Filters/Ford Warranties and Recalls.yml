@@ -1,0 +1,21 @@
+﻿---
+ID: "440c186b-604f-451e-8882-4d433597c363"
+Parent: "c852cb2e-6f79-4241-9fe4-8ca00c197f98"
+Template: "86eea8f7-4af3-428e-977e-5d428109467f"
+Path: /sitecore/content/FordIndia/Global/FAQ/FAQ Filters/Ford Warranties and Recalls
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201105T133619Z
+    - ID: "6335079c-f44b-4d21-8a01-56e327b0a2f2"
+      Hint: IsParent
+      Type: Checkbox
+      Value: 1
+    - ID: "ceeee0ac-fd52-4c3e-836d-c78854eea741"
+      Hint: Name
+      Value: Ford Warranties and Recalls

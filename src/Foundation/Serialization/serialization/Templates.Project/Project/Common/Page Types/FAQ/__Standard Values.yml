@@ -1,8 +1,8 @@
 ﻿---
-ID: "b5f2cbdc-bc7e-4037-9a7d-0ae24cd5c999"
-Parent: "88f46b65-1b45-4339-b452-ead039ad2eff"
-Template: "88f46b65-1b45-4339-b452-ead039ad2eff"
-Path: /sitecore/templates/Project/Common/Page Types/Content Page/__Standard Values
+ID: "c9f0ae99-4b6a-4848-87ca-d5e41c331bcf"
+Parent: "74d94262-c696-4b9f-aaec-2d342f45bf26"
+Template: "74d94262-c696-4b9f-aaec-2d342f45bf26"
+Path: /sitecore/templates/Project/Common/Page Types/FAQ/__Standard Values
 DB: master
 SharedFields:
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
@@ -16,27 +16,23 @@ SharedFields:
         <r
           id="{4CFC6277-BD95-45D8-8A33-C10AB9858F0B}"
           ph="main"
-          uid="{F854F0A7-DE1D-4B0D-BBE2-CE78BB84A392}" />
+          uid="{542458CC-5FC1-4067-982C-E75CD325AD11}" />
         <r
           id="{3ED979E5-AB17-40EE-AA78-838907D5F1FB}"
           ph="header"
-          uid="{E70A6117-0636-4FFD-B04E-95946622D568}" />
+          uid="{4E98B411-4AA2-443B-BCF1-2C872FEB3E11}" />
         <r
           id="{21B86F93-F4B1-467D-A676-FE32C4144CEC}"
           ph="PhNavigationBar"
-          uid="{1DD943D0-35B1-4608-8926-4BC92C541CFA}" />
+          uid="{5E7B4370-7937-4DCD-B559-CD200D9D1BE7}" />
         <r
           id="{44954101-6B69-43AA-85AF-308A5167FF93}"
           ph="PhRightNavigationBar"
-          uid="{2758CD6D-A2C0-460C-BE25-FB7B4236A7B0}" />
-        <r
-          id="{E44676F7-378F-4FCE-9320-EA5B2AAD8796}"
-          ph="main"
-          uid="{63B51DD1-5F64-4215-9F18-0541DE78E315}" />
+          uid="{C787998E-2067-4328-983C-E0CCF5006B36}" />
         <r
           id="{D27897F7-3D6A-4788-A2E1-3D25DC4582B4}"
           ph="footer"
-          uid="{435361DF-9D01-45A1-B292-3A0A105CFA3B}" />
+          uid="{6F700967-C06B-4010-B020-F734DB32586C}" />
       </d>
     </r>
 Languages:
@@ -46,7 +42,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20201030T050301Z
+      Value: 20201105T122212Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
