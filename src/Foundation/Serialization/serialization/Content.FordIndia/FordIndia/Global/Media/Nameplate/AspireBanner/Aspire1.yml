@@ -1,0 +1,22 @@
+﻿---
+ID: "e698cabf-1c58-4c57-a1c6-bc2ac688744f"
+Parent: "448c619d-8a4f-4d9d-805a-4d7f9e26822f"
+Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
+Path: /sitecore/content/FordIndia/Global/Media/Nameplate/AspireBanner/Aspire1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201111T094631Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{FB26ED03-13EF-48FC-99CB-89BAA8848239}" />

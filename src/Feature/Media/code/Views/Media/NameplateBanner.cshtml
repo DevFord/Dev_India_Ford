@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<FordIndia.Feature.Media.Models.TwoBanner>
 @using FordIndia.Feature.Media;
 @using FordIndia.Feature.Navigation;
+@using Sitecore.Data.Items;
+@using Sitecore.Mvc.Presentation;
 @using FordIndia.Feature.Media.Models;
 <!--[Overview]-->
 @{
-   
-    var getItem = Sitecore.Context.Database.Items.GetItem("{221ED41C-5155-4564-A588-8EBD262CB186}");
-
+    var CurrentItem = Sitecore.Context.Item;
 
 }
 @if (Model != null)
@@ -21,38 +21,40 @@
                             <source srcset="@item.MediaImage" media="(min-width: 767px)">
                             <img src="@item.MediaImage">
                         </picture>
-                        <div class="overview-carousel-caption text-white">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-9 m-auto">
-                                        <div class="d-sm-flex align-items-center">
-                                            <div class="col col-title text-right pr-5 mr-5">
-                                                <h2>@Html.Raw(item.MediaTitle)</h2>
-                                            </div>
-                                            <div class="col-data col-sm-0 col-3 pl-0 pr-5">
-                                                <h5 class="data-label">@getItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.PriceText]</h5>
-                                                <div class="data-value"><i class="fa fa-rupee"></i>@getItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.Price]</div>
-                                            </div>
-                                            <div class="col-data pl-0 pr-5">
-                                                <h5 class="data-label">@getItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGText]</h5>
-                                                <div class="data-value">
-                                                    @getItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGValue]</div>
-                                                                                            </div>
-                                            <div class="col-data pl-0 pr-5">
-                                                <h5 class="data-label">@getItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingText]</h5>
-                                                <div class="data-value">@getItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingCount]</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
                 }
+
             </div>
             <div class="swiper-pagination"></div>
         </div>
+        <div class="overview-carousel-caption text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 m-auto">
+                        <div class="d-sm-flex align-items-center">
+                            <div class="col col-title text-right pr-5 mr-5">
+                                <h2>@Html.Raw(CurrentItem.Fields[FordIndia.Feature.Media.Templates.Banner.Fields.BannerTitle])</h2>
+                            </div>
+                            <div class="col-data col-sm-0 col-3 pl-0 pr-5">
+                                <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.PriceText]</h5>
+                                <div class="data-value"><i class="fa fa-rupee"></i>@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.Price]</div>
+                            </div>
+                            <div class="col-data pl-0 pr-5">
+                                <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGText]</h5>
+                                <div class="data-value">
+                                    @CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGValue]
+                                </div>
+                            </div>
+                            <div class="col-data pl-0 pr-5">
+                                <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingText]</h5>
+                                <div class="data-value">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingCount]</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 }
 <!--[/Overview]-->

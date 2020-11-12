@@ -1,0 +1,40 @@
+﻿---
+ID: "703b6e1c-0db3-4b04-970d-971bd34814ce"
+Parent: "9dd6c957-d048-49c2-b743-bf139cfdc73e"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/FordIndia/Property Images/ford-service-icon"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/703B6E1C0DB34B04970D971BD34814CE.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 80
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "2974de59-0e85-44b2-9379-19cfdda555ca"
+  Value: iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAABGlBMVEUAAAAme6rp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+g7h7Hp6+jp6+jp6+gmZo0nP1np6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+gsf6zp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+jp6+g+ibIugK3p6+jp6+gxga3p6+gnP1kllMv///9BirNPcYpLX3OUn6lPgZ9vf444jLhMYHTx8/U5V3HR1dbEy80zSmJzgpI/VGo7WnQrQlw3VG0uRV4skMNNgaFPdI9FWm87UWiAjptneIljdIVFZX40SmM0jLowhbKGk59OgJ1Ne5hId5U+Z4M0S2KSnaiFkG1qAAAANHRSTlMA3PtGGxUGAe6pIwr10cm5lXlyYffr593Pyb6xnoFpW043MikP5OPh1q6hjYc8LvrnplXpUYQmcgAAAshJREFUWMPV2GdT4kAYwPElofcioFIULGdv9yyneJxX9CgqTeze9/8al0yOB3YDJGR3zvH/ahkyvyEk2c0seZc8wYN9VS0F18UpXzl5HAnDMH80X1wT+GGpnB/Mbe6chGwbS3T+lmaB1EmzwUWX1tHhqXULGy6tRSvQVZkv18cHD7WDrm++2unmWjt2wQo81Q66pfa61Y49nQmuGuAZfbuw7o2eGeDBdE8ZgldfrLsagulpT2MpDI5A2HRP9NbS4BCEyDoxF9oCxyBs+8zgDgiAkDR5KyAEKmXOc/vFQIh4WTAAgiAkGG8fhMEwc+8si4MQZ3+gOKi4CRaTAcIuemvAg7Xv1tV40I+L4Z4JtBUPQmq4mm9y4LNN8JkDl4mRChxYuf9mp/sKguxl2WVB+/EgrBhgRBqYN15hFGngJ2PiBwbkV72n1xccv7w+MaseD4JbBxMwysGqx4CqDuZN4BkdVLEObeG4RTtVbMDdhzjPRieANcDOaRXHVXoOWI0DcYLISARjOqhIBKOatw4SwaxEEG9Ej2wwJBPckn9RtPwTwN5P7JG2cdymj6MvehyIM+KWCaxTe9VN4LEO5iSCBVxRuFPu/8K6tI3jNu2OvujjKXMzbEriRSnr4IE8MOzVQV9aGhjDNy9JYMIAi9LAEsFVSgqY9RGjnCSwQP51IgkMDkFvhgcvzrE+7eC4Q//MAJcJlmTBJp1abwa4SrBQmgHvaOs3NqANHDdodzoY8ZFRCQn/oUrG8maFwRxhUkXBcJCwBQTBBOHyZITAqJfwqYoA6A8Sc0nnoKKSScUdg0UyMV/AIbhHpuSNDZ+UxiXWGvvQoK3LsQ93BriLgFnEZ9lWTQO03ll6qP8Yq8mNsfqDHfBzZb42Pv52n3Rw0aV3tGBvC9Z6D9ZJ8vex7RcsbmeALbuTchOhPKVUIZ4PxLYD8cJKOUT+d38B5BwBU7W5q3QAAAAASUVORK5CYII=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1127
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 80 x 80
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 80
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201112T060218Z

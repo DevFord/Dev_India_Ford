@@ -1,0 +1,14 @@
+﻿---
+ID: "79d9b2fe-559f-43f1-b607-418b9c34fb5c"
+Parent: "3ad0f04f-37a1-4a60-880f-0256c2ada1f5"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/FordIndia/Global/LeftImage RightBullet/Figo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201111T160815Z

@@ -70,7 +70,7 @@ $('.footer-title').click(function(){
     e.stopPropagation();
 });*/
 
-
+// Home Page Carousel
 $('.hp-carousel').owlCarousel({
 		items: 1,
 		loop: false,
@@ -87,6 +87,7 @@ $('.hp-carousel').owlCarousel({
 		autoHeight:true,
 	});
 
+// latest Carousel
 $('.latest-carousel').owlCarousel({
 		items: 1,
 		loop: false,
@@ -102,19 +103,141 @@ $('.latest-carousel').owlCarousel({
 		thumbImage: false,
 		autoHeight:true,
 	});
-$('.overview-carousel').owlCarousel({
-		items: 1,
+	
+// overview Slider
+var mySwiper = new Swiper('.spy-overview .swiper-container', {
+  loop: true,
+  pagination: {
+        el: '.spy-overview .swiper-pagination',
+        clickable: true,
+      },
+});
+// Safety Slider
+var safetyThumbs = new Swiper('.safety-thumbs', {
+      spaceBetween: 0,
+      slidesPerView: 5,
+			direction: 'vertical',
+      loop: false,
+      freeMode: false,
+      loopedSlides: 5, //looped slides should be the same			
+    });
+    var safetySlide = new Swiper('.safety-slider', {
+      spaceBetween: 0,
+      loop: false,
+      loopedSlides: 5, //looped slides should be the same      
+      thumbs: {
+        swiper: safetyThumbs,
+      },
+			autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+});
+		
+// Fun Slider
+var funThumbs = new Swiper('.fun-thumbs', {
+      spaceBetween: 0,
+      slidesPerView: 4,
+      loop: false,
+      freeMode: false,
+      loopedSlides: 4, //looped slides should be the same
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var funSlide = new Swiper('.fun-slider', {
+      spaceBetween: 0,
+      loop: false,
+      loopedSlides: 4, //looped slides should be the same      
+      thumbs: {
+        swiper: funThumbs,
+      }
+});
+
+ /*var swiper = new Swiper('.tech-thumbs', {
+      slidesPerView: 3.5,
+			//autoHeight: true,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.tech-thumbs .swiper-button-next',
+        prevEl: '.tech-thumbs .swiper-button-prev',
+      },
+			pagination: {
+        el: '.tech-thumbs .swiper-pagination',
+        clickable: true,
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth >= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }*/
+
+// Technology Slider
+var techThumbs = new Swiper('.tech-thumbs', {
+      spaceBetween: 0,
+      slidesPerView: 3.5,
+			direction: 'vertical',
+			autoHeight: true,
+      loop: false,
+      freeMode: true,
+			//slidesPerGroup: 3,
+      //loopedSlides: 3, //looped slides should be the same
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+			navigation: {
+        nextEl: '.tech-thumbs .swiper-button-next',
+        prevEl: '.tech-thumbs .swiper-button-prev',
+      },
+			pagination: {
+					el: '.tech-thumbs .swiper-pagination',
+					clickable: true,
+				},			
+    });
+    var techSlide = new Swiper('.tech-slider', {
+      spaceBetween: 0,
+      loop: false,
+      //loopedSlides: 3, //looped slides should be the same      
+      thumbs: {
+        swiper: techThumbs,
+      },			
+			pagination: {
+					el: '.tech-slider .swiper-pagination',
+					clickable: true,
+				},
+			autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+});
+
+// Review Slider
+	var mySwiper = new Swiper('.review-swiper', {
+		loop: true,		
+		pagination: {
+					el: '.review-swiper .swiper-pagination',
+					clickable: true,
+				},
+	});
+// Compare Slider
+	var mySwiper = new Swiper('.compare-swiper', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		slidesPerGroup: 4,
 		loop: false,
-		dots: true,
-		nav: false,
-		center:false,		
-		margin: 0,		
-		autoplay:true,
-	  smartSpeed:800,
-    autoplayTimeout:8000,
-		autoplayHoverPause:false,
-		thumbs: false,
-		thumbImage: false,
-		autoHeight:true,
+		pagination: {
+					el: '.compare-swiper .swiper-pagination',
+					clickable: true,
+				},
 	});
 });
+
+
+
+
