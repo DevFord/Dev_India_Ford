@@ -1,0 +1,41 @@
+﻿@model FordIndia.Feature.Nameplate.Models.Property
+
+<!--[peace]-->
+@if (Model != null)
+{
+    <section class="section spy-peace" id="peace">
+        <div class="container">
+            <header class="title-head m-auto text-center pb-5">
+                <h2 class="title">@Model.Header</h2>
+            </header>
+            <div class="row">
+                <div class="col-md-7">
+                    <picture>
+                        <source srcset="@Model.HeaderImage" media="(min-width: 768px)">
+                        <img src="@Model.HeaderImage" alt="">
+                    </picture>
+                </div>
+                <div class="col-md-5">
+                    @if (Model.propertyItems != null && Model.propertyItems.Count > 0)
+                    {
+                        var count = Model.propertyItems.Count;
+                        for (int i = 0; i < count; i++)
+                        {
+                            <div class="d-flex mt-5">
+                                <div class="col-icon mr-4">
+                                    <img src="@Model.propertyItems[i].Image" alt="Ford Service">
+                                </div>
+                                <div class="col-text">
+                                    <h3>@Model.propertyItems[i].Title</h3>
+                                    <p class="text-muted">@Model.propertyItems[i].Description</p>
+                                </div>
+                            </div>
+                        }
+
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!--[/peace]-->

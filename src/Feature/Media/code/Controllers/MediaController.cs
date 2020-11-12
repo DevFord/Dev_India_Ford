@@ -145,29 +145,27 @@ namespace FordIndia.Feature.Media.Controllers
                     var Banner = dataSource.GetChildren();
                     if (Banner.Any())
                     {
-                        if (Banner.Count > 1)
+                        if (Banner.Count > 0)
                         {
                             List<TwoBanner> Nameplate = new List<TwoBanner>();
                             foreach (Item item in Banner)
                             {
                                 var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
-                                var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
                                 var Nameplatebanner = new TwoBanner
                                 {
-                                    MediaTitle = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
-                                    MediaDescription = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
                                     MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
-                                    MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
                                     Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
+
                                 };
                                 Nameplate.Add(Nameplatebanner);
                             }
                             return View("~/Views/Media/NameplateBanner.cshtml", Nameplate);
-
                         }
+                       
                     }
 
                 }
+               
 
             }
             catch (Exception ex)

@@ -1,0 +1,28 @@
+﻿---
+ID: "0a6c5e8e-135f-4da8-8757-ee5182804a50"
+Parent: "79d9b2fe-559f-43f1-b607-418b9c34fb5c"
+Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
+Path: /sitecore/content/FordIndia/Global/LeftImage RightBullet/Figo/Property3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201111T160916Z
+    - ID: "302c9f8d-f703-4f76-a4ab-73d222648232"
+      Hint: MediaDescription
+      Value: When it comes to Ford Service, believe in facts and not impressions. Here is the Ford EcoSport's periodic maintenance table for you to see & Judge for yourself
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
+      Hint: MediaTitle
+      Value: "More Sub-Assemble Parts"
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{860ED7E8-3A7D-4A05-A0F8-2C9F703BD17C}" />

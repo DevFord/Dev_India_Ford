@@ -39,6 +39,16 @@ namespace FordIndia.Feature.Media
                 public static readonly ID Link = new ID("{768D36DB-CB38-411C-8758-8EC19F2539D0}");
             }
         }
+        public struct Banner
+        {
+            public static readonly ID ID = new ID("{75C60227-4DD3-40E1-91A2-80C7E734F92D}");
+            public struct Fields
+            {
+                public static readonly ID BannerTitle = new ID("{FE06932D-75CD-400D-AD9B-45576DBCB922}");
+                public static readonly ID BannerImage = new ID("{AAF04878-48DF-4C12-ADA5-2AD39C738729}");
+                public static readonly ID CallToAction = new ID("{58B899F9-4BBC-4675-859A-3B35F828D415}");
+            }
+        }
 
     }
 }

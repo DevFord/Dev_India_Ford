@@ -18,7 +18,7 @@ Languages:
       Value: 67,00,000
     - ID: "14b84ec9-2b90-4dbb-98f8-b0ef51845e65"
       Hint: SeatingCount
-      Value: 6
+      Value: 7
     - ID: "1982a9ad-c6f1-4bc7-8106-c343a9066acb"
       Hint: SubCategoryName
       Value: Ford Aspire
@@ -50,4 +50,4 @@ Languages:
     - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
       Hint: Link
       Value: |
-        <link linktype="javascript" url="javascript:void(0);" anchor="" />
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{3C249C6B-43A8-46D6-AC58-0B7E1CC30846}" />

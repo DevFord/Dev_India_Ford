@@ -1,8 +1,8 @@
 ﻿---
-ID: "5002be02-60fa-4f89-8fbd-9cf7f639aba8"
-Parent: "15ff62fd-aade-4563-bc42-51cce3d761f9"
+ID: "384f0e51-a890-4d3b-b13e-002439808599"
+Parent: "3add4a97-00df-494c-b4d6-65446b1cf401"
 Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
-Path: /sitecore/content/FordIndia/Global/Media/Nameplate/FigoBanner/Image2
+Path: /sitecore/content/FordIndia/Global/Media/Nameplate/EndeavourBanner/Endeavour3
 DB: master
 Languages:
 - Language: en
@@ -11,18 +11,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20201025T192226Z
-    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
-      Hint: MobileImage
-      Value: |
-        <image mediaid="{74F42B30-9FB5-412E-B7CC-62922E6F2C1D}" />
+      Value: 20201111T094719Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
-      Hint: MediaTitle
-      Value: New Ford <br>Endeavour <br>Sport
     - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
       Hint: MediaImage
       Value: |
