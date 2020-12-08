@@ -1,0 +1,30 @@
+﻿---
+ID: "a25b7203-47a8-488d-a89c-eb2083189c2d"
+Parent: "58d643cb-e104-468e-b6a5-b12c134213c6"
+Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
+Path: /sitecore/content/FordIndia/Global/Media/TollFreeBanner/Toll MediaGroup/Toll Free
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201120T070918Z
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{517F5CCA-C5D0-48B0-B87D-B1489D8D12EC}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{DC47F976-9509-4983-BEC2-E374F39B3A48}" />
+    - ID: "a68ca6c2-46be-4fcf-a3f7-aa8a849aae68"
+      Hint: link
+      Value: |
+        <link linktype="internal" />

@@ -27,7 +27,11 @@ namespace FordIndia.Feature.Media.Models
         public virtual Image MobileImage { get; set; }
 
         [SitecoreField(FieldId = "{A68CA6C2-46BE-4FCF-A3F7-AA8A849AAE68}")]
-        public virtual Image Link { get; set; }
+        public virtual string Link { get; set; }
+
+        [SitecoreField(FieldId = "{0E39CF5F-7E4B-496E-A25D-DC47FBA2F6C2}")]
+        public virtual string ButtonText { get; set; }
+
         public Item Item { get; set; }
 
         

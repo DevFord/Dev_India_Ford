@@ -1,0 +1,14 @@
+﻿---
+ID: "d183e0b2-b61b-4d21-beb3-d96bc60c8421"
+Parent: "93f5939b-276b-48b1-8715-d3fa1c5e6785"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/FordIndia/Images/Toll Free
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201120T071058Z

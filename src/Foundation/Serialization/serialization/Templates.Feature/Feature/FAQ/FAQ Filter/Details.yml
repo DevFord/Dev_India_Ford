@@ -1,0 +1,14 @@
+﻿---
+ID: "dfe0c07d-8abf-44d7-ad3c-b0ebcb5e6cc2"
+Parent: "86eea8f7-4af3-428e-977e-5d428109467f"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/FAQ/FAQ Filter/Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201105T070002Z

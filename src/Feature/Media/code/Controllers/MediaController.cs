@@ -45,14 +45,14 @@ namespace FordIndia.Feature.Media.Controllers
                     var Banneritem = dataSource.GetChildren();
                     if (Banneritem.Any())
                     {
+                        List<TwoBanner> TwobannerCarosel = new List<TwoBanner>();
                         if (Banneritem.Count > 1 && Banneritem.Count == 2)
-                        {
-                            List<TwoBanner> TwobannerCarosel = new List<TwoBanner>();
+                        {                           
                             foreach (Item item in Banneritem)
                             {
                                 var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
                                 var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
-                                var banner = new TwoBanner
+                                var twoBanner = new TwoBanner
                                 {
                                     MediaTitle = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
                                     MediaDescription = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
@@ -60,18 +60,17 @@ namespace FordIndia.Feature.Media.Controllers
                                     MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
                                     Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
                                 };
-                                TwobannerCarosel.Add(banner);
+                                TwobannerCarosel.Add(twoBanner);
                             }
                             return View("~/Views/Media/TwoBanner.cshtml", TwobannerCarosel);
                         }
-                        if (Banneritem.Count > 1 && Banneritem.Count == 3)
+                        else if (Banneritem.Count > 2 && Banneritem.Count == 3)
                         {
-                            List<TwoBanner> TwobannerCarosel = new List<TwoBanner>();
                             foreach (Item item in Banneritem)
                             {
                                 var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
                                 var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
-                                var banner = new TwoBanner
+                                var tileBanner = new TwoBanner
                                 {
                                     MediaTitle = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? item.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
                                     MediaDescription = !string.IsNullOrEmpty(item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? item.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
@@ -79,27 +78,30 @@ namespace FordIndia.Feature.Media.Controllers
                                     MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
                                     Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
                                 };
-                                TwobannerCarosel.Add(banner);
+                                TwobannerCarosel.Add(tileBanner);
                             }
                             return View("~/Views/Media/BannerTiles.cshtml", TwobannerCarosel);
                         }
-
-                        else
+                        else if(Banneritem.Count > 0 )
                         {
-                            var bannercontext = Sitecore.Context.Item;
-                            var desktopimage = (ImageField)bannercontext.Fields[Templates.ImageItem.MediaImageFieldID];
-                            var mobimage = (ImageField)bannercontext.Fields[Templates.ImageItem.MobileImage];
-                            var banner = new TwoBanner
+                            
+                            foreach (Item item in Banneritem)
                             {
-                                MediaTitle = !string.IsNullOrEmpty(bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value) ? bannercontext.Fields[Templates.ImageItem.MediaTitleFieldID].Value : string.Empty,
-                                MediaDescription = !string.IsNullOrEmpty(bannercontext.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value) ? bannercontext.Fields[Templates.ImageItem.MediaDescriptionFieldID].Value : string.Empty,
-                                MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
-                                MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
-                                Link = !string.IsNullOrEmpty(Helpers.LinkUrl(bannercontext.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(bannercontext.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
-                            };
-                            return View("~/Views/Media/NameplateBanner.cshtml", banner);
+                                var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
+                                var mobimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
+                                var tollBanner= new TwoBanner
+                                {                                    
+                                    MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                    MobileImage = mobimage.MediaItem != null && !string.IsNullOrEmpty(mobimage.Value) ? MediaManager.GetMediaUrl(mobimage.MediaItem) : string.Empty,
+                                    Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
+                                };
+                                TwobannerCarosel.Add(tollBanner);
+                            }
+                            return View("~/Views/Media/TollFreeBanner.cshtml", TwobannerCarosel);
 
                         }
+
+                        
                     }
                 }
             }
@@ -151,9 +153,12 @@ namespace FordIndia.Feature.Media.Controllers
                             foreach (Item item in Banner)
                             {
                                 var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
+                                var isvideo = (CheckboxField)item.Fields[Templates.ImageItem.IsVideo];
                                 var Nameplatebanner = new TwoBanner
                                 {
                                     MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                    VideoLink = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates._HasMediaVideoItem.Fields.MediaVideoLink])) ? Helpers.LinkUrl(item.Fields[Templates._HasMediaVideoItem.Fields.MediaVideoLink]) : string.Empty,
+                                    Isvideo = isvideo != null && isvideo.Checked ? true : false,
                                     Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
 
                                 };

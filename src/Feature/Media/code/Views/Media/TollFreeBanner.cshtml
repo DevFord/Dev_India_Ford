@@ -1,0 +1,26 @@
+﻿@model IEnumerable<FordIndia.Feature.Media.Models.TwoBanner>
+@using Sitecore.Data.Fields;
+@using Sitecore.Data.Items;
+@using Sitecore.Links;
+@using Sitecore.Resources.Media;
+@using Sitecore.Mvc.Presentation;
+@using FordIndia.Feature.Media;
+
+
+<!--[Toll-Free]-->
+@if (Model != null)
+{
+    <section class="sec-toll-free">
+        <a href="tel:1800-419-3000">
+            @foreach (var items in Model)
+            {
+                <picture>
+                   
+                    <source srcset="@items.MediaImage" media="(min-width: 768px)">
+                    <img src="@items.MobileImage">
+                </picture>
+            }
+        </a>
+    </section>
+}
+<!--[/Toll-Free]-->

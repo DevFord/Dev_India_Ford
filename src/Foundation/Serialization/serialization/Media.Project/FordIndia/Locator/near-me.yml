@@ -1,0 +1,47 @@
+﻿---
+ID: "65cdfbed-648b-4099-9d82-91fe78f62873"
+Parent: "31c65022-70fa-4f5b-be59-6828534d8201"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/FordIndia/Locator/near-me"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/65CDFBED648B40999D8291FE78F62873.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 27
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "6c1d4f62-3ae9-4314-af6d-cca9da8d6356"
+  Value: iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAhFBMVEUAAAAtls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls0tls16m3nNAAAAK3RSTlMAAycLgtiHMvW8sJlsYzw3LcmrnY8gFxIP6NC4o3t0XU4e7uDAdlJCGllLMcm82AAAAQ9JREFUKM91kttygkAQRBdYLiIKCioKBvGenP//v7jDkoIU9AOzU2d6GrZQQ2V+quaUsZ5D+4THewp4+opRFJT/0Qp8fUl/9AmSMcpZuPa4i9kOUc3XoEuIBwsFTfYOdyn6yDHwzDHGs0xTmpyIW+WDK9NLy/BNeyX7FDeKjGVDv/LxeQa00h3IJfFgBtOEtTWLxBJyTl0V0UWQWxbgKNUCqNdTd76TZXfk1ovny+TJJS0pu3T58EbyeovHcW9exceUBQaIxZF4FkWFBKi/K/W607sGtjuZFrPoTGOnunIhsETWf0vt0UapIVyWfUIxQrKWahW2WRMjC0fa5XSqXTWhUFOEjpqWy/y/G95G/+4v4HgZbLBIbjgAAAAASUVORK5CYII=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 527
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 27 x 27
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 27
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201208T105935Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Near Me

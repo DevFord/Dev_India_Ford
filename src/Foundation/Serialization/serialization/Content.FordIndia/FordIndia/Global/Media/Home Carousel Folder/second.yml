@@ -9,12 +9,15 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "0e39cf5f-7e4b-496e-a25d-dc47fba2f6c2"
+      Hint: ButtonText
+      Value: Learn More
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20151209T045130Z
     - ID: "302c9f8d-f703-4f76-a4ab-73d222648232"
       Hint: MediaDescription
-      Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      Value: *Avail offers  1,00,000 Off Till July 31st T&C Apply
     - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
       Hint: MobileImage
       Value: |
@@ -25,7 +28,7 @@ Languages:
     - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
       Hint: MediaImage
       Value: |
-        <image mediaid="{BDA42D6D-5E53-49D6-90E0-EBC64110942A}" />
+        <image mediaid="{BB9B2E26-491A-496B-BD9D-3AF6A104A5DC}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

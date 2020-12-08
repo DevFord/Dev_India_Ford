@@ -1,0 +1,116 @@
+﻿@model IEnumerable<FordIndia.Feature.Locator.Models.LocatorData>
+@using FordIndia.Feature.Locator;
+@using System.Collections.Generic;
+@using Sitecore.Data.Fields;
+@using Sitecore.Resources.Media
+@using FordIndia.Foundation.Dictionary.Extensions
+
+@{
+    var header = string.Empty;
+    var Image = string.Empty;
+    var ImageAlt = string.Empty;
+    var current = Sitecore.Context.Item;
+    if (current != null)
+    {
+        var image = (ImageField)current.Fields[Templates.LocaterItem.Fields.Image];
+        header = current.Fields[Templates.LocaterItem.Fields.Header] != null ? current.Fields[Templates.LocaterItem.Fields.Header].ToString() : string.Empty;
+        Image = image.MediaItem != null && !string.IsNullOrEmpty(image.Value) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty;
+        ImageAlt = image.Alt;
+    }
+}
+<script src="~/js/Locater.js"></script>
+@if (Model != null)
+{
+    <!--[Dealer Locator]-->
+    <section class="dealer-section">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-md-5 graident">
+                    <div class="search-dealer pt-5 pb-5 pl-5">
+                        <div class="cus-scr pr-5">
+                            <header class="title-head mb-5">
+                                <h2 class="title">@Html.Raw(header)</h2>
+                            </header>
+
+                            <div class="search-dealer">
+                                <div class="form-group">
+                                    <select class="form-control selectpicker" data-size="7" data-title="State" id="state_list" name="state_list" data-width="100%">
+
+                                        @foreach (var item in ViewBag.State)
+                                        {
+                                            <option value="@item" data-match="@item">@item</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control selectpicker" name="City_Name" data-size="7" data-title="City" id="City_Name" data-width="100%">
+
+                                        @foreach (var city in ViewBag.City)
+                                        {
+                                            <option value="@city">@city</option>
+                                        }
+
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control selectpicker" name="dealer_list" data-size="7" data-title="Dealer" id="dealer_list" data-width="100%">
+                                        @foreach (var dealer in ViewBag.Dealer)
+                                        {
+                                            <option value="">@dealer</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="search-submit d-lg-flex align-items-center justify-content-center text-center">
+                                <button type="submit" class="btn btn-lg btn-outline-primary text-uppercase">@Html.Sitecore().Dictionary("/Locator/Search")<i class="fa fa-chevron-right ml-1"></i></button>
+                                <div class="pl-5 pr-5 text-center">or</div>
+                                <a href="#" class="btn btn-lg btn-link text-uppercase d-flex align-items-center justify-content-center text-center p-0"><img src="@Image" alt="@ImageAlt" class="mr-2">@Html.Sitecore().Dictionary("/Locator/Near me")</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 p-0">
+                    <div class="loaction-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.890685693958!2d80.01519861534226!3d12.78560702239024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f957c97466b7%3A0xe5b0665ef377994a!2sFord%20India%20Pvt%20LTD!5e0!3m2!1sen!2sin!4v1605863451310!5m2!1sen!2sin" width="600" height="620" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--[/Dealer Locator]-->
+}
+
+@*<script>
+
+        $(document).ready(function () {
+            //Dropdownlist Selectedchange event
+            $("#state_list").change(function () {
+                var state = $(this).val();
+
+                //if (!isNaN(state))
+                //{
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("BindCity")',
+                        dataType: 'json',
+                        data: { state: state },
+                        success: function (citys) {
+                            $("#city_list").empty();
+                            // states contains the JSON formatted list
+                            // of states passed from the controller
+                            $.each(citys, function (i, city) {
+                                $("#city_list").append('<option value="' + city.Locality + '">' + city.Locality + '</option>');
+                            });
+                        },
+                        error: function (ex) {
+                            alert('Failed to retrieve states.' + ex);
+                        }
+                    });
+                    return false;
+                //}
+            });
+        });
+
+    </script>*@
+

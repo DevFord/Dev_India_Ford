@@ -14,9 +14,9 @@ namespace FordIndia.Feature.Nameplate.Controllers
     public class NameplateController : Controller
     {
         // GET: Nameplate
-        public ActionResult Index()
+        public ActionResult GetAmount()
         {
-            return View();
+            return View("~/Views/Nameplate/AjaxTest.cshtml");
         }
         public ActionResult Properties()
         {

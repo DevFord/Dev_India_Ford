@@ -15,5 +15,7 @@ namespace FordIndia.Feature.Media.Models
         public string MediaImage { get; set; }       
         public string Link { get; set; }
         public string MobileImage { get; set; }
+        public bool Isvideo { get; set; }
+        public string VideoLink { get; set; }
     }
 }

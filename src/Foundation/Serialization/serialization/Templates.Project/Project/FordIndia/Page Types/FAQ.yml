@@ -1,0 +1,29 @@
+﻿---
+ID: "74d94262-c696-4b9f-aaec-2d342f45bf26"
+Parent: "9557b3f8-e183-4878-913e-22713cc29e99"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/FordIndia/Page Types/FAQ
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/16x16/message.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {A44E450E-BA3F-4FAF-9C53-C63241CC34EB}
+    {26812DC4-15C9-44F1-9A96-B991D95B099F}
+    {05998E77-2E2A-41DB-ACA2-15D177D6F249}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201105T101111Z

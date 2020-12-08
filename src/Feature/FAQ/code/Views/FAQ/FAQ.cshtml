@@ -1,0 +1,88 @@
+﻿@model FordIndia.Feature.FAQ.Models.FAQ
+@using FordIndia.Feature.FAQ.Models
+@using Sitecore.Data.Items
+@using Sitecore.Data.Fields
+@using FordIndia.Feature.FAQ
+@using Sitecore.Mvc
+
+@{
+    string currentURL = Request.Url.ToString();
+}
+
+<!--[faq-List]-->
+<section class="section sec-faq">
+    <div class="container">
+        <!--[Filter]-->
+        <div class="filter-bar d-flex mb-4">
+            <nav class="filter-bar-tab">
+                <ul class="nav nav-tabs">
+                    @if (Model.FAQfilterList != null && Model.FAQfilterList.Count > 0)
+                    {
+                        foreach (Item categoryItem in Model.FAQfilterList)
+                        {
+                            string FilterName = categoryItem.Fields[Templates.FAQFilterItems.Fields.Name].Value;
+                            <li class="nav-item"><a class="nav-link " href="@currentURL" data-toggle="tab">@FilterName</a></li>
+
+                        }
+
+
+                    }
+
+                </ul>
+            </nav>
+        </div>
+        <!--[/Filter]-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="buying-ford">
+                @foreach (var faqFilter in Model.FAQfilterList)
+                {
+
+                    <header class="title-head pb-2 pt-4">
+
+                        <h2 class="title blue">@Html.Sitecore().Field(Templates.FAQFilterItems.Fields.Name.ToString(), faqFilter)</h2>
+
+                    </header>
+
+              
+                  
+                   FAQItems FAQItems = Model.FAQList.Find(x => x.FAQFilter.Name.Equals(faqFilter.Name));
+                   List<Item> QueAnsList = FAQItems.FAQ;
+                   
+                    <div class="faq-list">
+                        <div class="accordion" id="buyingford">
+
+                            @foreach (var faqList in QueAnsList)
+                            {
+
+                                <div class="card">
+
+                                    <div class="card-header" id="heading1">
+
+                                        <button type="button" data-toggle="collapse" data-target="#collapse1">@Html.Sitecore().Field(Templates.FAQ.Fields.Question.ToString(), faqList)</button>
+
+                                    </div>
+
+                                    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#buyingford">
+
+                                        <div class="card-body">
+
+                                            <p>@Html.Sitecore().Field(Templates.FAQ.Fields.Answer.ToString(), faqList)</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            }
+
+
+                        </div>
+                    </div>
+                   }
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!--[/faq-List]-->

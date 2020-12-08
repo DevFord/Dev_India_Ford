@@ -2,32 +2,29 @@
 @using FordIndia.Feature.Media;
 @using FordIndia.Feature.Media.Models;
 
-@if(Model != null)
+@if (Model != null)
 {
     <!--[Latest-at-ford]-->
     <section class="sec-latest relative">
-       
-            <header class="title-head absolute text-white text-center mt-4 mw-100">
-                <h2 class="title">@Sitecore.Globalization.Translate.Text("LatestFord")</h2>
-            </header>
-            <div class="latest-carousel owl-carousel">
+        <header class="title-head absolute text-white text-center mt-4 mw-100">
+            <h2 class="title">@Sitecore.Globalization.Translate.Text("LatestFord")</h2>
+        </header>
+        <div class="swiper-container latest-swiper">
+            <div class="swiper-wrapper">
                 @foreach (var item in Model)
                 {
-                    <div class="slide-item">
+                    <div class="swiper-slide">
                         <a href="#">
-                            <picture>
-                                <source srcset="@item.MediaImage" media="(min-width: 768px)">
+                            <picture class="swiper-img">
+                                <source srcset="@item.MediaImage" media="(min-width: 576px)">
                                 <img src="@item.MobileImage">
                             </picture>
                         </a>
                     </div>
                 }
-
-
             </div>
-        
-        
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <!--[/Latest-at-ford]-->
 }
-

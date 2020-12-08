@@ -1,0 +1,51 @@
+﻿---
+ID: "a1688921-23fc-476e-b24e-32b8f465aac4"
+Parent: "0a02ac85-fbc1-44b1-8fc8-9c9771b0cc2b"
+Template: "0a02ac85-fbc1-44b1-8fc8-9c9771b0cc2b"
+Path: /sitecore/templates/Project/FordIndia/Page Types/Locater/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{1D517D38-25AF-4702-9340-807ADCBFF2DE}">
+        <r
+          id="{3ED979E5-AB17-40EE-AA78-838907D5F1FB}"
+          ph="header"
+          uid="{ABE4A4A1-1C91-4D97-8306-09FD75CD2025}" />
+        <r
+          id="{21B86F93-F4B1-467D-A676-FE32C4144CEC}"
+          ph="PhNavigationBar"
+          uid="{AF714D11-C2CF-4652-8EE5-2CCC0B0B7012}" />
+        <r
+          id="{44954101-6B69-43AA-85AF-308A5167FF93}"
+          ph="PhRightNavigationBar"
+          uid="{7613EF78-B983-4C2E-9CF5-DDCFD2401E37}" />
+        <r
+          ds=""
+          id="{476B8BB7-BE89-445B-9E0B-B0A5CDA08BC4}"
+          par=""
+          ph="main"
+          uid="{50EE8017-D9DD-4776-A1CD-3279557AC71F}" />
+        <r
+          id="{D27897F7-3D6A-4788-A2E1-3D25DC4582B4}"
+          ph="footer"
+          uid="{01F19CE1-6102-4300-9FFE-F48620186240}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201203T095042Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

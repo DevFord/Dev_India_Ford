@@ -114,6 +114,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\FordIndia.Foundation.Dictionary.csproj">
+      <Project>{4bf94639-78a4-46a3-b12c-99e2038f025c}</Project>
+      <Name>FordIndia.Foundation.Dictionary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\FordIndia.Foundation.SitecoreExtensions.csproj">
       <Project>{36795007-8d80-4760-aaa3-f2352a3a3fc1}</Project>
       <Name>FordIndia.Foundation.SitecoreExtensions</Name>

@@ -4,6 +4,10 @@ Parent: "ea13174a-b43e-4f68-b474-b41188771a9e"
 Template: "1361a3e5-d15e-43ab-8d0b-b02c3fb65ab2"
 Path: /sitecore/content/FordIndia/Global/Media/Two Banner Slider
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 Languages:
 - Language: en
   Versions:

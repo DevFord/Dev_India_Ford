@@ -1,0 +1,26 @@
+﻿---
+ID: "66f4bfbf-5b7b-4df5-805f-9e701d26f052"
+Parent: "c6777637-c769-4ae1-be69-e91825ca4872"
+Template: "26cedc58-293c-4474-a8db-de92464f2eba"
+Path: /sitecore/content/FordIndia/Global/FAQ/FAQs/Ford Warranties and recall
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "01086a14-d804-4b10-9d5f-1d14174892af"
+      Hint: Question
+      Value: |
+         I have a technical question for ford Warranties
+        
+    - ID: "037e34c4-f8a5-4118-b34e-46f75d975889"
+      Hint: Answer
+      Value: "For technical information, you should contact your Ford Dealer - our Dealers are our technical experts and will be able to assist you."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201105T134116Z
+    - ID: "dfc67494-c028-4cc3-9549-00156a7326a0"
+      Hint: FAQ Filter
+      Type: Treelist
+      Value: "{DB18A32F-21A9-4A13-8E5D-EBEF579BD308}"

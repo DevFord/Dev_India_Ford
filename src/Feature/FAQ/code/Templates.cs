@@ -15,10 +15,10 @@ namespace FordIndia.Feature.FAQ
             {
                 public static readonly ID Question = new ID("{01086A14-D804-4B10-9D5F-1D14174892AF}");
                 public static readonly ID Answer = new ID("{037E34C4-F8A5-4118-B34E-46F75D975889}");
-                public static readonly ID FAQCategory = new ID("{DFC67494-C028-4CC3-9549-00156A7326A0}");
+                public static readonly ID FAQFilter = new ID("{DFC67494-C028-4CC3-9549-00156A7326A0}");
             }
         }
-        public struct FAQCategoryItems
+        public struct FAQFilterItems
         {
             public static readonly ID ID = new ID("{86EEA8F7-4AF3-428E-977E-5D428109467F}");
             public struct Fields
@@ -34,5 +34,6 @@ namespace FordIndia.Feature.FAQ
     {
         public static readonly ID FAQFiltersID = new ID("{C852CB2E-6F79-4241-9FE4-8CA00C197F98}");
         public static readonly ID FAQID = new ID("{378D194F-8358-455B-93AA-6FFC7BCAD57D}");
+        public static readonly ID FAQsID = new ID("{C6777637-C769-4AE1-BE69-E91825CA4872}");
     }
 }

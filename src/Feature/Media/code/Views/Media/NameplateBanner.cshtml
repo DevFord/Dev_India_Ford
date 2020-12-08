@@ -11,50 +11,93 @@
 }
 @if (Model != null)
 {
-    <section id="overview" class="spy-overview">
+    <section id="overview" class="spy-overview h-100">
+
         <div class="swiper-container">
+
             <div class="swiper-wrapper">
+
                 @foreach (var item in Model)
                 {
-                    <div class="swiper-slide">
-                        <picture class="swiper-img">
-                            <source srcset="@item.MediaImage" media="(min-width: 767px)">
-                            <img src="@item.MediaImage">
-                        </picture>
-                    </div>
+                    if (item.Isvideo == true)
+                    {
+                        <div class="swiper-slide slide-video">
+                            <video class="swiper-video" preload="" autoplay="" playsinline="" muted="" loop="" data-source-src="@item.VideoLink" title="" src="@item.VideoLink"></video>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="swiper-slide">
+                            <picture class="swiper-img">
+                                <source srcset="@item.MediaImage" media="(min-width: 767px)">
+                                <img src="@item.MobileImage">
+                            </picture>
+                        </div>
+
+                    }
+
                 }
 
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="overview-carousel-caption text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9 m-auto">
-                        <div class="d-sm-flex align-items-center">
-                            <div class="col col-title text-right pr-5 mr-5">
-                                <h2>@Html.Raw(CurrentItem.Fields[FordIndia.Feature.Media.Templates.Banner.Fields.BannerTitle])</h2>
-                            </div>
-                            <div class="col-data col-sm-0 col-3 pl-0 pr-5">
-                                <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.PriceText]</h5>
-                                <div class="data-value"><i class="fa fa-rupee"></i>@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.Price]</div>
-                            </div>
-                            <div class="col-data pl-0 pr-5">
-                                <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGText]</h5>
-                                <div class="data-value">
-                                    @CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGValue]
-                                </div>
-                            </div>
-                            <div class="col-data pl-0 pr-5">
-                                <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingText]</h5>
-                                <div class="data-value">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingCount]</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="overview-slide-caption text-white">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-9 col-md-11 m-auto">
+
+                        <div class="d-sm-flex align-items-center">
+
+                            <div class="col col-title text-sm-right text-center pr-md-5 pr-sm-3 mr-md-5 mr-sm-3 pl-sm-0">
+
+                                <h2>@Html.Raw(CurrentItem.Fields[FordIndia.Feature.Media.Templates.Banner.Fields.BannerTitle])</h2>
+
+                            </div>
+
+                            <div class="d-flex align-items-end col-feature justify-content-center text-sm-left text-center">
+
+                                <div class="col-data p-0 pr-sm-5">
+
+                                    <h5 class="data-label">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.PriceText]</h5>
+
+                                    <div class="data-value d-flex justify-content-md-start justify-content-center"><i class="fa fa-rupee mr-2"></i>@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.Price]</div>
+
+                                </div>
+
+                                <div class="col-data p-0 pr-sm-5">
+
+                                    <h5 class="data-label">Est. MPG <span class="d-none d-xl-inline">City/Highway</span></h5>
+
+                                    <div class="data-value d-flex justify-content-md-start justify-content-center"> @CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.MPGValue]</div>
+
+                                </div>
+
+                                <div class="col-data p-0 pr-sm-5">
+
+                                    <h5 class="data-label">Seating <span class="d-none d-xl-inline">For at</span></h5>
+
+                                    <div class="data-value d-flex justify-content-md-start justify-content-center">@CurrentItem.Fields[FordIndia.Feature.Navigation.Templates.Subcategory.Fields.SeatingCount]</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 }
 <!--[/Overview]-->

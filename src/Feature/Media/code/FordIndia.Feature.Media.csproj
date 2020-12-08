@@ -115,6 +115,7 @@
     <Content Include="Views\Media\BannerTiles.cshtml" />
     <Content Include="Views\Media\HeroBanner.cshtml" />
     <Content Include="Views\Media\NameplateBanner.cshtml" />
+    <Content Include="Views\Media\TollFreeBanner.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
