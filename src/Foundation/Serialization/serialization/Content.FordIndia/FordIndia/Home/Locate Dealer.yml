@@ -1,0 +1,21 @@
+﻿---
+ID: "f505c72a-5f14-4b1a-a26a-628361831ab0"
+Parent: "0d17fede-b400-41a8-b306-72ce37f12548"
+Template: "0a02ac85-fbc1-44b1-8fc8-9c9771b0cc2b"
+Path: /sitecore/content/FordIndia/Home/Locate Dealer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201203T100012Z
+    - ID: "605a1eb1-34ba-4d8a-a8ca-1ee6940fb665"
+      Hint: Header
+      Value: Locate the <br>nearest dealer(s)
+    - ID: "97db06a0-2255-42a6-9855-d10071127b47"
+      Hint: Image
+      Value: |
+        <image mediaid="{65CDFBED-648B-4099-9D82-91FE78F62873}" />

@@ -1,0 +1,14 @@
+﻿---
+ID: "a6bf7a17-6e31-4f57-bdd4-7786a83fee34"
+Parent: "6632be4a-cd7d-4449-8a5f-8888a459d7b5"
+Template: "1361a3e5-d15e-43ab-8d0b-b02c3fb65ab2"
+Path: /sitecore/content/FordIndia/Global/Media/Three coloum/Endevour
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201028T081218Z

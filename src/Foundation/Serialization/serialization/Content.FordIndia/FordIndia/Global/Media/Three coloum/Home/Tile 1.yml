@@ -1,0 +1,29 @@
+﻿---
+ID: "3e162656-fc7d-4e56-8cfc-ef02900f9441"
+Parent: "75ff0e5b-b1fa-492f-961e-3b1c26d16ad9"
+Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
+Path: /sitecore/content/FordIndia/Global/Media/Three coloum/Home/Tile 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201028T081342Z
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{ED9A49DD-8DD4-42D0-B362-77E9BF22C417}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
+      Hint: MediaTitle
+      Value: Ford Service <br>Price Promise
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{ED9A49DD-8DD4-42D0-B362-77E9BF22C417}" />

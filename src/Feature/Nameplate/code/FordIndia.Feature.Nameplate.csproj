@@ -94,7 +94,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\Nameplate.js" />
     <Content Include="Views\Nameplate\LeftImageRightbullet.cshtml" />
+    <Content Include="Views\Nameplate\AjaxTest.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

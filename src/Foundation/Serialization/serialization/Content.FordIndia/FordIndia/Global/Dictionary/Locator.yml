@@ -1,0 +1,21 @@
+﻿---
+ID: "e281d26d-80f9-4690-8d5e-770467cabbbb"
+Parent: "a48b4950-6f66-46bd-b616-480425d610ee"
+Template: "98e4bdc6-9b43-4eb2-baa3-d4303c35852e"
+Path: /sitecore/content/FordIndia/Global/Dictionary/Locator
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}
+    {EC4DD3F2-590D-404B-9189-2A12679749CC}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201208T115743Z

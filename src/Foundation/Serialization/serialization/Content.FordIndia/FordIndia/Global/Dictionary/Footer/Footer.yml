@@ -1,0 +1,21 @@
+﻿---
+ID: "0844b066-90cb-4f7a-9fc5-86f74aa99b07"
+Parent: "549bad05-e97d-45de-9a0f-e4c602fbeec2"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/FordIndia/Global/Dictionary/Footer/Footer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201118T092747Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: 2020 Ford India Motor Company

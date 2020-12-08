@@ -16,6 +16,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20201102T111220Z
+    - ID: "66e6c41a-b190-48a9-8ff4-c100f667ec1e"
+      Hint: Footer Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{53ED2C60-D3BE-4867-A795-F90B8AB7B39B}" />
     - ID: "6be6a780-ac62-454a-8700-75b0508e594e"
       Hint: Footer Title
       Value: Endeavour

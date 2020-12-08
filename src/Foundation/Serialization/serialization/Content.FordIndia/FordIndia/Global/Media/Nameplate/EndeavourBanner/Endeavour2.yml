@@ -9,13 +9,25 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001e9038-7573-4627-877f-06c4099e05d8"
+      Hint: IsVideo
+      Type: Checkbox
+      Value: 1
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20201111T094657Z
+    - ID: "2628705d-9434-4448-978c-c3bf166fa1eb"
+      Hint: MediaVideoLink
+      Value: |
+        <link linktype="media" target="" id="{4B6C03E0-0967-4C57-B66E-BB029D425703}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "83aaedd3-19e3-4e0c-b2b3-fe0ef5a10412"
+      Hint: IsVideo
+      Type: Checkbox
+      Value: 1
     - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
       Hint: MediaImage
       Value: |

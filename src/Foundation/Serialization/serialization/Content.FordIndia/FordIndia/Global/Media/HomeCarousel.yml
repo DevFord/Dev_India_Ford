@@ -4,6 +4,10 @@ Parent: "ea13174a-b43e-4f68-b474-b41188771a9e"
 Template: "c18d3794-d126-4548-bfc8-89358de6e9c1"
 Path: /sitecore/content/FordIndia/Global/Media/HomeCarousel
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 Languages:
 - Language: da
   Versions:

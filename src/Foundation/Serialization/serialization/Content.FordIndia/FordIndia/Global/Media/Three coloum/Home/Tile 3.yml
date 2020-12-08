@@ -1,0 +1,29 @@
+﻿---
+ID: "ca58071e-6384-4923-b69a-efe61a619bc6"
+Parent: "75ff0e5b-b1fa-492f-961e-3b1c26d16ad9"
+Template: "f0369e1a-9030-4a05-a09c-ef09b664ed27"
+Path: /sitecore/content/FordIndia/Global/Media/Three coloum/Home/Tile 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201028T081342Z
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{5DD73B4C-63CC-49EB-A424-FFBEC8FC8B3D}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
+      Hint: MediaTitle
+      Value: Fun to <br>Drive
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{5DD73B4C-63CC-49EB-A424-FFBEC8FC8B3D}" />

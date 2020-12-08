@@ -1,0 +1,18 @@
+﻿---
+ID: "75ff0e5b-b1fa-492f-961e-3b1c26d16ad9"
+Parent: "6632be4a-cd7d-4449-8a5f-8888a459d7b5"
+Template: "1361a3e5-d15e-43ab-8d0b-b02c3fb65ab2"
+Path: /sitecore/content/FordIndia/Global/Media/Three coloum/Home
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201028T081218Z

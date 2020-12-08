@@ -24,6 +24,9 @@ namespace FordIndia.Feature.Media
             public static ID MediaImageFieldID => new ID("{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}");
             public static ID LinkFieldID => new ID("{A68CA6C2-46BE-4FCF-A3F7-AA8A849AAE68}");
             public static ID MobileImage => new ID("{42284A58-25F9-47F7-A9DB-13826299EF07}");
+            public static ID IsVideo => new ID("{83AAEDD3-19E3-4E0C-B2B3-FE0EF5A10412}");
+            public static ID ButtonText => new ID("{0E39CF5F-7E4B-496E-A25D-DC47FBA2F6C2}");
+
         }
         public struct MediaGroup
         {
@@ -47,6 +50,14 @@ namespace FordIndia.Feature.Media
                 public static readonly ID BannerTitle = new ID("{FE06932D-75CD-400D-AD9B-45576DBCB922}");
                 public static readonly ID BannerImage = new ID("{AAF04878-48DF-4C12-ADA5-2AD39C738729}");
                 public static readonly ID CallToAction = new ID("{58B899F9-4BBC-4675-859A-3B35F828D415}");
+            }
+        }
+        public struct _HasMediaVideoItem
+        {
+            public static readonly ID ID = new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
+            public struct Fields
+            {
+                public static readonly ID MediaVideoLink = new ID("{2628705D-9434-4448-978C-C3BF166FA1EB}");
             }
         }
 

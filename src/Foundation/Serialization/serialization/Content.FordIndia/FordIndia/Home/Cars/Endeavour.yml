@@ -12,36 +12,32 @@ SharedFields:
   Hint: __Renderings
   Type: layout
   Value: |
-    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1"
+      s:xsd="http://www.w3.org/2001/XMLSchema">
       <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{1D517D38-25AF-4702-9340-807ADCBFF2DE}">
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          id="{3ED979E5-AB17-40EE-AA78-838907D5F1FB}"
-          ph="header"
-          uid="{B641BB02-ECC7-458E-B31D-E9A2B9BE789A}" />
+          uid="{781D7837-45D1-4624-9A74-72A1C78547F2}">
+          <p:d />
+        </r>
         <r
-          id="{21B86F93-F4B1-467D-A676-FE32C4144CEC}"
-          ph="PhNavigationBar"
-          uid="{BAA85F72-6809-48CD-B81C-28D01923E150}" />
+          uid="{C077295F-CBB4-4E09-AE7B-F43E0CAA6720}"
+          p:after="r[@uid='{4863D906-B316-476C-8682-4715F4C4C350}']"
+          s:ds="{3ADD4A97-00DF-494C-B4D6-65446B1CF401}"
+          s:id="{9A71EDB7-E1D6-4CDD-896B-0F64E8753978}"
+          s:par=""
+          s:ph="main" />
         <r
-          id="{44954101-6B69-43AA-85AF-308A5167FF93}"
-          ph="PhRightNavigationBar"
-          uid="{4863D906-B316-476C-8682-4715F4C4C350}" />
+          uid="{28140492-F12F-4081-8936-123350FE1FA5}"
+          p:after="r[@uid='{59B1A707-A972-45DD-AC68-42BD3440D4FF}']"
+          s:ds="{A6BF7A17-6E31-4F57-BDD4-7786A83FEE34}"
+          s:id="{D8550BD5-4DAE-46C5-BF9B-FDEEE25DAA0B}"
+          s:par=""
+          s:ph="main" />
         <r
-          ds="{3ADD4A97-00DF-494C-B4D6-65446B1CF401}"
-          id="{9A71EDB7-E1D6-4CDD-896B-0F64E8753978}"
-          par=""
-          ph="main"
-          uid="{781D7837-45D1-4624-9A74-72A1C78547F2}" />
-        <r
-          id="{D27897F7-3D6A-4788-A2E1-3D25DC4582B4}"
-          ph="footer"
-          uid="{955AD45C-FEB1-4F4D-B727-06D20964B7F8}" />
-        <r
-          id="{E77B703F-38ED-46C0-A8A2-3D619ECC6D68}"
-          ph="main"
-          uid="{59B1A707-A972-45DD-AC68-42BD3440D4FF}" />
+          uid="{955AD45C-FEB1-4F4D-B727-06D20964B7F8}"
+          p:after="*[1=2]" />
       </d>
     </r>
 Languages:
@@ -52,6 +48,13 @@ Languages:
     - ID: "09e7cae7-4983-4de4-980a-076f5909b480"
       Hint: Price
       Value: 67,00,000
+    - ID: "11dc1f44-c6a8-44a0-8f62-d3e6f07583c4"
+      Hint: RightBulletList
+      Type: Treelist
+      Value: |
+        {5E65D004-5EEF-406F-BE2F-40E63DB7CA07}
+        {A684E5F6-DD63-4774-839E-A132941C8426}
+        {0A6C5E8E-135F-4DA8-8757-EE5182804A50}
     - ID: "14b84ec9-2b90-4dbb-98f8-b0ef51845e65"
       Hint: SeatingCount
       Value: 7
@@ -67,6 +70,10 @@ Languages:
     - ID: "26248148-7b6b-4147-91ca-c93d439b6ff9"
       Hint: Header
       Value: Peace of Mind
+    - ID: "2de1e7e7-c8fa-4b13-bab3-e44843dc8565"
+      Hint: HeaderImage
+      Value: |
+        <image mediaid="{890E393B-EEE5-48BC-B80D-EA3E660CEFF0}" />
     - ID: "3b91895f-1219-4936-a0fb-79cb348b69a9"
       Hint: SubCategoryThumbnail
       Value: |
