@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="Js\Locater.js" />
     <Content Include="Views\Locator\Index.cshtml" />
+    <Content Include="Views\Locator\DealerLocator.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

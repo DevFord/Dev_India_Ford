@@ -81,5 +81,14 @@ namespace FordIndia.Feature.Navigation
                 public static readonly ID Link = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
             }
         }
+        public struct ScrollNavItems
+        {
+            public static readonly ID ID = new ID("{0D7B46D8-DF86-4AE9-BB19-0A8E9909AF23}");
+            public struct Fields
+            {
+                public static readonly ID Title = new ID("{D3BC94D9-5A7B-4B00-8A90-9017F186294A}");
+                public static readonly ID LinkID= new ID("{95C668E2-97DF-41C9-9D90-2787F6012948}");
+            }
+        }
     }
 }

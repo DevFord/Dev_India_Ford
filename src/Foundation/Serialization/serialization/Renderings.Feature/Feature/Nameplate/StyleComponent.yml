@@ -1,0 +1,25 @@
+﻿---
+ID: "ecb88ddc-87bf-4a54-b2fa-2212301bbe83"
+Parent: "7eb2881f-cb7f-4f0c-b333-93e9f43a2ebf"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Nameplate/StyleComponent
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: StyleComponent
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: FordIndia.Feature.Nameplate.Controllers.NameplateController,FordIndia.Feature.Nameplate
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210112T065257Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

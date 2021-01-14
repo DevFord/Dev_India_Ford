@@ -1,0 +1,32 @@
+﻿---
+ID: "daa8d10f-0611-45be-87f0-437fa393f541"
+Parent: "f2a75a98-caaa-46e9-bfbf-037d897105d3"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: "/sitecore/content/FordIndia/Global/3-4Component/Endeavour/Image2"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201217T090134Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{26BB0CD6-6178-440A-BFD4-1FFBE6843B33}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: "Hands-Free Lift Gate"
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: Simply trigger the sensor with your leg and the lift gate will open and close on its own.
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{26BB0CD6-6178-440A-BFD4-1FFBE6843B33}" />

@@ -1,0 +1,44 @@
+﻿@*@model IEnumerable<FordIndia.Feature.Navigation.Models.BreadcrumbNav>*@
+@model FordIndia.Feature.Navigation.Models.BreadcrumbNav
+@using FordIndia.Feature.Navigation.Models
+
+<!--[Breadcrumb-Nav]-->
+@if (Model != null)
+{
+    <nav class="breadcrumb-nav fixed-top">
+
+        <ul class="nav flex-nowrap">
+
+            @foreach (var breadNavitem in Model.navItems)
+            {
+                if (breadNavitem != null && breadNavitem.ShowMenu == true && breadNavitem.ShowChildren == true)
+                {
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="javascript:void(0);" data-toggle="dropdown"><i class="fa fa-chevron-down mr-2"></i> @breadNavitem.TitleName</a>
+
+                        <div class="dropdown-menu">
+                            @if (breadNavitem.ShowChildren == true)
+                            {
+                                foreach (var item in Model.navchildItems)
+                                {
+                                    <a href="@item.childLink" class="dropdown-item active">@item.childTitleName</a>
+                                }
+                            }
+                        </div>
+
+                    </li>
+
+
+                }
+                else if (breadNavitem != null && breadNavitem.ShowMenu == true)
+                {
+                    <li class="nav-item"><a class="nav-link" href="@breadNavitem.Link">@breadNavitem.TitleName</a></li>
+                }
+            }
+
+
+        </ul>
+
+    </nav>
+}
+<!--[/Breadcrumb-Nav]-->

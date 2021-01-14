@@ -15,6 +15,10 @@ Languages:
     - ID: "302c9f8d-f703-4f76-a4ab-73d222648232"
       Hint: MediaDescription
       Value: "When it comes to the price of car parts, Ford keeps your pockers happy! We work had every day to localise and make the spare parts readily, available, so you save more"
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{7E692DA8-9BE9-4772-860A-107C4E817902}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -25,4 +29,4 @@ Languages:
     - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
       Hint: MediaImage
       Value: |
-        <image mediaid="{729AC78F-00DF-4217-94C9-34DE91574095}" />
+        <image mediaid="{9D73398D-333E-46CC-8279-90224683E449}" />

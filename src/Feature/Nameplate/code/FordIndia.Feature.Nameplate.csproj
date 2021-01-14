@@ -97,6 +97,7 @@
     <Content Include="js\Nameplate.js" />
     <Content Include="Views\Nameplate\LeftImageRightbullet.cshtml" />
     <Content Include="Views\Nameplate\AjaxTest.cshtml" />
+    <Content Include="Views\Nameplate\StyleComponent.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,7 +116,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Features\code\FordIndia.Feature.Features.csproj">
+      <Project>{d0a323b3-1238-4bb8-8b1b-44ada3552573}</Project>
+      <Name>FordIndia.Feature.Features</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

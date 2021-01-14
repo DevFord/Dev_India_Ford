@@ -1,0 +1,25 @@
+﻿---
+ID: "ffeb4ed5-2ee7-4844-9750-df5f08eaf839"
+Parent: "0d17fede-b400-41a8-b306-72ce37f12548"
+Template: "fa5a86c6-b0b4-47d8-8d5d-8b0f161a2b97"
+Path: /sitecore/content/FordIndia/Home/Discover Ford
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Discover Ford
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201210T094814Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
+      Hint: Link
+      Value: |
+        <link linktype="javascript" url="javascript:void(0);" anchor="" />

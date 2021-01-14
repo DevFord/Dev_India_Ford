@@ -15,6 +15,10 @@ Languages:
     - ID: "302c9f8d-f703-4f76-a4ab-73d222648232"
       Hint: MediaDescription
       Value: When it comes to Ford Service, believe in facts and not impressions. Here is the Ford EcoSport's periodic maintenance table for you to see & Judge for yourself
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{6E51B4A0-E274-4549-B545-5DEEDD1EBCF9}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -25,4 +29,4 @@ Languages:
     - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
       Hint: MediaImage
       Value: |
-        <image mediaid="{860ED7E8-3A7D-4A05-A0F8-2C9F703BD17C}" />
+        <image mediaid="{A17E6084-3F39-4158-9EB8-89A809A7366B}" />

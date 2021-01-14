@@ -15,7 +15,7 @@ Languages:
     - ID: "66e6c41a-b190-48a9-8ff4-c100f667ec1e"
       Hint: Footer Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{6147B66D-5658-4DE8-96DB-5AACB44D202D}" />
+        <link id="{6147B66D-5658-4DE8-96DB-5AACB44D202D}" querystring="" text="" anchor="" title="" class="" url="/FordIndia/Home/Discover Ford/customer relationship centre" linktype="internal" />
     - ID: "6be6a780-ac62-454a-8700-75b0508e594e"
       Hint: Footer Title
       Value: Contact Us

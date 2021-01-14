@@ -1,0 +1,34 @@
+﻿@model FordIndia.Feature.Features.Models.FeaturesDetails
+<!--[style]-->
+@if (Model != null)
+{
+    <section class="spy-style" id="style">
+        <div class="container">
+            <header class="title-head mt-5 mb-4">
+                <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+                <h2 class="title">@Model.Title</h2>
+            </header>
+        </div>
+        <div class="swiper-container style-swiper pagination-static">
+            <div class="swiper-wrapper">
+                @foreach (var item in Model.ImageList)
+                {
+                    <div class="swiper-slide card-caption">
+                        <picture class="swiper-img">
+                            <source srcset="@item.Image" media="(min-width: 576px)">
+                            <img src="@item.MobileImg" alt="">
+                        </picture>
+                        <div class="col-text text-white">
+                            <div class="title-head">
+                                <h3 class="title">@item.Heading</h3>
+                                <p>@item.desc </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+}
+<!--[/style]-->

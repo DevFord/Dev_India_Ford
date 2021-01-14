@@ -1,0 +1,20 @@
+﻿---
+ID: "f2a75a98-caaa-46e9-bfbf-037d897105d3"
+Parent: "870936fb-820f-42cd-bb15-cb8919517cf1"
+Template: "b2418257-ca45-4c40-bc90-bf2edbb16f01"
+Path: "/sitecore/content/FordIndia/Global/3-4Component/Endeavour"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210106T073834Z
+    - ID: "7eacf3be-3ef8-4c13-987c-520954fc19d0"
+      Hint: Title
+      Value: Play Smart. Why Follow.
+    - ID: "a2d1da6f-77e0-42d3-b327-8f9891636ad2"
+      Hint: BlueTitle
+      Value: Key Features

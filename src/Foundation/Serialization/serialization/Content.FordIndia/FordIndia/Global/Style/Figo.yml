@@ -1,0 +1,25 @@
+﻿---
+ID: "1cf7bf60-b7b7-47e4-95f1-50d91fd283c4"
+Parent: "679201fa-b330-4bb9-9e9f-70e46f66aaae"
+Template: "b2418257-ca45-4c40-bc90-bf2edbb16f01"
+Path: /sitecore/content/FordIndia/Global/Style/Figo
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{FB927782-ECDB-4D55-8CC0-C6AA55D58E81}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210112T080112Z
+    - ID: "7eacf3be-3ef8-4c13-987c-520954fc19d0"
+      Hint: Title
+      Value: Eye Candy
+    - ID: "a2d1da6f-77e0-42d3-b327-8f9891636ad2"
+      Hint: BlueTitle
+      Value: STYLE

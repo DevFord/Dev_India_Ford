@@ -1,0 +1,28 @@
+﻿---
+ID: "7acbf448-65d9-4417-ab04-c36d49c3a4b9"
+Parent: "f2a9e60b-8663-49aa-a6f4-8e2337918ef5"
+Template: "0d7b46d8-df86-4ae9-bb19-0a8e9909af23"
+Path: /sitecore/content/FordIndia/Global/Navigation/Scroll Navigation/Style
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 38
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201222T075100Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "95c668e2-97df-41c9-9d90-2787f6012948"
+      Hint: LinkID
+      Value: style
+    - ID: "d3bc94d9-5a7b-4b00-8a90-9017f186294a"
+      Hint: Title
+      Value: Style
