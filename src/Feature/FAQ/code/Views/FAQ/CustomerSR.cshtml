@@ -1,0 +1,38 @@
+﻿@model IEnumerable<FordIndia.Feature.FAQ.Models.CorporateSR>
+<!--[csr-List]-->
+@if (Model != null)
+{
+    <section class="section sec-csr">
+
+        <div class="container">
+            <div class="csr-list">
+                <div class="accordion" id="csrlist">
+                    @foreach (var item in Model)
+                    {
+                        <div class="card">
+
+                            <div class="card-header" id="heading1">
+
+                                <button type="button" data-toggle="collapse" data-target="#@item.CollapseID">@item.Header</button>
+
+                            </div>
+
+                            <div id="@item.CollapseID" class="collapse show" aria-labelledby="heading1" data-parent="#csrlist">
+
+                                <div class="card-body">
+
+                                    @Html.Raw(item.Accordian)
+                                </div>
+
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--[/csr-List]-->
+}

@@ -1,0 +1,28 @@
+﻿---
+ID: "d2b54e60-6be5-44cb-8f1e-db77b47c42e1"
+Parent: "1cf7bf60-b7b7-47e4-95f1-50d91fd283c4"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Style/Figo/Figo1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210112T080318Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{E82BCB26-359E-448B-B2D1-27A583AC0ED4}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Stylish interiors
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: Color coordinated seats, matching door accents and charcoal black dashboard.
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{882ADC21-3FA2-4238-A8E2-A88FE2989AE9}" />

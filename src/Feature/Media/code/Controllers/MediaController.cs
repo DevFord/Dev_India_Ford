@@ -179,5 +179,11 @@ namespace FordIndia.Feature.Media.Controllers
             }
             return new EmptyResult();
         }
+        public ActionResult StyleCarousel()
+        {
+             
+            return View();
+
+        }
     }
 }

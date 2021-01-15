@@ -1,0 +1,40 @@
+﻿@model IEnumerable< FordIndia.Feature.Navigation.Models.ScrollNav>
+
+@if (Model != null)
+{
+    <!--[scrollspy-nav]-->
+
+    <nav class="scrollspy-nav d-xl-flex d-none align-items-center">
+
+        <ul class="list-unstyled m-0 p-0">
+            @foreach(var nav in Model)
+            {
+                <li class="nav-item"><a class="nav-link" href="#@nav.Link"><span>@nav.Title</span></a></li>
+
+                @*<li class="nav-item"><a class="nav-link" href="#design"><span>Design</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#features"><span>Key Features</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#safety"><span>Safety</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#technology"><span>Technology</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#style"><span>Style</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#fun"><span>Fun to Drive</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#peace"><span>Peace of Mind</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#reviews"><span>Reviews</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#compare"><span>Compare</span></a></li>*@
+            }
+
+
+
+        </ul>
+
+    </nav>
+
+    <!--[/scrollspy-nav]-->
+}

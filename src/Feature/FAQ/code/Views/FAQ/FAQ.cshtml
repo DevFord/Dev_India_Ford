@@ -6,83 +6,90 @@
 @using Sitecore.Mvc
 
 @{
-    string currentURL = Request.Url.ToString();
-}
+    // string currentURL = Request.Url.ToString();
+    //var id = string.Empty;
+    //var currentItem = Sitecore.Context.Item;
+    //if (currentItem != null)
+    //{
+    //    id = currentItem.Fields[Templates.FAQFilterItems.Fields.TabId].Value;
+    //}
 
-<!--[faq-List]-->
-<section class="section sec-faq">
-    <div class="container">
-        <!--[Filter]-->
-        <div class="filter-bar d-flex mb-4">
-            <nav class="filter-bar-tab">
-                <ul class="nav nav-tabs">
-                    @if (Model.FAQfilterList != null && Model.FAQfilterList.Count > 0)
-                    {
-                        foreach (Item categoryItem in Model.FAQfilterList)
+}
+@if (Model.FAQfilterList != null && Model.FAQfilterList.Count > 0)
+{
+    <!--[faq-List]-->
+    <section class="section sec-faq">
+        <div class="container">
+            <!--[Filter]-->
+            <div class="filter-bar d-flex mb-4">
+                <nav class="filter-bar-tab">
+                    <ul class="nav nav-tabs">
+
+                        @foreach (Item categoryItem in Model.FAQfilterList)
                         {
                             string FilterName = categoryItem.Fields[Templates.FAQFilterItems.Fields.Name].Value;
-                            <li class="nav-item"><a class="nav-link " href="@currentURL" data-toggle="tab">@FilterName</a></li>
+                            <li class="nav-item"><a class="nav-link " href="#@Html.Sitecore().Field(Templates.FAQFilterItems.Fields.TabId.ToString(), categoryItem)" data-toggle="tab">@FilterName</a></li>
 
                         }
-
-
-                    }
-
-                </ul>
-            </nav>
-        </div>
-        <!--[/Filter]-->
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="buying-ford">
+                    </ul>
+                </nav>
+            </div>
+            <!--[/Filter]-->
+            <div class="tab-content">
                 @foreach (var faqFilter in Model.FAQfilterList)
                 {
+                    var Parent = faqFilter.Fields[Templates.FAQFilterItems.Fields.TabId].Value;
+                    var parentId = Parent.Replace("-", "");
 
-                    <header class="title-head pb-2 pt-4">
+                    <div class="tab-pane fade show active" id="@Html.Sitecore().Field(Templates.FAQFilterItems.Fields.TabId.ToString(), faqFilter)">
+                        @if (Parent != null)
+                        {
+                            <header class="title-head pb-2 pt-4">
 
-                        <h2 class="title blue">@Html.Sitecore().Field(Templates.FAQFilterItems.Fields.Name.ToString(), faqFilter)</h2>
+                                <h2 class="title blue">@Html.Sitecore().Field(Templates.FAQFilterItems.Fields.Name.ToString(), faqFilter)</h2>
 
-                    </header>
+                            </header>
+                        }
+                        @{
+                            FAQItems FAQItems = Model.FAQList.Find(x => x.FAQFilter.Name.Equals(faqFilter.Name));
+                            List<Item> QueAnsList = FAQItems.FAQ;
+                        }
 
-              
-                  
-                   FAQItems FAQItems = Model.FAQList.Find(x => x.FAQFilter.Name.Equals(faqFilter.Name));
-                   List<Item> QueAnsList = FAQItems.FAQ;
-                   
-                    <div class="faq-list">
-                        <div class="accordion" id="buyingford">
+                        <div class="faq-list">
+                            <div class="accordion" id="@parentId">
 
-                            @foreach (var faqList in QueAnsList)
-                            {
+                                @foreach (var faqList in QueAnsList)
+                                {
 
-                                <div class="card">
+                                    <div class="card">
 
-                                    <div class="card-header" id="heading1">
+                                        <div class="card-header" id="heading1">
 
-                                        <button type="button" data-toggle="collapse" data-target="#collapse1">@Html.Sitecore().Field(Templates.FAQ.Fields.Question.ToString(), faqList)</button>
+                                            <button type="button" data-toggle="collapse" data-target="#@Html.Sitecore().Field(Templates.StyleItems.Fields.CollapseId.ToString(), faqList)">@Html.Sitecore().Field(Templates.FAQ.Fields.Question.ToString(), faqList)</button>
 
-                                    </div>
+                                        </div>
 
-                                    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#buyingford">
+                                        <div id="@Html.Sitecore().Field(Templates.StyleItems.Fields.CollapseId.ToString(), faqList)" class="collapse show" aria-labelledby="heading1" data-parent="#@parentId">
 
-                                        <div class="card-body">
+                                            <div class="card-body">
 
-                                            <p>@Html.Sitecore().Field(Templates.FAQ.Fields.Answer.ToString(), faqList)</p>
+                                                <p>@Html.Sitecore().Field(Templates.FAQ.Fields.Answer.ToString(), faqList)</p>
+
+                                            </div>
 
                                         </div>
 
                                     </div>
-
-                                </div>
-                            }
-
-
+                                }
+                            </div>
                         </div>
                     </div>
-                   }
+
+
+                }
             </div>
 
         </div>
-
-    </div>
-</section>
-<!--[/faq-List]-->
+    </section>
+    <!--[/faq-List]-->
+}

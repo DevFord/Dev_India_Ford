@@ -1,0 +1,86 @@
+﻿---
+ID: "61fd067d-751b-47b1-a6fd-ebd1ac337f78"
+Parent: "ffeb4ed5-2ee7-4844-9750-df5f08eaf839"
+Template: "88f46b65-1b45-4339-b452-ead039ad2eff"
+Path: /sitecore/content/FordIndia/Home/Discover Ford/csr
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{63B51DD1-5F64-4215-9F18-0541DE78E315}">
+          <p:d />
+        </r>
+        <r
+          uid="{F854F0A7-DE1D-4B0D-BBE2-CE78BB84A392}"
+          p:after="r[@uid='{435361DF-9D01-45A1-B292-3A0A105CFA3B}']" />
+        <r
+          uid="{B47C12AD-FC10-468F-B1E4-BC9A8EC8BEB1}"
+          p:after="r[@uid='{F854F0A7-DE1D-4B0D-BBE2-CE78BB84A392}']"
+          s:ds="{7F8C38F1-BC86-4047-B6F1-DA64C4B6D8BE}"
+          s:id="{87B87E94-C824-4944-9FE2-1C94185B62E8}"
+          s:par=""
+          s:ph="main" />
+        <r
+          uid="{098BA306-5B74-41D6-9DE1-6E2EA9608E13}"
+          p:after="r[@uid='{B47C12AD-FC10-468F-B1E4-BC9A8EC8BEB1}']"
+          s:ds="{A4F1F3B0-2BE6-4C12-8CD9-572F7C0BB91C}"
+          s:id="{5B7BF1ED-2707-4B0E-AF32-519CA6D4D043}"
+          s:par=""
+          s:ph="main" />
+        <r
+          uid="{0B35B2E9-2A4A-4C64-86BE-2980D3E775F8}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{B48940AB-CF31-4237-840F-138C4CB5C509}"
+          s:par=""
+          s:ph="main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Corporate Social Responsibility
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201210T102505Z
+    - ID: "42284a58-25f9-47f7-a9db-13826299ef07"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{F902DA45-5F77-4477-99BA-A6DDEA71FE7A}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "63dda48b-b0cb-45a7-9a1b-b26ddb41009b"
+      Hint: MediaTitle
+      Value: Corporate Social Responsibility
+    - ID: "6673e33d-96b3-4f72-8316-08b11190ac8e"
+      Hint: Title
+      Value: Corporate Social Responsibility
+    - ID: "768d36db-cb38-411c-8758-8ec19f2539d0"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{0D17FEDE-B400-41A8-B306-72CE37F12548}" />
+    - ID: "9f51dead-ad6e-41c2-9759-7be17eb474a4"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{A8C08308-2D24-4ECD-B82C-999522F64A91}" />
+    - ID: "e4549837-b4fb-4845-9b49-1cb8a39fa13d"
+      Hint: Image
+      Value: |
+        <image mediaid="{4DC0A5FE-BDD7-471D-8B52-9CB72C35CC2C}" />
+    - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{61FD067D-751B-47B1-A6FD-EBD1AC337F78}" />

@@ -12,7 +12,7 @@ namespace FordIndia.Feature.FAQ.Models
     public class FAQ
     {
         public List<Item> FAQfilterList { get; set; }
-        public List<Item> CategoryList { get; set; }
+        //public List<Item> CategoryList { get; set; }
         public List<FAQItems> FAQList { get; set; }
         public Item CurrentItem { get; set; }
         public FAQ()

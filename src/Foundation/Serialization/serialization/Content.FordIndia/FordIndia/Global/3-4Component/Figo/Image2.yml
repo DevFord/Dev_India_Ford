@@ -1,0 +1,32 @@
+﻿---
+ID: "bfb7099a-b5ab-48b4-87c7-ded2014d7fa6"
+Parent: "76749e2b-47d2-4366-9503-e9fe15ca600b"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: "/sitecore/content/FordIndia/Global/3-4Component/Figo/Image2"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201217T090134Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{221A039E-EA42-4E4B-A885-40D576D0BC07}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Touch & Go
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: "Infotainment Touchscreen 17.78 cm (7.0) with in-built navigation. Now drive your music."
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{FB02BCDC-427E-475A-B340-963E434DA848}" />

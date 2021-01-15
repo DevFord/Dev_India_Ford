@@ -1,0 +1,28 @@
+﻿---
+ID: "993da0e3-8d7f-4071-a015-5780a1897202"
+Parent: "1cf7bf60-b7b7-47e4-95f1-50d91fd283c4"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Style/Figo/Figo2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210112T080406Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{786DC263-989E-4C4B-A9A6-319A96E0920E}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Stand Apart
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: R15 sporty alloy wheels that make your presence felt.
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{99825C3D-5FB7-4AD4-AE91-1AD4E07E0567}" />

@@ -1,0 +1,29 @@
+﻿---
+ID: "7683a948-974b-400b-a39a-4c53da0fa4d8"
+Parent: "7f8c38f1-bc86-4047-b6f1-da64c4b6d8be"
+Template: "a1cba309-d22b-46d5-80f8-2972c185363f"
+Path: /sitecore/content/FordIndia/Global/Navigation/Breadcrumb Navigation/Corporate/About Ford
+DB: master
+SharedFields:
+- ID: "68016087-aa00-45d6-922a-678475c50d4a"
+  Hint: ShowChildren
+  Type: Checkbox
+  Value: 0
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: About Ford
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201210T121654Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

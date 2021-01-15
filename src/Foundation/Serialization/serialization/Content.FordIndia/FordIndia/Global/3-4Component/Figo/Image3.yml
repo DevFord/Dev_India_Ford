@@ -1,0 +1,32 @@
+﻿---
+ID: "db23acb0-aa55-4300-a44d-d578440b9ffd"
+Parent: "76749e2b-47d2-4366-9503-e9fe15ca600b"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: "/sitecore/content/FordIndia/Global/3-4Component/Figo/Image3"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201217T090134Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{B936A8CF-4C39-40B2-BD58-BB8B77EDABBC}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Just Chill
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: "With class-leading Automatic Climate Control get the perfect temperature inside your Ford."
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{7F2362B6-C8F0-4099-B728-432FA2CDE601}" />

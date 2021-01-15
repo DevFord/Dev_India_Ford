@@ -13,17 +13,21 @@ SharedFields:
   Type: layout
   Value: |
     <r xmlns:p="p" xmlns:s="s"
-      p:p="1"
-      s:xsd="http://www.w3.org/2001/XMLSchema">
+      p:p="1">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{8B145F60-F413-4D89-9CB6-3A66F4F516A6}"
-          p:after="*[1=2]"
-          s:ds="{58D643CB-E104-468E-B6A5-B12C134213C6}"
-          s:id="{B0584148-3061-488D-9657-DB8927FADC17}"
-          s:par=""
-          s:ph="main" />
+          uid="{62588699-3FC9-41AE-9CAD-EE213F4C52F8}"
+          s:ds="{76749E2B-47D2-4366-9503-E9FE15CA600B}"
+          s:par="" />
+        <r
+          uid="{00D70A19-059A-4FD2-934A-109331FCCCE1}"
+          s:ds="{F2A9E60B-8663-49AA-A6F4-8E2337918EF5}"
+          s:par="" />
+        <r
+          uid="{3FC0E38C-4062-4FDA-B93E-F8EF5B0E66DE}"
+          s:ds="{1CF7BF60-B7B7-47E4-95F1-50D91FD283C4}"
+          s:par="" />
       </d>
     </r>
 Languages:
@@ -55,11 +59,10 @@ Languages:
       Value: 20201023T075036Z
     - ID: "26248148-7b6b-4147-91ca-c93d439b6ff9"
       Hint: Header
-      Value: Peace of Mind
+      Value: Commited to serve you
     - ID: "2de1e7e7-c8fa-4b13-bab3-e44843dc8565"
-      Hint: HeaderImage
-      Value: |
-        <image mediaid="{890E393B-EEE5-48BC-B80D-EA3E660CEFF0}" />
+      Hint: BlueTitle
+      Value: Peace of Mind
     - ID: "3b91895f-1219-4936-a0fb-79cb348b69a9"
       Hint: SubCategoryThumbnail
       Value: |
@@ -70,9 +73,15 @@ Languages:
     - ID: "653c4419-e323-4fef-9cc1-d585c8b65b8b"
       Hint: MPGText
       Value: Est. MPG City/Highway
+    - ID: "7eacf3be-3ef8-4c13-987c-520954fc19d0"
+      Hint: Title
+      Value: Car Highlights
     - ID: "91e3213e-1fb1-4a60-9a9b-931f5041ade1"
       Hint: PriceText
       Value: Starting at
+    - ID: "a2d1da6f-77e0-42d3-b327-8f9891636ad2"
+      Hint: BlueTitle
+      Value: Key Features
     - ID: "f914da57-dfb8-4f62-9f77-13c492d0041c"
       Hint: MPGValue
       Value: 14/17

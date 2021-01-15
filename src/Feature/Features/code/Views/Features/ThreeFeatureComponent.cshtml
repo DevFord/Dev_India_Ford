@@ -1,0 +1,82 @@
+﻿@model FordIndia.Feature.Features.Models.FeaturesDetails
+@using Sitecore.Resources.Media
+@using Sitecore.Data.Items
+@using FordIndia.Feature.Features
+@using Sitecore.Data.Fields
+
+@{
+    var MobAlt = string.Empty;
+    var ImageAlt = string.Empty;
+    var Image = string.Empty;
+    var mobImage = string.Empty;
+    Item current = RenderingContext.Current.Rendering.Item;
+    //Item childItem = current.GetChildren();
+   
+}
+@if (Model != null)
+{
+    <!--[features]-->
+    <section class="spy-feature pt-5 bg-dark" id="features">
+
+        <div class="container">
+
+                <div class="title-head mb-4 text-white">
+
+                    <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+
+                    <h2 class="title">@Model.Title</h2>
+
+                </div>
+
+            </div>
+
+        <div class="swiper-container feature-slider grid-3">
+
+            <div class="swiper-wrapper">
+                @foreach (var item in Model.ImageList)
+                {
+                   
+                    var items = @Html.Sitecore().Field("Image", item);
+                    ImageField image = (ImageField)current.Fields[Templates.ImageItems.Fields.Image];
+                    Image = image.MediaItem != null && !string.IsNullOrEmpty(image.Value) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty;
+                    ImageAlt = image.Alt;
+                        <div class="swiper-slide card-caption">
+
+                            <picture class="swiper-img">
+
+                                <source srcset="@item.Image" media="(min-width: 768px)">
+
+                                <img src="@item.MobileImg" alt="@ImageAlt">
+
+                            </picture>
+                            
+                            <div class="col-text text-white">
+
+                                <div class="title-head pr-md-5">
+
+                                    <h3 class="title">@item.Heading</h3>
+
+                                    <p>@item.desc</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    }
+
+                
+            </div>
+
+            <div class="swiper-pagination d-md-none"></div>
+
+        </div>
+
+
+
+    </section>
+
+    <!--[/features]-->
+
+}

@@ -1,0 +1,30 @@
+﻿---
+ID: "aedf4354-20af-43ff-ad39-0981ec4d4992"
+Parent: "a4f1f3b0-2be6-4c12-8cd9-572f7c0bb91c"
+Template: "26cedc58-293c-4474-a8db-de92464f2eba"
+Path: /sitecore/content/FordIndia/Global/Accordian/Focus on Education
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "01086a14-d804-4b10-9d5f-1d14174892af"
+      Hint: Question
+      Value: Focus on Education
+    - ID: "037e34c4-f8a5-4118-b34e-46f75d975889"
+      Hint: Answer
+      Value: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque debitis facilis consequatur, maiores eligendi nemo aliquam ullam temporibus fugit, tempora et provident porro repellendus voluptate? Fuga excepturi, ullam reiciendis."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201212T134448Z
+    - ID: "4248cf40-75f2-49d1-aaee-fa6eeef2ca3e"
+      Hint: TabId
+      Value: "buying-ford"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8a3e2490-0a21-45d1-b931-b78a3aad350d"
+      Hint: CollapseId
+      Value: collapse1

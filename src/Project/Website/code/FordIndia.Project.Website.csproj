@@ -305,7 +305,9 @@
     <Content Include="Assets\images\tollfree-ico.png" />
     <Content Include="Assets\js\bootstrap-select.min.js" />
     <Content Include="Assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\js\isotope.pkgd.min.js" />
     <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\nameplate.js" />
     <Content Include="Assets\js\owl.carousel.min.js" />
     <Content Include="Assets\js\swiper-bundle.min.js" />
     <Content Include="Views\Website\Layouts\Default.cshtml" />

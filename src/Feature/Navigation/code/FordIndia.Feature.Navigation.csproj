@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,13 +105,17 @@
     <Content Include="Views\Navigation\RightNavigationBar.cshtml" />
     <Content Include="Views\Navigation\PrimaryMenu.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\Navigation\BreadcrumbNavigation.cshtml" />
+    <Content Include="Views\Navigation\ScrollNavigation.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Models\BreadcrumbNav.cs" />
     <Compile Include="Models\NavigationBar.cs" />
     <Compile Include="Models\NavigationItems.cs" />
     <Compile Include="Models\RightNavigationBar.cs" />
+    <Compile Include="Models\ScrollNav.cs" />
     <Compile Include="Models\_Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\INavigationRepository.cs" />

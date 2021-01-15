@@ -4,6 +4,10 @@ Parent: "93f5939b-276b-48b1-8715-d3fa1c5e6785"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
 Path: /sitecore/media library/FordIndia/Images/HeroBanners
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 Languages:
 - Language: en
   Versions:

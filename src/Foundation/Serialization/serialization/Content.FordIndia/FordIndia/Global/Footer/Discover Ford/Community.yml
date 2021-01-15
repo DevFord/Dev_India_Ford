@@ -16,6 +16,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20201102T111628Z
+    - ID: "66e6c41a-b190-48a9-8ff4-c100f667ec1e"
+      Hint: Footer Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{61FD067D-751B-47B1-A6FD-EBD1AC337F78}" />
     - ID: "6be6a780-ac62-454a-8700-75b0508e594e"
       Hint: Footer Title
       Value: Community

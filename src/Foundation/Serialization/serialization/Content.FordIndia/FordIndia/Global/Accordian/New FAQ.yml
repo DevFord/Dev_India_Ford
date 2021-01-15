@@ -1,0 +1,33 @@
+﻿---
+ID: "51cd4cdd-6f4c-4e59-a368-a98005caefb4"
+Parent: "a4f1f3b0-2be6-4c12-8cd9-572f7c0bb91c"
+Template: "26cedc58-293c-4474-a8db-de92464f2eba"
+Path: /sitecore/content/FordIndia/Global/Accordian/New FAQ
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "01086a14-d804-4b10-9d5f-1d14174892af"
+      Hint: Question
+      Value: Driving Human Progress in Our Communities
+    - ID: "037e34c4-f8a5-4118-b34e-46f75d975889"
+      Hint: Answer
+      Value: |
+        <p>Ford’s commitment to India is not just business-centric. At the heart of the company’s business plans are people and communities. With an unwavering commitment to the country and its people, Ford’s CSR initiatives are also a reflection of the company’s ‘Go Further’ journey in India.</p>
+        
+        							<p>Ford’s involvement with communities started in 1998 and took a defining shape with Operation Better World in 2012 when issues related to Community Life, Education, Sustainability, and Driving Safety were outlined as the core priorities. Our work in these core areas continues to be rooted in Ford’s long-standing commitment to making a positive impact on society and Henry Ford’s legacy of building strong communities wherever Ford does business.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201212T134448Z
+    - ID: "4248cf40-75f2-49d1-aaee-fa6eeef2ca3e"
+      Hint: TabId
+      Value: "buying-ford"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8a3e2490-0a21-45d1-b931-b78a3aad350d"
+      Hint: CollapseId
+      Value: collapse2

@@ -1,0 +1,28 @@
+﻿---
+ID: "1ae4db4c-99e0-4fc1-a448-18739fea4815"
+Parent: "1cf7bf60-b7b7-47e4-95f1-50d91fd283c4"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Style/Figo/Figo3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210112T080510Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{E4830414-36AC-4AFA-8621-2F749EDE705D}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Strike A Pose
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: Strikes a smart pose with its sporty cellular front grille. Say Cheese.
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{FA329785-66DD-4005-B9F2-6AB7BA8F3431}" />
