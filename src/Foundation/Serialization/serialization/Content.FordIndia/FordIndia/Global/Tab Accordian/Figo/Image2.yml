@@ -1,0 +1,28 @@
+﻿---
+ID: "77012351-ace2-4b68-9f51-92a96c2d2882"
+Parent: "6a5c6ac2-706d-45af-ad45-78c4d46598b0"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Tab Accordian/Figo/Image2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T080009Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{CC83A05C-2584-40F4-A3CA-9F5E74E6558A}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: See More. Do More.
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: "Rear-view Camera with wide view gives extraordinary full and clear vision when you reverse."
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{E68AE9CF-C6DE-41A2-9097-B0C556A9A1B0}" />

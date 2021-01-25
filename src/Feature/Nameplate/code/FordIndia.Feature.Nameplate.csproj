@@ -98,6 +98,8 @@
     <Content Include="Views\Nameplate\LeftImageRightbullet.cshtml" />
     <Content Include="Views\Nameplate\AjaxTest.cshtml" />
     <Content Include="Views\Nameplate\StyleComponent.cshtml" />
+    <Content Include="Views\Nameplate\TabAccordian.cshtml" />
+    <Content Include="Views\Nameplate\TabListingAccordian.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

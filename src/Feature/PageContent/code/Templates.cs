@@ -35,6 +35,17 @@ namespace FordIndia.Feature.PageContent
 
             }
         }
+        public struct InterestedSectionItem
+        {
+            public static readonly ID ID = new ID("{485208AB-55C9-45B5-B941-33967A160C51}");
+            public struct Fields
+            {
+                public static readonly ID Title = new ID("{B42CB8C5-C362-4528-A5C7-89AF4D5BD5F2}");
+                public static readonly ID Description = new ID("{97D7BFD7-A110-4701-B033-178170519722}");
+                public static readonly ID QuoteLink = new ID("{17041608-84E2-47D8-9C25-0D6618CF066B}");
+                public static readonly ID Link = new ID("{2244B0F4-F214-4D83-859E-67DCD47D62DC}");
+            }
+        }
     }
 
 }

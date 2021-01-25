@@ -1,0 +1,24 @@
+﻿---
+ID: "eaa80796-954c-424c-840d-08780b6ea78e"
+Parent: "589cfa29-4f92-4769-bf16-3bd84c40cc87"
+Template: "1f9a6820-8d47-413b-a184-ccfc7c572221"
+Path: /sitecore/content/FordIndia/Global/Vertical Listing Carousel/Figo VLC
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T193250Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "da3403b4-6bc9-4057-95df-42a5879ac7f5"
+      Hint: Title
+      Value: Intuitive Smart Technology
+    - ID: "e29c2956-dde3-444f-9d6e-a3c6845def9d"
+      Hint: BlueHeaderVLC
+      Value: Technology

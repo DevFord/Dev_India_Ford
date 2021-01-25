@@ -1,8 +1,8 @@
 ﻿---
-ID: "a2d1da6f-77e0-42d3-b327-8f9891636ad2"
-Parent: "e0841681-7116-4ca0-8173-35692fea0bb0"
+ID: "b42cb8c5-c362-4528-a5c7-89af4d5bd5f2"
+Parent: "0d9c84d3-8e9a-441b-96bf-20cbfd2d3637"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Feature/3-4 Feature/HeaderDetails/Header/BlueTitle"
+Path: /sitecore/templates/Feature/PageContent/InterestedContent/InterestedSection/Header
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -18,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20201217T075219Z
+      Value: 20210122T085004Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -9,10 +9,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "001e9038-7573-4627-877f-06c4099e05d8"
-      Hint: IsVideo
-      Type: Checkbox
-      Value: 1
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20201111T094657Z

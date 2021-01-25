@@ -1,0 +1,55 @@
+﻿@model FordIndia.Feature.Features.Models.FeaturesDetails
+@if (Model != null)
+{
+    <!--[fun]-->
+    <section class="section spy-fun pb-0" id="fun">
+        <div class="swiper-container fun-slider">
+            <div class="container">
+                <div class="d-md-flex mb-4 align-items-center">
+                    <header class="col-sm-5 p-0 title-head mb-lg-0 mb-3">
+                        <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+                        <h2 class="title">@Model.Title</h2>
+                    </header>
+                    <div class="swiper-container fun-thumbs pl-md-5">
+                        <div class="swiper-wrapper">
+                            @foreach (var item in Model.ImageList)
+                            {
+                                <div class="swiper-slide">@item.Heading</div>
+
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-wrapper slide-content">
+                @foreach (var items in Model.ImageList)
+                {
+                    <div class="swiper-slide card-caption">
+                        <picture class="swiper-img">
+                            <source srcset="@items.Image" media="(min-width: 576px)">
+                            <img src="@items.MobileImg" alt="Terrain Management System">
+                        </picture>
+                        <div class="col-text text-white">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="title-head">
+                                            <h3 class="title">@items.Heading</h3>
+                                            <p>@items.desc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="swiper-pagination d-md-none"></div>
+        </div>
+
+    </section>
+    <!--[/fun]-->
+}

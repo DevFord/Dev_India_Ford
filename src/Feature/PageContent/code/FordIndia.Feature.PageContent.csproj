@@ -100,11 +100,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\PageContent\ContactUs.cshtml" />
     <Content Include="Views\PageContent\Content.cshtml" />
+    <Content Include="Views\PageContent\InterestedSection.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\PageContentController.cs" />
     <Compile Include="Models\Content.cs" />
+    <Compile Include="Models\InterestedModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
@@ -118,7 +120,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\FordIndia.Foundation.Dictionary.csproj">
+      <Project>{4bf94639-78a4-46a3-b12c-99e2038f025c}</Project>
+      <Name>FordIndia.Foundation.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\FordIndia.Foundation.SitecoreExtensions.csproj">
+      <Project>{36795007-8d80-4760-aaa3-f2352a3a3fc1}</Project>
+      <Name>FordIndia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

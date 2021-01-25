@@ -1,0 +1,64 @@
+﻿@model FordIndia.Feature.Media.Models.VerticalListingCarousel
+
+<!--[technology]-->
+@if (Model != null)
+{
+
+
+    <div class="container d-md-none">
+        <header class="title-head pb-3">
+            <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+            <h2 class="title">@Model.Title</h2>
+        </header>
+    </div>
+
+    <section class="spy-tech section bg-dark" id="technology">
+        <div class="container">
+            <header class="title-head text-white pb-5 d-md-block d-none">
+                <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+                <h2 class="title">@Model.Title</h2>
+            </header>
+
+
+            <div class="row flex-row-reverse">
+                <div class="col-md-7">
+                    <div class="swiper-container tech-slider pagination-static">
+                        <div class="swiper-wrapper">
+                            @foreach (var item in Model.ImageList)
+                            {
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="@item.Image" media="(min-width: 576px)">
+                                        <img src="@item.MobileImage" alt="">
+                                    </picture>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="swiper-container tech-thumbs">
+                        <div class="swiper-wrapper">
+                            @foreach (var item in Model.ImageList)
+                            {
+                                <div class="swiper-slide">
+                                    <h4>@item.Heading</h4>
+                                    <p>@item.Description</p>
+                                </div>
+                                
+                            }
+                            </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination d-md-none"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+}
+    <!--[/technology]-->

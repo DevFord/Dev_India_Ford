@@ -8,7 +8,7 @@ namespace FordIndia.Feature.Nameplate
 {
     public class Templates
     {
-        
+
         public struct _HasMediaImageItem
         {
             public static readonly ID ID = new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
@@ -42,25 +42,26 @@ namespace FordIndia.Feature.Nameplate
             }
 
         }
-        public struct HeaderItems
+        public struct TabAccordianHeaderItem
         {
-            public static readonly ID ID = new ID("{B2418257-CA45-4C40-BC90-BF2EDBB16F01}");
+            public static readonly ID ID = new ID("{E8C00375-D020-4604-AD99-8F64EFF75F04}");
             public struct Fields
             {
-                public static readonly ID BlueTitle = new ID("{A2D1DA6F-77E0-42D3-B327-8F9891636AD2}");
-                public static readonly ID Title = new ID("{7EACF3BE-3EF8-4C13-987C-520954FC19D0}");
+                public static readonly ID Title= new ID("{19ABED51-5423-40D2-9CC7-31A282A9A6A8}");
+                public static readonly ID BlueTitle = new ID("{88E71010-D5B6-4292-B0EA-F8991DC24B56}");
+                
+
             }
         }
-        public struct ImageItems
+        public struct _VerticalListingAccordianItems
         {
-            public static readonly ID ID = new ID("{FB927782-ECDB-4D55-8CC0-C6AA55D58E81}");
+            public static readonly ID ID = new ID("{22AF0D1B-D7D3-4DCE-89D2-FE2C520BE4FE}");
             public struct Fields
             {
-                public static readonly ID Heading = new ID("{8564EE35-5AD3-4D3F-A4B7-CF03FBA894ED}");
-                public static readonly ID Description = new ID("{EDC95F56-61D1-42AE-B8A0-42A24236F6B1}");
-                public static readonly ID Image = new ID("{EDFCA2FD-FA94-43D7-AD22-80E38E40681B}");
-                public static readonly ID MobileImage = new ID("{8377040C-EE92-4D25-96E9-12D1D0B2DBC7}");
+                public static readonly ID BlueTitle = new ID("{242F2EC8-E4FB-4826-8D4C-CDC28D72834C}");
+                public static readonly ID Title = new ID("{4E0CEF4E-EC87-40D7-BCC5-A696B3CDCE3A}");
             }
         }
+
     }
 }
