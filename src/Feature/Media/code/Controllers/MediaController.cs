@@ -10,6 +10,7 @@ using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 using Sitecore.Resources.Media;
 using static FordIndia.Foundation.SitecoreExtensions.Extensions.HtmlHelperExtensions;
+using Sitecore.Diagnostics;
 
 namespace FordIndia.Feature.Media.Controllers
 {
@@ -107,7 +108,7 @@ namespace FordIndia.Feature.Media.Controllers
             }
             catch (Exception ex)
             {
-                return new EmptyResult();
+                ex.Message.ToString();
             }
             return new EmptyResult();
         }
@@ -133,9 +134,10 @@ namespace FordIndia.Feature.Media.Controllers
             }
             catch (Exception ex)
             {
-                return new EmptyResult();
+                ex.Message.ToString();
+                
             }
-
+            return new EmptyResult();
         }
         public ActionResult NameplateBanner()
         {
@@ -153,10 +155,12 @@ namespace FordIndia.Feature.Media.Controllers
                             foreach (Item item in Banner)
                             {
                                 var desktopimage = (ImageField)item.Fields[Templates.ImageItem.MediaImageFieldID];
+                                var Mobileimage = (ImageField)item.Fields[Templates.ImageItem.MobileImage];
                                 var isvideo = (CheckboxField)item.Fields[Templates.ImageItem.IsVideo];
                                 var Nameplatebanner = new TwoBanner
                                 {
                                     MediaImage = desktopimage.MediaItem != null && !string.IsNullOrEmpty(desktopimage.Value) ? MediaManager.GetMediaUrl(desktopimage.MediaItem) : string.Empty,
+                                    MobileImage = Mobileimage.MediaItem != null && !string.IsNullOrEmpty(Mobileimage.Value) ? MediaManager.GetMediaUrl(Mobileimage.MediaItem) : string.Empty,
                                     VideoLink = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates._HasMediaVideoItem.Fields.MediaVideoLink])) ? Helpers.LinkUrl(item.Fields[Templates._HasMediaVideoItem.Fields.MediaVideoLink]) : string.Empty,
                                     Isvideo = isvideo != null && isvideo.Checked ? true : false,
                                     Link = !string.IsNullOrEmpty(Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID])) ? Helpers.LinkUrl(item.Fields[Templates.ImageItem.LinkFieldID]) : string.Empty,
@@ -175,15 +179,105 @@ namespace FordIndia.Feature.Media.Controllers
             }
             catch (Exception ex)
             {
-                return new EmptyResult();
+                ex.Message.ToString();
             }
             return new EmptyResult();
         }
-        public ActionResult StyleCarousel()
+        public ActionResult VericalListCarousel()
         {
-             
-            return View();
+           
+            var model = new VerticalListingCarousel();
+            var ImageListModel = new List<ImageDetail>();
+            var CurrentDataSource = RenderingContext.CurrentOrNull.Rendering.DataSource;
 
+            try
+            {
+                if (!string.IsNullOrEmpty(CurrentDataSource))
+                {
+                    Item dataSource = Sitecore.Context.Database.GetItem(CurrentDataSource);
+                    if (dataSource.TemplateID == Templates._VerticalListingHeaderItems.ID)
+                    {
+                        if (dataSource != null && dataSource.GetChildren().Any() && dataSource.GetChildren() != null)
+                        {
+                            model.BlueTitle = !string.IsNullOrEmpty(dataSource.Fields[Templates._VerticalListingHeaderItems.Fields.BlueTitle].Value) ? dataSource.Fields[Templates._VerticalListingHeaderItems.Fields.BlueTitle].Value : string.Empty;
+                            model.Title = !string.IsNullOrEmpty(dataSource.Fields[Templates._VerticalListingHeaderItems.Fields.Title].Value) ? dataSource.Fields[Templates._VerticalListingHeaderItems.Fields.Title].Value : string.Empty;
+                            foreach (Item item in dataSource.GetChildren())
+                            {
+                                var image = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.Image];
+                                var MobImage = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.MobileImage];
+                                var imageDetail = new ImageDetail
+                                {
+                                    Heading = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Heading].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Heading].Value : string.Empty,
+                                    Description = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Description].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Description].Value : string.Empty,
+                                    Image = image != null && !string.IsNullOrEmpty(image.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(image.MediaItem)) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty,
+                                    MobileImage = MobImage != null && !string.IsNullOrEmpty(MobImage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(MobImage.MediaItem)) ? MediaManager.GetMediaUrl(MobImage.MediaItem) : string.Empty
+                                };
+                                ImageListModel.Add(imageDetail);
+                            }
+                            model.ImageList = ImageListModel;
+                            return View("~/Views/Media/VerticalListCarousel.cshtml", model);
+
+                        }
+                    }
+                   
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Info("-----Error in Vertical Carousel --------", ex.Message);
+            }
+            return new EmptyResult();
         }
+        public ActionResult ReviewCarousel()
+        {
+
+            var ReviewModel = new VerticalListingCarousel();
+            var ReviewImageList = new List<ImageDetail>();
+            var dataSource = RenderingContext.CurrentOrNull.Rendering.DataSource;
+
+            try
+            {
+                if (!string.IsNullOrEmpty(dataSource))
+                {
+                    Item dataSourceItem = Sitecore.Context.Database.GetItem(dataSource);
+                    if (dataSourceItem.TemplateID == Templates.ReviewCaroselItems.ID)
+                    {
+                        if (dataSourceItem != null && dataSourceItem.GetChildren().Any() && dataSourceItem.GetChildren() != null)
+                        {
+                            ReviewModel.BlueTitle = !string.IsNullOrEmpty(dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.BlueTitleRC].Value) ? dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.BlueTitleRC].Value : string.Empty;
+                            ReviewModel.Title = !string.IsNullOrEmpty(dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.TitleRC].Value) ? dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.TitleRC].Value : string.Empty;
+
+                         var dsimage = (ImageField)dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.RightImage];
+                            ReviewModel.Image = dsimage != null && !string.IsNullOrEmpty(dsimage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(dsimage.MediaItem)) ? MediaManager.GetMediaUrl(dsimage.MediaItem) : string.Empty;
+
+                            foreach (Item item in dataSourceItem.GetChildren())
+                            {
+                                var image = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.Image];
+                                var MobImage = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.MobileImage];
+                                var imageList= new ImageDetail
+                                {
+                                    Heading = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Heading].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Heading].Value : string.Empty,
+                                    Description = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Description].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Description].Value : string.Empty,
+                                    Image = image != null && !string.IsNullOrEmpty(image.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(image.MediaItem)) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty,
+                                    MobileImage = MobImage != null && !string.IsNullOrEmpty(MobImage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(MobImage.MediaItem)) ? MediaManager.GetMediaUrl(MobImage.MediaItem) : string.Empty
+                                };
+                                ReviewImageList.Add(imageList);
+                            }
+                            ReviewModel.ImageList = ReviewImageList;
+                            return View("~/Views/Media/ReviewCarousel.cshtml", ReviewModel);
+
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+            }
+            return new EmptyResult();
+        }
+
+
     }
 }

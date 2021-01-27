@@ -1,0 +1,21 @@
+﻿---
+ID: "41ab3e1c-5ca2-482b-b35b-044c7a8a960c"
+Parent: "4bbbd528-611c-4be0-af64-c7974b86fe10"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/FordIndia/Global/Dictionary/InterestedSection/Get a Quote Link
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210122T185845Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: Get a Quote 

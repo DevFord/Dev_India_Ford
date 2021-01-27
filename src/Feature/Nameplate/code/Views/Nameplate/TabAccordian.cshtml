@@ -1,0 +1,71 @@
+﻿@model FordIndia.Feature.Features.Models.FeaturesDetails
+@if (Model != null)
+{
+    <!--[safety]-->
+    <section class="spy-safety relative" id="safety">
+        <div class="container-fluid">
+
+            <header class="title-head p-3 mt-2 mb-2 d-lg-none">
+                <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+                <h2 class="title">@Model.Title</h2>
+            </header>
+
+
+            <div class="row">
+                <div class="col-md-8 p-0">
+                    <div class="swiper-container safety-slider">
+                        <div class="swiper-wrapper slide-content">
+                            @foreach (var item in Model.ImageList)
+                            {
+                                <div class="swiper-slide card-caption">
+                                    <picture class="swiper-img">
+                                        <source srcset="@item.Image" media="(min-width: 576px)">
+                                        <img src="@item.MobileImg" alt="">
+                                    </picture>
+                                    <div class="col-text text-white">
+                                        <div class="title-head pr-lg-5">
+                                            <h3 class="title">@item.Heading</h3>
+                                            <p>@item.desc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            
+                            
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0">
+                    <div class="d-md-flex align-items-center h-100">
+                        <div class="d-inner-flex p-md-5 p-3">
+                            <header class="title-head mb-5 d-none d-lg-block">
+                                <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+                                <h2 class="title">@Model.Title</h2>
+                            </header>
+                            <div class="swiper-container safety-thumbs">
+                                <div class="swiper-wrapper">
+                                    @foreach (var item in Model.ImageList)
+                                    {
+                                        <div class="swiper-slide">@item.Heading</div>
+                                        @*<div class="swiper-slide">See More. Do More. </div>
+                                        <div class="swiper-slide">Built As Tough As You Are</div>
+                                        <div class="swiper-slide">Fun Unstoppable</div>
+                                        <div class="swiper-slide">Smart Confidence</div>*@
+                                    }
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--[/safety]-->
+}

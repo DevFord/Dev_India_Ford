@@ -1,0 +1,21 @@
+﻿---
+ID: "58675aca-7fa2-4338-a25d-421822f397f8"
+Parent: "2ba34f84-096a-496a-9886-5419cb6e1eff"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Review Carousel/Figo Review Carousel/FigoImg1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210127T081757Z
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: "EcoBlue Engine &amp; 10-speed AT a deadly combo, It's a Fantastic Ride, It's more fuel-efficient and capable off-road"
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{B1CE73C3-C411-4961-8352-05D57E83E0F5}" />

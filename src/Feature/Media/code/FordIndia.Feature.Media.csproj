@@ -116,7 +116,8 @@
     <Content Include="Views\Media\HeroBanner.cshtml" />
     <Content Include="Views\Media\NameplateBanner.cshtml" />
     <Content Include="Views\Media\TollFreeBanner.cshtml" />
-    <Content Include="Views\Media\StyleCarousel.cshtml" />
+    <Content Include="Views\Media\ReviewCarousel.cshtml" />
+    <Content Include="Views\Media\VerticalListCarousel.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +126,7 @@
     <Compile Include="Models\HeroBanner.cs" />
     <Compile Include="Models\ImageItem.cs" />
     <Compile Include="Models\TwoBanner.cs" />
+    <Compile Include="Models\VerticalListingCarousel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IMediaRepository.cs" />
     <Compile Include="Repository\MediaRepository.cs" />
@@ -150,6 +152,10 @@
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\FordIndia.Foundation.SitecoreExtensions.csproj">
       <Project>{36795007-8d80-4760-aaa3-f2352a3a3fc1}</Project>
       <Name>FordIndia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Features\code\FordIndia.Feature.Features.csproj">
+      <Project>{d0a323b3-1238-4bb8-8b1b-44ada3552573}</Project>
+      <Name>FordIndia.Feature.Features</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Navigation\Code\FordIndia.Feature.Navigation.csproj">
       <Project>{5ee96168-c482-4eaf-a886-2f60eea65484}</Project>

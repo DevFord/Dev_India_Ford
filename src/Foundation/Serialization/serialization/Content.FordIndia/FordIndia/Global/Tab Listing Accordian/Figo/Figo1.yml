@@ -1,0 +1,21 @@
+﻿---
+ID: "50cb020d-9bde-4a3f-b593-2a0ba2e0af11"
+Parent: "84d5d7d3-9eb5-4101-b059-684001619089"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Tab Listing Accordian/Figo/Figo1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210119T142855Z
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Choose Your Thrill
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{3E950CE1-7EEB-4B09-94EE-2A19A4E51E68}" />

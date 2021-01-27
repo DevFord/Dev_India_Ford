@@ -1,0 +1,28 @@
+﻿---
+ID: "2ba34f84-096a-496a-9886-5419cb6e1eff"
+Parent: "2f64ff59-022a-4c61-9c71-9ab621628cc3"
+Template: "2bf2f708-3f13-484f-90e8-c892e74be313"
+Path: /sitecore/content/FordIndia/Global/Review Carousel/Figo Review Carousel
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210127T072159Z
+    - ID: "39b28869-7fa6-4d4f-bd5a-00bf0b25a265"
+      Hint: TitleRC
+      Value: What Experts Say
+    - ID: "58c48c58-5251-4e3e-85dd-e02ece983e42"
+      Hint: BlueTitleRC
+      Value: Expert Reviews
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8e8aa3eb-0e0a-4183-8e89-257793c6501f"
+      Hint: RightImage
+      Value: |
+        <image mediaid="{77D43DC9-F53D-4374-8EE9-A454865EFA87}" />

@@ -1,0 +1,21 @@
+﻿@model FordIndia.Feature.PageContent.Models.InterestedModel
+@using FordIndia.Foundation.Dictionary.Extensions
+@if (Model != null)
+{
+    <!--[Interested]-->
+    <section class="pb-3 sec-interest">
+        <div class="container">
+            <header class="title-head mb-3 text-center">
+                <h2 class="title">@Model.Title</h2>
+            </header>
+            <div class="cta-group text-center">
+                <a href="#" class="btn btn-outline-primary text-uppercase m-2">@Html.Sitecore().Dictionary("/InterestedSection/Get a Quote Link")<i class="fa fa-chevron-right ml-2"></i></a>
+                <a href="#" class="btn btn-outline-primary text-uppercase m-2">@Html.Sitecore().Dictionary("/InterestedSection/Book Now") <i class="fa fa-chevron-right ml-2"></i></a>
+            </div>
+            <div class="dislaimer-text mt-2 pt-2 small">
+                <p>@Model.Description</p>
+            </div>
+        </div>
+    </section>
+    <!--[/Interested]-->
+}

@@ -60,26 +60,27 @@ namespace FordIndia.Feature.Media
                 public static readonly ID MediaVideoLink = new ID("{2628705D-9434-4448-978C-C3BF166FA1EB}");
             }
         }
-        //public struct _HeaderItems
-        //{
-        //    public static readonly ID ID = new ID("{1B99DAE6-28B0-4AF3-83E5-5D49D643D30D}");
-        //    public struct Fields
-        //    {
-        //        public static readonly ID BlueTitle = new ID("{0134A44C-F989-4C3C-8543-856440AC8096}");
-        //        public static readonly ID Header = new ID("{4DFA9A83-185E-49A5-95D8-C8282928F287}");
-        //    }
-        //}
-        //public struct _ImageDetailItems
-        //{
-        //    public static readonly ID ID = new ID("{8B6E0E03-891B-4D51-8A9F-A245C1C34E7B}");
-        //    public struct Fields
-        //    {
-        //        public static readonly ID Heading = new ID("{4D368254-534C-4598-9E09-19DAF162B420}");
-        //        public static readonly ID Description = new ID("{80FF8EA7-5A24-4DAD-84E2-67BD4165A177}");
-        //        public static readonly ID Image = new ID("{8FE5E460-3ECC-4D6E-9B27-43C413AAE061}");
-        //        public static readonly ID MobileImage = new ID("{B08AFF36-CE5F-4261-AE0C-321B87CDCA0F}");
-        //    }
-        //}
+        public struct _VerticalListingHeaderItems
+        {
+            public static readonly ID ID = new ID("{1F9A6820-8D47-413B-A184-CCFC7C572221}");
+            public struct Fields
+            {
+                public static readonly ID BlueTitle = new ID("{E29C2956-DDE3-444F-9D6E-A3C6845DEF9D}");
+                public static readonly ID Title = new ID("{DA3403B4-6BC9-4057-95DF-42A5879AC7F5}");
+            }
+        }
+        public struct ReviewCaroselItems
+        {
+            public static readonly ID ID = new ID("{2BF2F708-3F13-484F-90E8-C892E74BE313}");
+            public struct Fields
+            {
+                public static readonly ID BlueTitleRC = new ID("{58C48C58-5251-4E3E-85DD-E02ECE983E42}");
+                public static readonly ID TitleRC = new ID("{39B28869-7FA6-4D4F-BD5A-00BF0B25A265}");
+                public static readonly ID RightImage = new ID("{8E8AA3EB-0E0A-4183-8E89-257793C6501F}");
+            }
+        }
+
+
 
     }
 }

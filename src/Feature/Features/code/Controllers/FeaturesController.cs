@@ -90,7 +90,7 @@ namespace FordIndia.Feature.Features.Controllers
             {
                 ex.Message.ToString();
             }
-            return View();
+            return new EmptyResult();
         }
     }
 }

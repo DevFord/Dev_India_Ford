@@ -1,0 +1,24 @@
+﻿---
+ID: "04c9cc3b-2bb4-42b9-ad0a-6eb4a0689d28"
+Parent: "6a5c6ac2-706d-45af-ad45-78c4d46598b0"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Tab Accordian/Figo/Image5
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T080009Z
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Smart Confidence
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: "WithAnti-lock Braking System (ABS) and Electronic Brake Force Distribution (EBD), drive with confidence."
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{99825C3D-5FB7-4AD4-AE91-1AD4E07E0567}" />

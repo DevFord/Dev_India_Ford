@@ -18,10 +18,6 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{781D7837-45D1-4624-9A74-72A1C78547F2}">
-          <p:d />
-        </r>
-        <r
           uid="{C077295F-CBB4-4E09-AE7B-F43E0CAA6720}"
           p:after="r[@uid='{4863D906-B316-476C-8682-4715F4C4C350}']"
           s:ds="{3ADD4A97-00DF-494C-B4D6-65446B1CF401}"
@@ -29,12 +25,16 @@ SharedFields:
           s:par=""
           s:ph="main" />
         <r
-          uid="{62588699-3FC9-41AE-9CAD-EE213F4C52F8}"
-          s:ds="{F2A75A98-CAAA-46E9-BFBF-037D897105D3}"
-          s:par="" />
-        <r
           uid="{00D70A19-059A-4FD2-934A-109331FCCCE1}"
           s:ds="{F2A9E60B-8663-49AA-A6F4-8E2337918EF5}"
+          s:par="" />
+        <r
+          uid="{781D7837-45D1-4624-9A74-72A1C78547F2}">
+          <p:d />
+        </r>
+        <r
+          uid="{62588699-3FC9-41AE-9CAD-EE213F4C52F8}"
+          s:ds="{F2A75A98-CAAA-46E9-BFBF-037D897105D3}"
           s:par="" />
         <r
           uid="{3FC0E38C-4062-4FDA-B93E-F8EF5B0E66DE}"
@@ -47,12 +47,6 @@ SharedFields:
           s:id="{D8550BD5-4DAE-46C5-BF9B-FDEEE25DAA0B}"
           s:par=""
           s:ph="main" />
-        <r
-          uid="{DE2B5E62-B7A1-42BA-9FE4-C1D7A7BD9B90}"
-          p:after="r[@uid='{28140492-F12F-4081-8936-123350FE1FA5}']" />
-        <r
-          uid="{955AD45C-FEB1-4F4D-B727-06D20964B7F8}"
-          p:after="*[1=2]" />
       </d>
     </r>
 Languages:
@@ -98,27 +92,13 @@ Languages:
     - ID: "653c4419-e323-4fef-9cc1-d585c8b65b8b"
       Hint: MPGText
       Value: Est. MPG City/Highway
-    - ID: "7eacf3be-3ef8-4c13-987c-520954fc19d0"
-      Hint: Title
-      Value: Car Highlights
     - ID: "91e3213e-1fb1-4a60-9a9b-931f5041ade1"
       Hint: PriceText
       Value: Starting at
-    - ID: "a2d1da6f-77e0-42d3-b327-8f9891636ad2"
-      Hint: BlueTitle
-      Value: Key Features
     - ID: "aaf04878-48df-4c12-ada5-2ad39c738729"
       Hint: BannerImage
       Value: |
         <image mediaid="{F2F26B1F-FEC2-4256-B978-F58995F757F7}" />
-    - ID: "d4776845-07af-42ec-b2f8-f9dacc5cdea3"
-      Hint: ImageList
-      Type: Treelist
-      Value: |
-        {B93B4DB2-7C52-4955-83CC-5BF696AFC7AF}
-        {DAA8D10F-0611-45BE-87F0-437FA393F541}
-        {8C45D3E5-D889-4AE3-A49F-E7E87699ADF7}
-        {15B805A1-9D0D-482A-822B-B7B444EAF2BA}
     - ID: "f914da57-dfb8-4f62-9f77-13c492d0041c"
       Hint: MPGValue
       Value: 14/18

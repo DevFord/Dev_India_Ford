@@ -1,0 +1,24 @@
+﻿---
+ID: "84d5d7d3-9eb5-4101-b059-684001619089"
+Parent: "02bfe9d2-251b-4c0f-92a8-21631b4dc964"
+Template: "22af0d1b-d7d3-4dce-89d2-fe2c520be4fe"
+Path: /sitecore/content/FordIndia/Global/Tab Listing Accordian/Figo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "242f2ec8-e4fb-4826-8d4c-cdc28d72834c"
+      Hint: BlueHeaderVLA
+      Value: Fun to Drive
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210119T142750Z
+    - ID: "4e0cef4e-ec87-40d7-bcc5-a696b3cdce3a"
+      Hint: Title
+      Value: Every drive a delight with Ford's legendary driving dynamics.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

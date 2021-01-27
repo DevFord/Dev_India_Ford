@@ -1,0 +1,24 @@
+﻿---
+ID: "fd470a77-f985-442c-920d-d541cb90c1e1"
+Parent: "eaa80796-954c-424c-840d-08780b6ea78e"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Vertical Listing Carousel/Figo VLC/Image2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T193321Z
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Push To Start
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: Push Button start; simply push and set off on your drives.
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{E68AE9CF-C6DE-41A2-9097-B0C556A9A1B0}" />

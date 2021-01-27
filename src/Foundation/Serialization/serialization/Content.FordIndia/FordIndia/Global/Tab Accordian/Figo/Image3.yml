@@ -1,0 +1,28 @@
+﻿---
+ID: "9b6c7c7b-53d3-4103-be97-60167852b235"
+Parent: "6a5c6ac2-706d-45af-ad45-78c4d46598b0"
+Template: "fb927782-ecdb-4d55-8cc0-c6aa55d58e81"
+Path: /sitecore/content/FordIndia/Global/Tab Accordian/Figo/Image3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T080009Z
+    - ID: "8377040c-ee92-4d25-96e9-12d1d0b2dbc7"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{C3751381-BC1A-4E8A-956D-73AB26902C7D}" />
+    - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
+      Hint: Heading
+      Value: Built As Tough As You Are
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: Enjoy more adventures with the confidence of Ford's superior build quality.
+    - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
+      Hint: Image
+      Value: |
+        <image mediaid="{9DFBEFF6-D6A7-4DE6-BC71-D277C036E1B9}" />

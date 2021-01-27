@@ -1,0 +1,24 @@
+﻿---
+ID: "6a5c6ac2-706d-45af-ad45-78c4d46598b0"
+Parent: "1f75d029-6fe0-4290-bd2f-c1a39b3ec309"
+Template: "e8c00375-d020-4604-ad99-8f64eff75f04"
+Path: /sitecore/content/FordIndia/Global/Tab Accordian/Figo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19abed51-5423-40d2-9cc7-31a282a9a6a8"
+      Hint: Title
+      Value: Safety Thrills
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T075944Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "88e71010-d5b6-4292-b0ea-f8991dc24b56"
+      Hint: BlueHeaderTA
+      Value: Safety

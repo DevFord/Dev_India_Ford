@@ -79,8 +79,8 @@ namespace FordIndia.Feature.Nameplate.Controllers
                     {
                         if (dataSource != null && dataSource.GetChildren().Any() && dataSource.GetChildren() != null)
                         {
-                            model.BlueTitle = !string.IsNullOrEmpty(dataSource.Fields[Features.Templates.HeaderItems.Fields.BlueTitle].Value) ? dataSource.Fields[Templates.HeaderItems.Fields.BlueTitle].Value : string.Empty;
-                            model.Title = !string.IsNullOrEmpty(dataSource.Fields[Features.Templates.HeaderItems.Fields.Title].Value) ? dataSource.Fields[Templates.HeaderItems.Fields.Title].Value : string.Empty;
+                            model.BlueTitle = !string.IsNullOrEmpty(dataSource.Fields[Features.Templates.HeaderItems.Fields.BlueTitle].Value) ? dataSource.Fields[Features.Templates.HeaderItems.Fields.BlueTitle].Value : string.Empty;
+                            model.Title = !string.IsNullOrEmpty(dataSource.Fields[Features.Templates.HeaderItems.Fields.Title].Value) ? dataSource.Fields[Features.Templates.HeaderItems.Fields.Title].Value : string.Empty;
                             foreach (Item item in dataSource.GetChildren())
                             {
                                 var image = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.Image];
@@ -99,18 +99,82 @@ namespace FordIndia.Feature.Nameplate.Controllers
 
                         }
                     }
-
-                    
+                    else if(dataSource.TemplateID == Templates.TabAccordianHeaderItem.ID)
+                    {
+                        if (dataSource != null && dataSource.GetChildren().Any() && dataSource.GetChildren() != null)
+                        {
+                            model.BlueTitle = !string.IsNullOrEmpty(dataSource.Fields[Templates.TabAccordianHeaderItem.Fields.BlueTitle].Value) ? dataSource.Fields[Templates.TabAccordianHeaderItem.Fields.BlueTitle].Value : string.Empty;
+                            model.Title = !string.IsNullOrEmpty(dataSource.Fields[Templates.TabAccordianHeaderItem.Fields.Title].Value) ? dataSource.Fields[Templates.TabAccordianHeaderItem.Fields.Title].Value : string.Empty;
+                            foreach (Item item in dataSource.GetChildren())
+                            {
+                                var image = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.Image];
+                                var MobImage = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.MobileImage];
+                                var imageDetails = new ImageDetails
+                                {
+                                    Heading = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Heading].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Heading].Value : string.Empty,
+                                    desc = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Description].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Description].Value : string.Empty,
+                                    Image = image != null && !string.IsNullOrEmpty(image.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(image.MediaItem)) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty,
+                                    MobileImg = MobImage != null && !string.IsNullOrEmpty(MobImage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(MobImage.MediaItem)) ? MediaManager.GetMediaUrl(MobImage.MediaItem) : string.Empty
+                                };
+                                ImageListModel.Add(imageDetails);
+                            }
+                            model.ImageList = ImageListModel;
+                            return View("~/Views/Nameplate/TabAccordian.cshtml", model);
+                        }
+                    }
                 }
-
-
             }
             catch (Exception ex)
             {
                 ex.Message.ToString();
             }
-            return View();
+            return new EmptyResult();
         }
+        public ActionResult VericalListingAccordian()
+        {
+
+            var VLAccordianModel = new FeaturesDetails();
+            var ImageListModel = new List<ImageDetails>();
+            try
+            {
+                var DataSource = RenderingContext.CurrentOrNull.Rendering.DataSource;
+                if (!string.IsNullOrEmpty(DataSource))
+                {
+                    Item dataSource = Sitecore.Context.Database.GetItem(DataSource);
+                    if (dataSource.TemplateID == Templates._VerticalListingAccordianItems.ID)
+                    {
+                        if (dataSource != null && dataSource.GetChildren().Any() && dataSource.GetChildren() != null)
+                        {
+                            VLAccordianModel.BlueTitle = !string.IsNullOrEmpty(dataSource.Fields[Templates._VerticalListingAccordianItems.Fields.BlueTitle].Value) ? dataSource.Fields[Templates._VerticalListingAccordianItems.Fields.BlueTitle].Value : string.Empty;
+                            VLAccordianModel.Title = !string.IsNullOrEmpty(dataSource.Fields[Templates._VerticalListingAccordianItems.Fields.Title].Value) ? dataSource.Fields[Templates._VerticalListingAccordianItems.Fields.Title].Value : string.Empty;
+                            foreach (Item item in dataSource.GetChildren())
+                            {
+                                var image = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.Image];
+                                var MobImage = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.MobileImage];
+                                var VLAimageDetails = new ImageDetails
+                                {
+                                    Heading = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Heading].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Heading].Value : string.Empty,
+                                    desc = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Description].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Description].Value : string.Empty,
+                                    Image = image != null && !string.IsNullOrEmpty(image.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(image.MediaItem)) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty,
+                                    MobileImg = MobImage != null && !string.IsNullOrEmpty(MobImage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(MobImage.MediaItem)) ? MediaManager.GetMediaUrl(MobImage.MediaItem) : string.Empty
+                                };
+                                ImageListModel.Add(VLAimageDetails);
+                            }
+                            VLAccordianModel.ImageList = ImageListModel;
+                            return View("~/Views/Nameplate/TabListingAccordian.cshtml", VLAccordianModel);
+
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+            }
+            return new EmptyResult();
+        }
+        
     }
 
 }
