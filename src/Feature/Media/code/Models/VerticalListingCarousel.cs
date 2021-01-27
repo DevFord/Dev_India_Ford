@@ -9,6 +9,7 @@ namespace FordIndia.Feature.Media.Models
     {
         public string BlueTitle { get; set; }
         public string Title { get; set; }
+        public string Image { get; set; }
         public List<ImageDetail> ImageList { get; set; }
     }
     public class ImageDetail

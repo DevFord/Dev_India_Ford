@@ -10,6 +10,7 @@ using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 using Sitecore.Resources.Media;
 using static FordIndia.Foundation.SitecoreExtensions.Extensions.HtmlHelperExtensions;
+using Sitecore.Diagnostics;
 
 namespace FordIndia.Feature.Media.Controllers
 {
@@ -107,7 +108,7 @@ namespace FordIndia.Feature.Media.Controllers
             }
             catch (Exception ex)
             {
-                return new EmptyResult();
+                ex.Message.ToString();
             }
             return new EmptyResult();
         }
@@ -133,9 +134,10 @@ namespace FordIndia.Feature.Media.Controllers
             }
             catch (Exception ex)
             {
-                return new EmptyResult();
+                ex.Message.ToString();
+                
             }
-
+            return new EmptyResult();
         }
         public ActionResult NameplateBanner()
         {
@@ -222,11 +224,60 @@ namespace FordIndia.Feature.Media.Controllers
             }
             catch (Exception ex)
             {
+                Log.Info("-----Error in Vertical Carousel --------", ex.Message);
+            }
+            return new EmptyResult();
+        }
+        public ActionResult ReviewCarousel()
+        {
+
+            var ReviewModel = new VerticalListingCarousel();
+            var ReviewImageList = new List<ImageDetail>();
+            var dataSource = RenderingContext.CurrentOrNull.Rendering.DataSource;
+
+            try
+            {
+                if (!string.IsNullOrEmpty(dataSource))
+                {
+                    Item dataSourceItem = Sitecore.Context.Database.GetItem(dataSource);
+                    if (dataSourceItem.TemplateID == Templates.ReviewCaroselItems.ID)
+                    {
+                        if (dataSourceItem != null && dataSourceItem.GetChildren().Any() && dataSourceItem.GetChildren() != null)
+                        {
+                            ReviewModel.BlueTitle = !string.IsNullOrEmpty(dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.BlueTitleRC].Value) ? dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.BlueTitleRC].Value : string.Empty;
+                            ReviewModel.Title = !string.IsNullOrEmpty(dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.TitleRC].Value) ? dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.TitleRC].Value : string.Empty;
+
+                         var dsimage = (ImageField)dataSourceItem.Fields[Templates.ReviewCaroselItems.Fields.RightImage];
+                            ReviewModel.Image = dsimage != null && !string.IsNullOrEmpty(dsimage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(dsimage.MediaItem)) ? MediaManager.GetMediaUrl(dsimage.MediaItem) : string.Empty;
+
+                            foreach (Item item in dataSourceItem.GetChildren())
+                            {
+                                var image = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.Image];
+                                var MobImage = (ImageField)item.Fields[Features.Templates.ImageItems.Fields.MobileImage];
+                                var imageList= new ImageDetail
+                                {
+                                    Heading = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Heading].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Heading].Value : string.Empty,
+                                    Description = !string.IsNullOrEmpty(item.Fields[Features.Templates.ImageItems.Fields.Description].Value) ? item.Fields[Features.Templates.ImageItems.Fields.Description].Value : string.Empty,
+                                    Image = image != null && !string.IsNullOrEmpty(image.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(image.MediaItem)) ? MediaManager.GetMediaUrl(image.MediaItem) : string.Empty,
+                                    MobileImage = MobImage != null && !string.IsNullOrEmpty(MobImage.Value) && !string.IsNullOrEmpty(MediaManager.GetMediaUrl(MobImage.MediaItem)) ? MediaManager.GetMediaUrl(MobImage.MediaItem) : string.Empty
+                                };
+                                ReviewImageList.Add(imageList);
+                            }
+                            ReviewModel.ImageList = ReviewImageList;
+                            return View("~/Views/Media/ReviewCarousel.cshtml", ReviewModel);
+
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
                 ex.Message.ToString();
             }
             return new EmptyResult();
         }
-       
+
 
     }
 }

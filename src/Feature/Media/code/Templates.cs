@@ -69,7 +69,17 @@ namespace FordIndia.Feature.Media
                 public static readonly ID Title = new ID("{DA3403B4-6BC9-4057-95DF-42A5879AC7F5}");
             }
         }
-       
+        public struct ReviewCaroselItems
+        {
+            public static readonly ID ID = new ID("{2BF2F708-3F13-484F-90E8-C892E74BE313}");
+            public struct Fields
+            {
+                public static readonly ID BlueTitleRC = new ID("{58C48C58-5251-4E3E-85DD-E02ECE983E42}");
+                public static readonly ID TitleRC = new ID("{39B28869-7FA6-4D4F-BD5A-00BF0B25A265}");
+                public static readonly ID RightImage = new ID("{8E8AA3EB-0E0A-4183-8E89-257793C6501F}");
+            }
+        }
+
 
 
     }
