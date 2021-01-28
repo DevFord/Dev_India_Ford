@@ -1,0 +1,21 @@
+﻿---
+ID: "a49acba8-2786-4172-89b3-09362d15b4e8"
+Parent: "1559b2e8-1abc-4ba5-96de-63a48cf4101d"
+Template: "33b41029-6ad4-4f5c-af68-97f343b8ede0"
+Path: /sitecore/content/FordIndia/Global/Footer/My Ford/Offers
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 194
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201102T111628Z
+    - ID: "6be6a780-ac62-454a-8700-75b0508e594e"
+      Hint: Footer Title
+      Value: Offers
