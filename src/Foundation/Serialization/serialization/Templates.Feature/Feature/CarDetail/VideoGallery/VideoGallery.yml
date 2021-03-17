@@ -1,0 +1,14 @@
+﻿---
+ID: "90fc9545-34be-42d6-9d6e-edfb1513b6db"
+Parent: "fdb84838-9db8-4b48-a746-d4803d2def46"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/CarDetail/VideoGallery/VideoGallery
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210210T092318Z

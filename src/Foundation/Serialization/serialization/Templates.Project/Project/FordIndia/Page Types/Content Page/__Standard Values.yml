@@ -34,6 +34,10 @@ SharedFields:
           ph="main"
           uid="{63B51DD1-5F64-4215-9F18-0541DE78E315}" />
         <r
+          id="{AA9CE665-07DA-4678-8F4D-06371C11088F}"
+          ph="main"
+          uid="{B26360F6-4DC0-4A94-8D7E-FDA93510648F}" />
+        <r
           id="{D27897F7-3D6A-4788-A2E1-3D25DC4582B4}"
           ph="footer"
           uid="{435361DF-9D01-45A1-B292-3A0A105CFA3B}" />

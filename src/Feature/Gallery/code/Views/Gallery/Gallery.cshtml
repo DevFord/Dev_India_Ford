@@ -1,0 +1,162 @@
+﻿@model FordIndia.Feature.Gallery.Models.ImageAndVideoGallery
+
+@if (Model != null)
+{
+
+    <!--[design]-->
+    
+    <section class="section spy-design relative" id="design">
+
+        <div class="blank-wrapper"></div>
+
+        <picture class="design-bg">
+
+            <source srcset="@Model.HeaderImage" media="(min-width: 576px)">
+
+            <img src="images/endeavour-design-bg.jpg" alt="">
+
+        </picture>
+        <div class="design-header">
+
+            <div class="container">
+
+                <header class="d-md-flex mb-md-0 mb-3">
+
+                    <div class="title-head">
+
+                        <h5 class="skyblue text-uppercase">@Model.DesignHeader</h5>
+
+                        <h2 class="title">@Model.DesignSubHeader </h2>
+                    </div>
+                    <nav class="filter-bar-tab design-tab ml-auto mt-md-0 mt-4 d-none d-md-block">
+
+                        <ul class="nav nav-tabs align-items-center">
+
+                            <li class="nav-item"><span class="icon360"><img src="@Model.Image360degree" alt=""></span></li>
+
+                            <li class="nav-item ml-4"><a class="nav-link nav-link-exterior" href="#exterior" data-toggle="tab" role="tab">Exterior</a></li>
+
+                            <li class="nav-item"><a class="nav-link nav-link-interior" href="#interior" data-toggle="tab" role="tab">Interior</a></li>
+
+                            <li class="nav-item"><a href="#design-tab" class="nav-link-design close-tab" data-toggle="tab">&times;</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="design-tab">
+
+                <div class="container">
+
+                    <div class="row flex-row-reverse align-items-end h-100">
+
+                        <div class="col-md-8 col-lg-8 offset-lg-1">
+
+                            <div class="car-color-large text-center">
+
+                                <img src="@Model.MainImage" alt="">
+
+                            </div>
+
+                            <div class="swiper-container spin-swiper text-center mt-md-5 mt-3">
+
+                                <div class="swiper-wrapper my-gallery">
+                                    @foreach (var img in Model.CarImages)
+                                    {
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="@img.CarImage" alt="">@img.ImageName</a>
+                                        </div>
+                                    }
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 mt-md-0 mt-5">
+
+                            <div class="video-gallery">
+
+                                <div class="mb-3 d-flex align-items-center">
+
+                                    <h4 class="m-0">@Model.VideoGalleryHeader</h4>
+
+                                    <a href="#" class="ml-auto v-all">@Model.VideoGallerySubHeader</a>
+
+                                </div>
+
+                                <div class="swiper-container my-gallery gallery-swiper pagination-static">
+
+                                    <div class="swiper-wrapper">
+
+                                        @foreach (var video in Model.VideoImage)
+                                        {
+                                            <div class="swiper-slide">
+
+                                                <a href="#" class="media-card media-card-video">
+
+                                                    <picture class="swiper-img">
+                                                        <source srcset="@video" media="(min-width: 400px)">
+
+                                                        <img src="@video" alt="">
+
+                                                    </picture>
+
+                                                </a>
+
+                                            </div>
+                                        }
+
+                                    </div>
+
+                                    <div class="swiper-pagination m-auto"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="img-gallery mt-3">
+
+                                <div class="mb-3 d-flex align-items-center">
+
+                                    <h4 class="m-0">@Model.ImageGalleryHeader</h4>
+
+                                    <a href="#" class="ml-auto v-all">@Model.ImageGallerySubHeader</a>
+
+                                </div>
+
+                                <div class="swiper-container gallery-swiper pagination-static">
+
+                                    <div class="swiper-wrapper">
+                                        @foreach (var imgs in Model.GalleryImage)
+                                        {
+                                            <div class="swiper-slide">
+
+                                                <a href="#" class="media-card">
+
+                                                    <picture class="swiper-img">
+                                                        <source srcset="@imgs" media="(min-width: 400px)">
+                                                        <img src="@imgs" alt="">
+                                                    </picture>
+                                                </a>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div class="swiper-pagination m-auto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+        </div>
+
+    </section>
+}
+<!--[/design]-->

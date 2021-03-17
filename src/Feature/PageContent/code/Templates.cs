@@ -46,6 +46,16 @@ namespace FordIndia.Feature.PageContent
                 public static readonly ID Link = new ID("{2244B0F4-F214-4D83-859E-67DCD47D62DC}");
             }
         }
+        public struct DisclaimerContent
+        {
+            public static readonly ID ID = new ID("{34F615FC-F66C-4A69-8109-4FCD5E396842}");
+            public struct Fields
+            {
+                public static readonly ID DisclaimerHeader = new ID("{0368858D-29D1-42CE-8DBA-11F152140C4F}");
+                public static readonly ID DisclaimerDeacription = new ID("{CCA71331-1439-45B0-9A0E-AF35C5888853}");
+
+            }
+        }
     }
 
 }

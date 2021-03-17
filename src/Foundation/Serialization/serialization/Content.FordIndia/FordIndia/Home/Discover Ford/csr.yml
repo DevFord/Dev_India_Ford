@@ -19,7 +19,7 @@ SharedFields:
         </r>
         <r
           uid="{F854F0A7-DE1D-4B0D-BBE2-CE78BB84A392}"
-          p:after="r[@uid='{435361DF-9D01-45A1-B292-3A0A105CFA3B}']" />
+          p:after="r[@uid='{2758CD6D-A2C0-460C-BE25-FB7B4236A7B0}']" />
         <r
           uid="{B47C12AD-FC10-468F-B1E4-BC9A8EC8BEB1}"
           p:after="r[@uid='{F854F0A7-DE1D-4B0D-BBE2-CE78BB84A392}']"
@@ -36,7 +36,7 @@ SharedFields:
           s:ph="main" />
         <r
           uid="{0B35B2E9-2A4A-4C64-86BE-2980D3E775F8}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{098BA306-5B74-41D6-9DE1-6E2EA9608E13}']"
           s:ds=""
           s:id="{B48940AB-CF31-4237-840F-138C4CB5C509}"
           s:par=""
@@ -48,6 +48,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "0368858d-29d1-42ce-8dba-11f152140c4f"
+      Hint: DisclaimerHeader
+      Value: Disclaimer
     - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
       Value: Corporate Social Responsibility
@@ -76,6 +79,26 @@ Languages:
       Hint: MediaImage
       Value: |
         <image mediaid="{A8C08308-2D24-4ECD-B82C-999522F64A91}" />
+    - ID: "cca71331-1439-45b0-9a0e-af35c5888853"
+      Hint: DisclaimerDeacription
+      Value: |
+        <p>Quisque aliquam, sapien et sagittis suscipit, lorem enim blandit enim, sit amet fringilla felis arcu eu tortor. Proin ultrices auctor dolor ac feugiat. Aenean ac diam non elit blandit tempus ut sed nulla. Donec vehicula rutrum erat, consectetur ultrices massa porttitor in. Ut ut sapien eget orci feugiat placerat. In congue placerat ligula id venenatis. Mauris tincidunt mi malesuada leo convallis pellentesque. Sed nec vestibulum eros. Integer eget hendrerit lectus. Mauris mollis enim in est vestibulum tincidunt. Nulla facilisi. Quisque sed dolor vel sem posuere tincidunt id eget arcu. Duis eleifend ipsum ex, ac ultricies dui finibus ut. Maecenas commodo libero at felis finibus lobortis. Praesent quis tellus lorem.</p>
+        
+                <p>Nulla facilisi. Phasellus sit amet convallis elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent posuere tellus in viverra dictum. Aliquam erat volutpat. Etiam nec sem sem. Mauris et suscipit massa. Aliquam semper nisi velit, at placerat sem viverra in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        
+                <p>Nam sollicitudin enim tempor dignissim tincidunt. Mauris quis mi vel eros faucibus accumsan sed nec ante. Mauris vel elit ac purus vulputate tristique. Nunc sagittis rutrum mauris, et imperdiet justo fringilla et. Cras sed pharetra magna, ut tristique dui. Praesent varius euismod ipsum, vitae faucibus est porta in. Vestibulum vitae leo et odio gravida ullamcorper pulvinar vitae dui. Morbi eu pulvinar lectus. Duis quis eleifend ante. Quisque sollicitudin at purus convallis consectetur. Pellentesque sagittis luctus diam, eget gravida mi euismod ac. Suspendisse ultrices pulvinar lorem, fermentum dignissim ipsum viverra luctus. Suspendisse potenti. Morbi dignissim suscipit justo, in imperdiet tellus efficitur viverra. Nullam et ante vitae odio sodales scelerisque quis non erat. Praesent tristique id nisl a dignissim.</p>
+        
+                <p>Suspendisse aliquet, dolor in faucibus consectetur, eros lorem tincidunt nisi, in egestas ligula eros in lectus. Ut placerat vestibulum ante. Proin volutpat augue in dui pharetra tempor. Pellentesque gravida ex enim, rutrum porttitor est sollicitudin in. Vivamus interdum nibh in condimentum dignissim. Etiam pharetra feugiat neque, sit amet consequat lorem lobortis ac. In condimentum egestas aliquet. Phasellus ultrices odio ut dolor lobortis porttitor. Duis sed arcu ut felis aliquam viverra. Suspendisse tempor egestas aliquet. Donec vitae interdum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        
+                <p>Curabitur malesuada eros felis, sit amet mattis ex ullamcorper quis. Ut eu metus enim. Nam placerat et augue at commodo. Pellentesque id purus eros. Donec imperdiet, est nec tempus volutpat, tortor augue ultrices arcu, ac laoreet lacus ipsum id enim. Duis aliquam gravida ex, eget commodo ipsum. Donec tincidunt porttitor odio, sed tempus tortor laoreet eget. Pellentesque viverra mollis turpis sed tincidunt. Duis euismod a felis sit amet pulvinar. Curabitur fringilla laoreet justo sed posuere. Donec porttitor nibh vitae diam malesuada, ut auctor arcu pretium. Pellentesque in laoreet elit, in dapibus nulla. Quisque vulputate sit amet arcu vitae laoreet.</p>
+        
+                <p>Fusce hendrerit est vel aliquet rhoncus. Nulla malesuada eget libero a rutrum. Pellentesque fringilla pulvinar nunc vel viverra. Fusce feugiat risus dolor, vel fringilla lectus lobortis congue. Proin egestas mauris augue, at condimentum sapien pellentesque pellentesque. Phasellus volutpat, nibh et volutpat porta, nisi magna consectetur arcu, ut pharetra velit tortor id urna. Proin faucibus tortor vel nunc pharetra elementum. Sed elit lorem, posuere ac neque nec, rhoncus hendrerit risus. Proin quis porttitor velit. Suspendisse potenti. Maecenas vehicula risus at quam fringilla gravida. Mauris convallis vulputate dolor, sed scelerisque lacus lacinia vitae. Proin dignissim at purus a pretium. In bibendum volutpat leo, sed finibus libero vehicula et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin lobortis, nisi sed fringilla rutrum, sem tortor blandit est, eu aliquam nisi erat et elit.</p>
+        
+                <p>Nunc quam sapien, sollicitudin non libero ac, porttitor congue nisl. Proin euismod lacus interdum, malesuada metus sed, malesuada quam. Praesent iaculis ante in consectetur malesuada. Nam erat dui, posuere non pellentesque quis, tempus id justo. Nunc rutrum, risus sit amet vulputate tristique, arcu massa scelerisque tortor, in pulvinar ante velit et eros. Nunc tincidunt ut ex ultrices gravida. Nunc rhoncus sodales tortor at rhoncus. Mauris ac venenatis tellus, sed pharetra neque. Ut auctor blandit ipsum, consequat ultrices nulla. Cras viverra rhoncus tincidunt. Vestibulum nec nisi id tellus tincidunt luctus auctor a tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        
+                <p>Aenean posuere ultrices euismod. Mauris eget tempus augue. Proin commodo lorem elit, vel blandit nisi interdum quis. Pellentesque tempor vitae erat nec congue. Pellentesque ornare, magna quis congue accumsan, felis orci rhoncus ligula, non blandit felis quam eget mauris. Aenean sit amet dolor eget magna dapibus semper in in mauris. In aliquam sollicitudin porttitor. Mauris imperdiet sodales urna sed aliquam. Etiam ut laoreet ipsum. Ut nec condimentum sapien. Vivamus ornare sed dui a bibendum. Phasellus vulputate mollis lectus, eu ornare mi tempor ut. Nulla ultrices lorem velit, eget congue arcu tempor at. Ut facilisis massa eget leo lacinia, ac consectetur urna vehicula.</p>
+        
+                <p>Proin ut interdum turpis. Nullam vel ex sed urna elementum ullamcorper ut nec mi. Sed eleifend ipsum libero, id hendrerit neque vehicula id. Praesent molestie libero id eros auctor, nec mollis justo fringilla. Donec rutrum, urna ut sollicitudin blandit, purus turpis finibus nisl, vestibulum vehicula odio libero in ex. Morbi malesuada ex at massa dictum, in dignissim mauris egestas. Nulla vehicula diam eget mauris tincidunt, quis malesuada diam vehicula.</p>
     - ID: "e4549837-b4fb-4845-9b49-1cb8a39fa13d"
       Hint: Image
       Value: |

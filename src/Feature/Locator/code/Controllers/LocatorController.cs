@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using FordIndia.Feature.Locator;
 using FordIndia.Feature.Locator.Models;
+using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 
 namespace FordIndia.Feature.Locator.Controllers
@@ -12,11 +13,11 @@ namespace FordIndia.Feature.Locator.Controllers
     public class LocatorController : Controller
     {
 
-        ApiCall apiCall = new ApiCall();
+       
         // GET: Locator
         public ActionResult Index()
         {
-           
+            ApiCall apiCall = new ApiCall();
             var data = apiCall.CreateObject().Data;
             try
             {
@@ -42,7 +43,7 @@ namespace FordIndia.Feature.Locator.Controllers
         
         public JsonResult BindCity(string state)
         {
-
+            ApiCall apiCall = new ApiCall();
             List<LocatorData> lstState = new List<LocatorData>();          
             var data = apiCall.CreateObject().Data;
             try
@@ -57,7 +58,7 @@ namespace FordIndia.Feature.Locator.Controllers
         }
         public JsonResult BindDealer(string dealer)
         {
-
+            ApiCall apiCall = new ApiCall();
             List<LocatorData> lstDealer = new List<LocatorData>();
             var data = apiCall.CreateObject().Data;
             try
@@ -70,9 +71,27 @@ namespace FordIndia.Feature.Locator.Controllers
             }
             return Json(lstDealer, JsonRequestBehavior.AllowGet);
         }
+        public JsonResult oldDealerLocator()
+        {
+            ApiCall apiCall = new ApiCall();
+            List<LocatorData> lstlocation = new List<LocatorData>();
+            var data = apiCall.CreateObject().Data;
+            try
+            {
+                //lstDealer = data.Where(a => a.DealerName == dealer).ToList();
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            return Json(lstlocation, JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
         public ActionResult DealerLocator()
         {
-            return View("~/Views/Locator/DealerLocator.cshtml");
+
+            return PartialView("~/Views/Locator/DealerLocatorPV.cshtml");
+
         }
 
     }

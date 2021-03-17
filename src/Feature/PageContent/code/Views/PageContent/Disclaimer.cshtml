@@ -1,0 +1,30 @@
+﻿@model FordIndia.Feature.PageContent.Models.DisclaimerModel
+
+
+@if (Model != null)
+{
+<!--[Disclaimer]-->
+
+<section class="sec-disclaimer bg-gray">
+
+    <div class="container">
+
+        <header class="title-head text-center">
+
+            <a class="collapsed title blue d-flex align-items-center justify-content-center p-sm-3 p-2" data-toggle="collapse" href="#disclaimer" role="button" aria-expanded="false" aria-controls="disclaimer">@Model.DisclaimerHeader <i class="fa fa-chevron-down ml-1"></i></a>
+
+        </header>
+
+        <div class="collapse" id="disclaimer">
+
+            <div class="card card-body">
+                @Html.Raw(Model.DisclaimerDeacription)
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+}
+<!--[/Disclaimer]-->

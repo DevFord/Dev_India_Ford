@@ -1,0 +1,14 @@
+﻿---
+ID: "5d5af5fc-221d-41d5-bcef-131a80a164cc"
+Parent: "cc3c2cae-8fb4-4894-97c5-28ad6ff93018"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/CarDetail/CarDetail/CarDetail
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210210T091115Z

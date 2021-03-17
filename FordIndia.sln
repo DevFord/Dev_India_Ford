@@ -72,6 +72,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Features", "Features", "{27
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FordIndia.Feature.Features", "src\Feature\Features\code\FordIndia.Feature.Features.csproj", "{D0A323B3-1238-4BB8-8B1B-44ADA3552573}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gallery", "Gallery", "{CCF8F35C-B483-4855-9855-F136EECEC831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FordIndia.Feature.Gallery", "src\Feature\Gallery\code\FordIndia.Feature.Gallery.csproj", "{FC5BEBEE-0912-4801-9165-E7B53A07120C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -134,6 +138,10 @@ Global
 		{D0A323B3-1238-4BB8-8B1B-44ADA3552573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A323B3-1238-4BB8-8B1B-44ADA3552573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A323B3-1238-4BB8-8B1B-44ADA3552573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5BEBEE-0912-4801-9165-E7B53A07120C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5BEBEE-0912-4801-9165-E7B53A07120C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5BEBEE-0912-4801-9165-E7B53A07120C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5BEBEE-0912-4801-9165-E7B53A07120C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +175,8 @@ Global
 		{975589B1-4406-4522-9DC1-EDD1B7B7310C} = {44E64ED0-F613-4052-A15F-2A473A7A4908}
 		{27E5F5CA-391D-41BD-ADEE-854A52B62C53} = {A120A0BB-9F45-4671-B94A-1C0C283002DF}
 		{D0A323B3-1238-4BB8-8B1B-44ADA3552573} = {27E5F5CA-391D-41BD-ADEE-854A52B62C53}
+		{CCF8F35C-B483-4855-9855-F136EECEC831} = {A120A0BB-9F45-4671-B94A-1C0C283002DF}
+		{FC5BEBEE-0912-4801-9165-E7B53A07120C} = {CCF8F35C-B483-4855-9855-F136EECEC831}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED930540-2C52-48A4-B162-6AEAD0CA43FA}

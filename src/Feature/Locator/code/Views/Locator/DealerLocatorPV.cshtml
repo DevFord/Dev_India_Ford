@@ -1,0 +1,182 @@
+﻿<!--[Dealer Locator]-->
+<div class="container-fluid p-0">
+    <div class="row m-0">
+        <div class="col-md-5 graident">
+            <div class="search-dealer pt-5 pb-5 pl-5">
+                <div class="dealer-listing pr-5">
+                    <header class="title-head mb-2">
+                        <div class="d-flex">
+                            @Html.ActionLink("Back", "Index", "Locator", null, new { @class = "btn-text ajaxLink" })@*<a href="#" class="btn-text"><i class="fa fa-chevron-left mr-2"></i></a>*@
+                            <h3 class="title">Locate a Dealer <small class="total-dealer mt-2"><span>(5 results)</span> found in New Delhi, Delhi</small></h3>
+                        </div>
+                    </header>
+                    <div class="locate-filter bor-bottom mb-4 pb-2">
+                        <a href="javascript:void();" class="text-uppercase filter-colum"><i class="fa fa-sliders fa-rotate-90"></i> Filter</a>
+                        <div class="dealer-filter-sec cus-scr">
+                            <header class="title-head mb-3">
+                                <div class="d-flex">
+                                    <a href="#" class="btn-text mt-2"><i class="fa fa-chevron-left mr-2"></i></a>
+                                    <h2 class="title">Back to Search Result</h2>
+                                </div>
+                            </header>
+                            <div class="d-flex align-items-center bor-bottom pt-3 pb-3 mb-3">
+                                <a href="#" class="text-uppercase">Clear Selection</a>
+                                <a href="#" class="text-uppercase ml-auto fliter-close">Done</a>
+                            </div>
+                            <div class="twofield bor-bottom pt-2 pb-3 mb-3">
+                                <h4 class="mb-4">Services</h4>
+                                <div class="d-flex mt-3">
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="car" id="car">
+                                        <label for="car">Car Service</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="transit" id="transit">
+                                        <label for="transit">Transit Centre</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twofield bor-bottom pt-2 pb-3 mb-3">
+                                <h4 class="mb-4">Vehicles Sales</h4>
+                                <div class="d-flex flex-wrap mt-3">
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="car1" id="car1">
+                                        <label for="car1">Car</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="motability" id="motability">
+                                        <label for="motability">Motability</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="used" id="used">
+                                        <label for="used">Used</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="store" id="store">
+                                        <label for="store">Store Mustang</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twofield bor-bottom pt-2 pb-3 mb-3">
+                                <h4 class="mb-4">Vehicles Services</h4>
+                                <div class="d-flex flex-wrap mt-3">
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="transit-ser" id="transit-ser">
+                                        <label for="transit-ser">Transit Service</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twofield bor-bottom pt-2 pb-3 mb-3">
+                                <h4 class="mb-4">Other</h4>
+                                <div class="d-flex flex-wrap mt-3">
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="small-buss" id="small-buss">
+                                        <label for="small-buss">Small Business and Fleet</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="repair" id="repair">
+                                        <label for="repair">Accident Repair Centre</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="parts" id="parts">
+                                        <label for="parts">Parts</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="fordrent" id="fordrent">
+                                        <label for="fordrent">Ford Rental</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twofield bor-bottom pt-2 pb-3 mb-3">
+                                <h4 class="mb-4">And, Or, Not filters</h4>
+                                <div class="d-flex flex-wrap mt-3">
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="ford-rent" id="ford-rent">
+                                        <label for="ford-rent">Ford Rental</label>
+                                    </div>
+                                    <div class="btn-checkbox">
+                                        <input type="checkbox" name="not-ford" id="not-ford">
+                                        <label for="not-ford">Not Ford Store</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cus-scr">
+                        <div class="location-sec dealer-list">
+                            <address class="pb-0 mb-0">
+                                <h3 class="title">Ford Chennai Plant and Regd. Office</h3>
+                                <span class="distance">2.7 kms</span>
+                                <p class="location-ico">Ford India Pvt. Ltd. S.P. Koil Post, Chengalpattu  - 603204</p>
+                                <p class="number-ico">+91-44-67403333</p>
+                            </address>
+                            <div class="location-btn mt-4 mb-4">
+                                <a href="#" class="btn btn-outline-primary text-uppercase mr-3">Direction <i class="fa fa-chevron-right ml-1"></i></a>
+                                <a href="#" class="btn btn-outline-primary text-uppercase">Dealer Details <i class="fa fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <div class="location-sec dealer-list">
+                            <address class="pb-0 mb-0">
+                                <h3 class="title">Ford Chennai Plant and Regd. Office</h3>
+                                <span class="distance">2.7 kms</span>
+                                <div class="dealer-rating mb-4">
+                                    4.4 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty"></i>
+                                    <span class="ml-4">8 Rating <button tabindex="0" class="info-icon ml-2" role="button" data-toggle="popover" data-trigger="hover" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry"> <i class="fa fa-info"></i></button></span>
+                                </div>
+                                <p class="location-ico">Ford India Pvt. Ltd. S.P. Koil Post, Chengalpattu  - 603204</p>
+                                <p class="number-ico">+91-44-67403333</p>
+                            </address>
+                            <div class="location-btn mt-4 mb-4">
+                                <a href="#" class="btn btn-outline-primary text-uppercase mr-3">Direction <i class="fa fa-chevron-right ml-1"></i></a>
+                                <a href="#" class="btn btn-outline-primary text-uppercase">Dealer Details <i class="fa fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <div class="location-sec dealer-list">
+                            <address class="pb-0 mb-0">
+                                <h3 class="title">Ford Chennai Plant and Regd. Office</h3>
+                                <span class="distance">2.7 kms</span>
+                                <p class="location-ico">Ford India Pvt. Ltd. S.P. Koil Post, Chengalpattu  - 603204</p>
+                                <p class="number-ico">+91-44-67403333</p>
+                            </address>
+                            <div class="location-btn mt-4 mb-4">
+                                <a href="#" class="btn btn-outline-primary text-uppercase mr-3">Direction <i class="fa fa-chevron-right ml-1"></i></a>
+                                <a href="#" class="btn btn-outline-primary text-uppercase">Dealer Details <i class="fa fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <div class="location-sec dealer-list">
+                            <address class="pb-0 mb-0">
+                                <h3 class="title">Ford Chennai Plant and Regd. Office</h3>
+                                <span class="distance">2.7 kms</span>
+                                <p class="location-ico">Ford India Pvt. Ltd. S.P. Koil Post, Chengalpattu  - 603204</p>
+                                <p class="number-ico">+91-44-67403333</p>
+                            </address>
+                            <div class="location-btn mt-4 mb-4">
+                                <a href="#" class="btn btn-outline-primary text-uppercase mr-3">Direction <i class="fa fa-chevron-right ml-1"></i></a>
+                                <a href="#" class="btn btn-outline-primary text-uppercase">Dealer Details <i class="fa fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <div class="location-sec dealer-list">
+                            <address class="pb-0 mb-0">
+                                <h3 class="title">Ford Chennai Plant and Regd. Office</h3>
+                                <span class="distance">2.7 kms</span>
+                                <p class="location-ico">Ford India Pvt. Ltd. S.P. Koil Post, Chengalpattu  - 603204</p>
+                                <p class="number-ico">+91-44-67403333</p>
+                            </address>
+                            <div class="location-btn mt-4 mb-4">
+                                <a href="#" class="btn btn-outline-primary text-uppercase mr-3">Direction <i class="fa fa-chevron-right ml-1"></i></a>
+                                <a href="#" class="btn btn-outline-primary text-uppercase">Dealer Details <i class="fa fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 p-0">
+            <div class="loaction-map">
+                <iframe src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeYjdSUBhrLwF55H61lV6LIOlqvHqrizo" width="600" height="750" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

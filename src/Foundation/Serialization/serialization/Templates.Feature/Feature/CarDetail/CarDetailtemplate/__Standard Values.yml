@@ -1,0 +1,28 @@
+﻿---
+ID: "18c1e534-ff0f-45d6-83d0-e2024db19de2"
+Parent: "6a380e58-3500-4e69-8cab-af30447a496b"
+Template: "6a380e58-3500-4e69-8cab-af30447a496b"
+Path: /sitecore/templates/Feature/CarDetail/CarDetailtemplate/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {6A380E58-3500-4E69-8CAB-AF30447A496B}
+    {CC3C2CAE-8FB4-4894-97C5-28AD6FF93018}
+    {B08022E3-E31E-4537-9979-5C49EDACDFF1}
+    {ED8C07F3-00ED-44C1-8D49-7D680E96982B}
+    {FDB84838-9DB8-4B48-A746-D4803D2DEF46}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210212T091917Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

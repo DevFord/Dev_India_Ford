@@ -19,7 +19,7 @@ Languages:
     - ID: "66e6c41a-b190-48a9-8ff4-c100f667ec1e"
       Hint: Footer Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{F505C72A-5F14-4B1A-A26A-628361831AB0}" />
+        <link id="{F505C72A-5F14-4B1A-A26A-628361831AB0}" querystring="" text="" anchor="" url="/FordIndia/Home/Locate Dealer/Search" title="" class="" linktype="internal" />
     - ID: "6be6a780-ac62-454a-8700-75b0508e594e"
       Hint: Footer Title
       Value: Locate a Dealer

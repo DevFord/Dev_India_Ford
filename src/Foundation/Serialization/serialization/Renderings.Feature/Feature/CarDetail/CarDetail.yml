@@ -1,0 +1,21 @@
+﻿---
+ID: "56865a63-3b07-471e-b4f1-9a79de6a8cea"
+Parent: "fef20f54-8ff5-40e4-a9ff-0b85c23dc791"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/CarDetail/CarDetail
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: CarDetail
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: FordIndia.Feature.CarDetail.Controllers.CarDetailController,FordIndia.Feature.CarDetail
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210211T043819Z

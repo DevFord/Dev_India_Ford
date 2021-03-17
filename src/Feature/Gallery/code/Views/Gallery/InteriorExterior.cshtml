@@ -1,0 +1,74 @@
+﻿@model FordIndia.Feature.Gallery.Models.LinkList
+@using FordIndia.Foundation.Dictionary.Extensions
+
+@if (Model != null)
+{
+
+    <!--[design]-->
+    <section class="section spy-design relative" id="design">
+
+        <div class="blank-wrapper"></div>
+        <picture class="design-bg">
+            <source srcset="@Model.BackgroundImg" media="(min-width: 576px)">
+            <img src="@Model.BackgroundImg" alt="@Model.BackGroundAlt">
+        </picture>
+
+        <div class="design-header">
+            <div class="container">
+                <header class="d-md-flex mb-md-0 mb-3">
+                    <div class="title-head">
+                        <h5 class="skyblue text-uppercase">@Model.BlueTitle</h5>
+                        <h2 class="title">@Model.Title</h2>
+                    </div>
+                    <nav class="filter-bar-tab design-tab ml-auto mt-md-0 mt-4 d-none d-md-block">
+                        <ul class="nav nav-tabs align-items-center">
+                            <li class="nav-item"><span class="icon360"><img src="@Model.IconImage" alt="@Model.IconImageAlt"></span></li>
+                            <li class="nav-item ml-4"><a class="nav-link nav-link-exterior" href="#exterior" data-toggle="tab" role="tab">@Html.Sitecore().Dictionary("Nameplate/Exterior")</a></li>
+                            <li class="nav-item"><a class="nav-link nav-link-interior" href="#interior" data-toggle="tab" role="tab">@Html.Sitecore().Dictionary("Nameplate/Interior")</a></li>
+                            <li class="nav-item"><a href="#design-tab" class="nav-link-design close-tab" data-toggle="tab">&times;</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="design-tab">
+                @*@Html.Partial("~/Views/Gallery/Gallery.cshtml");*@
+
+            </div>
+            <div class="tab-pane tab-pane-interior" id="exterior">
+                <div class="container d-md-none">
+                    <h4 class="mb-3">@Html.Sitecore().Dictionary("Nameplate/Exterior")</h4>
+                </div>
+                <div id="FordSpinExterior" class="spin-rotate rotate-exterior">
+                    @if (Model.linkList.Where(x => x.ExteriorLink != null)!=null)
+                    {
+
+                        foreach (var item in Model.linkList.Where(x => x.ExteriorLink != null))
+                        {
+                            <img data-src="@item.ExteriorLink" alt="@item.ExteriorAlt">
+                        }
+                    }
+                    <div id="FordSpinLoader" class="loader"></div>
+                </div>
+            </div>
+            <div class="tab-pane tab-pane-interior" id="interior">
+                <div class="container d-md-none">
+                    <h4 class="mb-3 mt-4">@Html.Sitecore().Dictionary("Nameplate/Interior")</h4>
+                </div>
+                <div id="FordSpinInterior" class="spin-rotate rotate-interior">
+                    @foreach (var item in Model.linkList.Where(x => x.InteriorLink != null))
+                    {
+                        <img data-src="@item.InteriorLink" alt="">
+                    }
+                    <div id="FordSpinLoaderExterior" class="loader"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--[/design]-->
+}
+

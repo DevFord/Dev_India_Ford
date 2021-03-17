@@ -1,0 +1,14 @@
+﻿---
+ID: "5b334f6b-8882-4322-a56a-4c65f1af1f48"
+Parent: "7740453d-0e4b-48f5-a34b-8554f9d09edb"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/FordIndia/CarDetail/horizontalImage
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210217T042243Z

@@ -1,0 +1,32 @@
+﻿---
+ID: "29937f5f-ea0b-4ad2-a3d4-30337f861e88"
+Parent: "36782d4d-b1d8-4c63-acf9-c82a30f3684c"
+Template: "931b504f-2d4d-4a01-acd7-bd9e4baf9004"
+Path: /sitecore/content/FordIndia/Home/Cars/Figo/Figo Local Content/Figo Header Gallery
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "030e1a8d-7495-4814-b213-a2e220c474db"
+      Hint: BlueTitleGH
+      Value: Design
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210204T114848Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7b41772d-812e-4994-95bd-87c572b70357"
+      Hint: BackgroundImage
+      Value: |
+        <image mediaid="{571BD96D-0F78-438E-BCD9-38E68EBE5980}" />
+    - ID: "e8abbda4-c430-470c-8da7-c69289fef543"
+      Hint: TitleGH
+      Value: "Take a 360-degree tour "
+    - ID: "fb1d7062-becd-4ea9-a44c-1ff46e2b8d3b"
+      Hint: IconImage
+      Value: |
+        <image mediaid="{91A03A9B-2D43-45CA-BCB9-B7A160BFEA8B}" />

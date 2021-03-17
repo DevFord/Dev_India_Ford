@@ -9,6 +9,7 @@ using Sitecore.Resources.Media;
 using FordIndia.Feature.PageContent.Models;
 using FordIndia.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Diagnostics;
+using Sitecore.Data.Items;
 
 namespace FordIndia.Feature.PageContent.Controllers
 {
@@ -72,6 +73,25 @@ namespace FordIndia.Feature.PageContent.Controllers
             }
             return new EmptyResult();
         }
+        public ActionResult Disclaimer()
+        {
+            try
+            {
+                DisclaimerModel disclaimerModel = new DisclaimerModel();
+                Item item = Sitecore.Context.Item;
+                if (item != null)
+                {
+                    disclaimerModel.DisclaimerHeader = !string.IsNullOrEmpty(item.Fields[Templates.DisclaimerContent.Fields.DisclaimerHeader].Value) ? item.Fields[Templates.DisclaimerContent.Fields.DisclaimerHeader].Value : string.Empty;
 
+                    disclaimerModel.DisclaimerDeacription = !string.IsNullOrEmpty(item.Fields[Templates.DisclaimerContent.Fields.DisclaimerDeacription].Value) ? item.Fields[Templates.DisclaimerContent.Fields.DisclaimerDeacription].Value : string.Empty;
+                }
+                return View("~/Views/PageContent/Disclaimer.cshtml", disclaimerModel);
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            return View();
+        }
     }
 }

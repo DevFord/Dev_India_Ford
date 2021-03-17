@@ -1,0 +1,14 @@
+﻿---
+ID: "37208454-4a8d-4a31-9f1c-efc04a8a1732"
+Parent: "7740453d-0e4b-48f5-a34b-8554f9d09edb"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/FordIndia/CarDetail/VideoGallery
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210212T132009Z

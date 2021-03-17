@@ -1,0 +1,402 @@
+﻿@model FordIndia.Feature.CarDetail.Models.CarDetailModel
+
+@if (Model !=null)
+{
+
+<!--[design]-->
+<script src="~/Script/nameplate.js"></script>
+<section class="section spy-design relative" id="design">
+
+    <div class="blank-wrapper"></div>
+
+    <picture class="design-bg">
+
+        <source srcset="@Model.HeaderImage" media="(min-width: 576px)">
+
+        <img src="images/endeavour-design-bg.jpg" alt="">
+
+    </picture>
+    <div class="design-header">
+
+        <div class="container">
+
+            <header class="d-md-flex mb-md-0 mb-3">
+
+                <div class="title-head">
+
+                    <h5 class="skyblue text-uppercase">@Model.DesignHeader</h5>
+
+                    <h2 class="title">@Model.DesignSubHeader </h2>
+                </div>
+                <nav class="filter-bar-tab design-tab ml-auto mt-md-0 mt-4 d-none d-md-block">
+
+                    <ul class="nav nav-tabs align-items-center">
+
+                        <li class="nav-item"><span class="icon360"><img src="@Model.Image360degree" alt=""></span></li>
+
+                        <li class="nav-item ml-4"><a class="nav-link nav-link-exterior" href="#exterior" data-toggle="tab" role="tab">Exterior</a></li>
+
+                        <li class="nav-item"><a class="nav-link nav-link-interior" href="#interior" data-toggle="tab" role="tab">Interior</a></li>
+
+                        <li class="nav-item"><a href="#design-tab" class="nav-link-design close-tab" data-toggle="tab">&times;</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="tab-content">
+
+        <div class="tab-pane active" id="design-tab">
+
+            <div class="container">
+
+                <div class="row flex-row-reverse align-items-end h-100">
+
+                    <div class="col-md-8 col-lg-8 offset-lg-1">
+
+                        <div class="car-color-large text-center">
+
+                            <img src="@Model.MainImage" alt="">
+
+                        </div>
+
+                        <div class="swiper-container spin-swiper text-center mt-md-5 mt-3">
+
+                            <div class="swiper-wrapper my-gallery">
+                                @foreach (var img in Model.CarImages)
+                                {
+                                    <div class="swiper-slide">
+                                        <a href="#"><img src="@img.CarImage" alt="">@img.ImageName</a>
+                                    </div>
+                                }
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 mt-md-0 mt-5">
+
+                        <div class="video-gallery">
+
+                            <div class="mb-3 d-flex align-items-center">
+
+                                <h4 class="m-0">@Model.VideoGalleryHeader</h4>
+
+                                <a href="#" class="ml-auto v-all">@Model.VideoGallerySubHeader</a>
+
+                            </div>
+
+                            <div class="swiper-container my-gallery gallery-swiper pagination-static">
+
+                                <div class="swiper-wrapper">
+
+                                    @foreach (var video in Model.VideoImage)
+                                    {
+                                        <div class="swiper-slide">
+
+                                            <a href="#" class="media-card media-card-video">
+
+                                                <picture class="swiper-img">
+                                                    <source srcset="@video" media="(min-width: 400px)">
+
+                                                    <img src="@video" alt="">
+
+                                                </picture>
+
+                                            </a>
+
+                                        </div>
+                                    }
+                                   
+                                </div>
+
+                                <div class="swiper-pagination m-auto"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="img-gallery mt-3">
+
+                            <div class="mb-3 d-flex align-items-center">
+
+                                <h4 class="m-0">@Model.ImageGalleryHeader</h4>
+
+                                <a href="#" class="ml-auto v-all">@Model.ImageGallerySubHeader</a>
+
+                            </div>
+
+                            <div class="swiper-container gallery-swiper pagination-static">
+
+                                <div class="swiper-wrapper">
+                                    @foreach (var imgs in Model.GalleryImage)
+                                    {
+                                        <div class="swiper-slide">
+
+                                            <a href="#" class="media-card">
+
+                                                <picture class="swiper-img">
+                                                    <source srcset="@imgs" media="(min-width: 400px)">
+                                                    <img src="@imgs" alt="">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                    }
+                                   </div>
+                                <div class="swiper-pagination m-auto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane tab-pane-interior" id="exterior">
+            <div class="container d-md-none">
+                <h4 class="mb-3">Exterior</h4>
+            </div>
+            <div id="FordSpinExterior" class="spin-rotate rotate-exterior">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/01.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/02.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/03.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/04.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/05.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/06.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/07.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/08.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/09.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/10.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/11.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/12.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/13.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/14.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/15.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/16.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/17.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/18.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/19.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/20.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/21.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/22.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/23.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/24.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/25.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/26.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/27.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/28.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/29.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/30.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/31.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/32.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/33.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/34.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/35.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/36.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/37.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/38.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/39.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/40.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/41.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/42.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/43.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/44.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/45.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/46.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/47.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/48.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/49.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/50.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/51.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/52.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/53.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/54.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/55.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/56.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/57.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/58.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/59.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/60.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/61.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/62.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/63.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/64.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/65.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/66.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/67.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/68.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/69.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/70.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/71.png" alt="">
+
+                <img data-src="images/ecosport/exterior/Absolute_Black/72.png" alt="">
+
+                <div id="FordSpinLoader" class="loader"></div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane tab-pane-interior" id="interior">
+
+            <div class="container d-md-none">
+
+                <h4 class="mb-3 mt-4">Interior</h4>
+
+            </div>
+
+            <div id="FordSpinInterior" class="spin-rotate rotate-interior">
+
+                <img data-src="images/gallery/interior/01.png" alt="">
+
+                <img data-src="images/gallery/interior/02.png" alt="">
+
+                <img data-src="images/gallery/interior/03.png" alt="">
+
+                <img data-src="images/gallery/interior/04.png" alt="">
+
+                <img data-src="images/gallery/interior/05.png" alt="">
+
+                <img data-src="images/gallery/interior/06.png" alt="">
+
+                <img data-src="images/gallery/interior/07.png" alt="">
+
+                <img data-src="images/gallery/interior/08.png" alt="">
+
+                <img data-src="images/gallery/interior/09.png" alt="">
+
+                <img data-src="images/gallery/interior/10.png" alt="">
+
+                <img data-src="images/gallery/interior/11.png" alt="">
+
+                <img data-src="images/gallery/interior/12.png" alt="">
+
+                <img data-src="images/gallery/interior/13.png" alt="">
+
+                <img data-src="images/gallery/interior/14.png" alt="">
+
+                <img data-src="images/gallery/interior/15.png" alt="">
+
+                <img data-src="images/gallery/interior/16.png" alt="">
+
+                <img data-src="images/gallery/interior/17.png" alt="">
+
+                <img data-src="images/gallery/interior/18.png" alt="">
+
+                <img data-src="images/gallery/interior/19.png" alt="">
+
+                <img data-src="images/gallery/interior/20.png" alt="">
+
+                <img data-src="images/gallery/interior/21.png" alt="">
+
+                <img data-src="images/gallery/interior/22.png" alt="">
+
+                <img data-src="images/gallery/interior/23.png" alt="">
+
+                <img data-src="images/gallery/interior/24.png" alt="">
+
+                <img data-src="images/gallery/interior/25.png" alt="">
+
+                <img data-src="images/gallery/interior/26.png" alt="">
+
+                <img data-src="images/gallery/interior/27.png" alt="">
+
+                <img data-src="images/gallery/interior/28.png" alt="">
+
+                <img data-src="images/gallery/interior/29.png" alt="">
+
+                <img data-src="images/gallery/interior/30.png" alt="">
+
+                <img data-src="images/gallery/interior/31.png" alt="">
+
+                <img data-src="images/gallery/interior/32.png" alt="">
+
+                <img data-src="images/gallery/interior/33.png" alt="">
+
+                <img data-src="images/gallery/interior/34.png" alt="">
+
+                <img data-src="images/gallery/interior/35.png" alt="">
+
+                <img data-src="images/gallery/interior/36.png" alt="">
+
+                <div id="FordSpinLoaderExterior" class="loader"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+}
+<!--[/design]-->

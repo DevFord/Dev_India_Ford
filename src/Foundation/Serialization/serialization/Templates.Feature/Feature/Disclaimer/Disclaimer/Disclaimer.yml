@@ -1,0 +1,14 @@
+﻿---
+ID: "dd55641c-2f1f-45c6-ab11-2dc3a1166c9b"
+Parent: "34f615fc-f66c-4a69-8109-4fcd5e396842"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Disclaimer/Disclaimer/Disclaimer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210310T043058Z

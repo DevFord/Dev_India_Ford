@@ -99,6 +99,14 @@ Languages:
       Hint: BannerImage
       Value: |
         <image mediaid="{F2F26B1F-FEC2-4256-B978-F58995F757F7}" />
+    - ID: "af57fdb0-8f88-4017-bce5-a776f9ea9d8a"
+      Hint: Exterior
+      Value: |
+        <link linktype="media" target="" id="{20132A50-14C5-48F1-B67F-A40DCB535BC0}" />
+    - ID: "cb8bd654-6084-4427-9edb-fb4e19c0883c"
+      Hint: Interior
+      Value: |
+        <link linktype="media" target="" id="{5DF6A84E-AD64-4C53-95BD-513591D045B5}" />
     - ID: "f914da57-dfb8-4f62-9f77-13c492d0041c"
       Hint: MPGValue
       Value: 14/18

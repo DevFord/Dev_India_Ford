@@ -15,6 +15,9 @@ Languages:
     - ID: "8564ee35-5ad3-4d3f-a4b7-cf03fba894ed"
       Hint: Heading
       Value: Gearbox
+    - ID: "edc95f56-61d1-42ae-b8a0-42a24236f6b1"
+      Hint: Description
+      Value: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     - ID: "edfca2fd-fa94-43d7-ad22-80e38e40681b"
       Hint: Image
       Value: |

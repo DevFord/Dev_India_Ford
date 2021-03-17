@@ -1,0 +1,18 @@
+﻿---
+ID: "77b797f6-94d0-4932-85b8-ccd0ec8b9677"
+Parent: "36782d4d-b1d8-4c63-acf9-c82a30f3684c"
+Template: "ce1879f4-6862-4e33-8ec8-c997fd9f6037"
+Path: /sitecore/content/FordIndia/Home/Cars/Figo/Figo Local Content/Video Gallery
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210208T112858Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
